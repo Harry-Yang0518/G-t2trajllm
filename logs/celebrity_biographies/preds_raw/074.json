@@ -1,0 +1,95 @@
+{
+  "id": "074",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Rabindranath Tagore\",\n        \"Track\": [\n            {\"Place\": \"Calcutta\"},\n            {\"Place\": \"Santiniketan\"},\n            {\"Place\": \"Amritsar\"},\n            {\"Place\": \"Dalhousie\"},\n            {\"Place\": \"Brighton, East Sussex, England\"},\n            {\"Place\": \"London\"},\n            {\"Place\": \"Butterton, Staffordshire\"},\n            {\"Place\": \"Mexico\"},\n            {\"Place\": \"Buenos Aires\"},\n            {\"Place\": \"Naples\"},\n            {\"Place\": \"Rome\"},\n            {\"Place\": \"Balatonfüred\"},\n            {\"Place\": \"Bali\"},\n            {\"Place\": \"Java\"},\n            {\"Place\": \"Kuala Lumpur\"},\n            {\"Place\": \"Malacca\"},\n            {\"Place\": \"Penang\"},\n            {\"Place\": \"Siam\"},\n            {\"Place\": \"Singapore\"},\n            {\"Place\": \"Birmingham\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Denmark\"},\n            {\"Place\": \"Switzerland\"},\n            {\"Place\": \"Germany\"},\n            {\"Place\": \"Soviet Union\"},\n            {\"Place\": \"Persia\"},\n            {\"Place\": \"Iraq\"},\n            {\"Place\": \"Sri Lanka\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Rabindranath Tagore",
+      "Track": [
+        {
+          "Place": "Calcutta"
+        },
+        {
+          "Place": "Santiniketan"
+        },
+        {
+          "Place": "Amritsar"
+        },
+        {
+          "Place": "Dalhousie"
+        },
+        {
+          "Place": "Brighton, East Sussex, England"
+        },
+        {
+          "Place": "London"
+        },
+        {
+          "Place": "Butterton, Staffordshire"
+        },
+        {
+          "Place": "Mexico"
+        },
+        {
+          "Place": "Buenos Aires"
+        },
+        {
+          "Place": "Naples"
+        },
+        {
+          "Place": "Rome"
+        },
+        {
+          "Place": "Balatonfüred"
+        },
+        {
+          "Place": "Bali"
+        },
+        {
+          "Place": "Java"
+        },
+        {
+          "Place": "Kuala Lumpur"
+        },
+        {
+          "Place": "Malacca"
+        },
+        {
+          "Place": "Penang"
+        },
+        {
+          "Place": "Siam"
+        },
+        {
+          "Place": "Singapore"
+        },
+        {
+          "Place": "Birmingham"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Denmark"
+        },
+        {
+          "Place": "Switzerland"
+        },
+        {
+          "Place": "Germany"
+        },
+        {
+          "Place": "Soviet Union"
+        },
+        {
+          "Place": "Persia"
+        },
+        {
+          "Place": "Iraq"
+        },
+        {
+          "Place": "Sri Lanka"
+        }
+      ]
+    }
+  ]
+}

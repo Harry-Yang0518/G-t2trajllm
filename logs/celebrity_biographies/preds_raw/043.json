@@ -1,0 +1,38 @@
+{
+  "id": "043",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Ernest Rutherford\",\n        \"Track\": [\n            {\"Place\": \"Brightwater\"},\n            {\"Place\": \"Foxhill\"},\n            {\"Place\": \"Havelock\"},\n            {\"Place\": \"Nelson College\"},\n            {\"Place\": \"Canterbury College, University of New Zealand\"},\n            {\"Place\": \"Cavendish Laboratory, University of Cambridge\"},\n            {\"Place\": \"McGill University\"},\n            {\"Place\": \"Victoria University of Manchester\"},\n            {\"Place\": \"Cavendish Laboratory (return)\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Ernest Rutherford",
+      "Track": [
+        {
+          "Place": "Brightwater"
+        },
+        {
+          "Place": "Foxhill"
+        },
+        {
+          "Place": "Havelock"
+        },
+        {
+          "Place": "Nelson College"
+        },
+        {
+          "Place": "Canterbury College, University of New Zealand"
+        },
+        {
+          "Place": "Cavendish Laboratory, University of Cambridge"
+        },
+        {
+          "Place": "McGill University"
+        },
+        {
+          "Place": "Victoria University of Manchester"
+        },
+        {
+          "Place": "Cavendish Laboratory (return)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "039",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Rudyard Kipling\",\n        \"Track\": [\n            {\"Place\": \"Bombay\"},\n            {\"Place\": \"Southsea, Portsmouth\"},\n            {\"Place\": \"Lorne Lodge, 4 Campbell Road, Southsea\"},\n            {\"Place\": \"The Grange, Fulham, London\"},\n            {\"Place\": \"Goldings Farm, Loughton\"},\n            {\"Place\": \"United Services College, Westward Ho!, Devon\"},\n            {\"Place\": \"Lahore\"},\n            {\"Place\": \"Simla\"},\n            {\"Place\": \"Allahabad\"},\n            {\"Place\": \"London\"},\n            {\"Place\": \"San Francisco\"},\n            {\"Place\": \"Portland, Oregon\"},\n            {\"Place\": \"Seattle, Washington\"},\n            {\"Place\": \"Victoria and Vancouver, British Columbia\"},\n            {\"Place\": \"Medicine Hat, Alberta\"},\n            {\"Place\": \"Yellowstone National Park\"},\n            {\"Place\": \"Salt Lake City\"},\n            {\"Place\": \"Omaha, Nebraska\"},\n            {\"Place\": \"Chicago\"},\n            {\"Place\": \"Beaver, Pennsylvania\"},\n            {\"Place\": \"Chautauqua\"},\n            {\"Place\": \"Niagara Falls\"},\n            {\"Place\": \"Toronto\"},\n            {\"Place\": \"Washington, D.C.\"},\n            {\"Place\": \"New York\"},\n            {\"Place\": \"Boston\"},\n            {\"Place\": \"Elmira, New York\"},\n            {\"Place\": \"Liverpool\"},\n            {\"Place\": \"Villiers Street, near Charing Cross, London\"},\n            {\"Place\": \"South Africa\"},\n            {\"Place\": \"Australia\"},\n            {\"Place\": \"New Zealand\"},\n            {\"Place\": \"India\"},\n            {\"Place\": \"Brattleboro, Vermont\"},\n            {\"Place\": \"Yokohama\"},\n            {\"Place\": \"Torquay, Devon\"},\n            {\"Place\": \"Groote Schuur, Cape Town\"},\n            {\"Place\": \"Rottingdean, near Brighton, East Sussex\"},\n            {\"Place\": \"Bateman's, Burwash\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Rudyard Kipling",
+      "Track": [
+        {
+          "Place": "Bombay"
+        },
+        {
+          "Place": "Southsea, Portsmouth"
+        },
+        {
+          "Place": "Lorne Lodge, 4 Campbell Road, Southsea"
+        },
+        {
+          "Place": "The Grange, Fulham, London"
+        },
+        {
+          "Place": "Goldings Farm, Loughton"
+        },
+        {
+          "Place": "United Services College, Westward Ho!, Devon"
+        },
+        {
+          "Place": "Lahore"
+        },
+        {
+          "Place": "Simla"
+        },
+        {
+          "Place": "Allahabad"
+        },
+        {
+          "Place": "London"
+        },
+        {
+          "Place": "San Francisco"
+        },
+        {
+          "Place": "Portland, Oregon"
+        },
+        {
+          "Place": "Seattle, Washington"
+        },
+        {
+          "Place": "Victoria and Vancouver, British Columbia"
+        },
+        {
+          "Place": "Medicine Hat, Alberta"
+        },
+        {
+          "Place": "Yellowstone National Park"
+        },
+        {
+          "Place": "Salt Lake City"
+        },
+        {
+          "Place": "Omaha, Nebraska"
+        },
+        {
+          "Place": "Chicago"
+        },
+        {
+          "Place": "Beaver, Pennsylvania"
+        },
+        {
+          "Place": "Chautauqua"
+        },
+        {
+          "Place": "Niagara Falls"
+        },
+        {
+          "Place": "Toronto"
+        },
+        {
+          "Place": "Washington, D.C."
+        },
+        {
+          "Place": "New York"
+        },
+        {
+          "Place": "Boston"
+        },
+        {
+          "Place": "Elmira, New York"
+        },
+        {
+          "Place": "Liverpool"
+        },
+        {
+          "Place": "Villiers Street, near Charing Cross, London"
+        },
+        {
+          "Place": "South Africa"
+        },
+        {
+          "Place": "Australia"
+        },
+        {
+          "Place": "New Zealand"
+        },
+        {
+          "Place": "India"
+        },
+        {
+          "Place": "Brattleboro, Vermont"
+        },
+        {
+          "Place": "Yokohama"
+        },
+        {
+          "Place": "Torquay, Devon"
+        },
+        {
+          "Place": "Groote Schuur, Cape Town"
+        },
+        {
+          "Place": "Rottingdean, near Brighton, East Sussex"
+        },
+        {
+          "Place": "Bateman's, Burwash"
+        }
+      ]
+    }
+  ]
+}

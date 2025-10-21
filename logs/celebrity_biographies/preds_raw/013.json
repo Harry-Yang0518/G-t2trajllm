@@ -1,0 +1,23 @@
+{
+  "id": "013",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Henri Becquerel\",\n        \"Track\": [\n            {\"Place\": \"Paris, France\"},\n            {\"Place\": \"Muséum National d'Histoire Naturelle\"},\n            {\"Place\": \"École Polytechnique\"},\n            {\"Place\": \"Le Croisic, France\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Henri Becquerel",
+      "Track": [
+        {
+          "Place": "Paris, France"
+        },
+        {
+          "Place": "Muséum National d'Histoire Naturelle"
+        },
+        {
+          "Place": "École Polytechnique"
+        },
+        {
+          "Place": "Le Croisic, France"
+        }
+      ]
+    }
+  ]
+}

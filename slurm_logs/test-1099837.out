@@ -1,0 +1,1612 @@
+[ERROR] id=024: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 30000, Requested 1317. Please try again in 2.634s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[ERROR] id=033: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 26568, Requested 3814. Please try again in 764ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[ERROR] id=036: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 30000, Requested 4854. Please try again in 9.708s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[ERROR] id=037: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 30000, Requested 1071. Please try again in 2.142s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[ERROR] id=038: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 28553, Requested 3169. Please try again in 3.444s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[ERROR] id=049: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-xisST3m90wokVE5bSBQhkHBj on tokens per min (TPM): Limit 30000, Used 30000, Requested 1456. Please try again in 2.912s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+
+=== ID: 000 ===
+Label (raw): ['Netherlands', 'Utrecht Technical School', 'Utrecht University', 'Federal Polytechnic Institute', 'University of Zurich', 'University of Strasbourg', 'Academy of Agriculture at Hohenheim', 'University of Strasbourg', 'University of Giessen', 'University of Würzburg', 'Zum Grünen Glas', 'Würzburg Physical Institute of the University of Würzburg', 'University of Würzburg', 'University of Munich', 'University of Würzburg', 'Columbia University', 'Weilheim']
+Pred  (raw): ['Netherlands', 'Utrecht Technical School, Utrecht, Netherlands', 'Utrecht University, Netherlands', 'Federal Polytechnic Institute, Zürich', 'University of Zurich', 'German Kaiser-Wilhelms-Universität, Strasbourg', 'University of Strasbourg', 'Academy of Agriculture, Hohenheim, Württemberg', 'University of Giessen', 'University of Würzburg', 'University of Munich', 'Columbia University, New York City', 'Weilheim, near Munich']
+Label (norm): ['Netherlands', 'Utrecht Technical School', 'Utrecht University', 'Federal Polytechnic Institute', 'University of Zurich', 'University of Strasbourg', 'Academy of Agriculture at Hohenheim', 'University of Strasbourg', 'University of Giessen', 'University of Würzburg', 'Zum Grünen Glas', 'Würzburg Physical Institute of the University of Würzburg', 'University of Würzburg', 'University of Munich', 'University of Würzburg', 'Columbia University', 'Weilheim']
+Pred  (norm): ['Netherlands', 'Utrecht Technical School Utrecht Netherlands', 'Utrecht University Netherlands', 'Federal Polytechnic Institute Zürich', 'University of Zurich', 'German Kaiser-Wilhelms-Universität Strasbourg', 'University of Strasbourg', 'Academy of Agriculture Hohenheim Württemberg', 'University of Giessen', 'University of Würzburg', 'University of Munich', 'Columbia University New York City', 'Weilheim near Munich']
+Matches (12):
+  - L[0]='Netherlands'  <->  P[0]='Netherlands'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Utrecht Technical School'  <->  P[1]='Utrecht Technical School Utrecht Netherlands'  (ratio=0.706, contain=True, reason=containment)
+  - L[2]='Utrecht University'  <->  P[2]='Utrecht University Netherlands'  (ratio=0.750, contain=True, reason=containment)
+  - L[3]='Federal Polytechnic Institute'  <->  P[3]='Federal Polytechnic Institute Zürich'  (ratio=0.892, contain=True, reason=containment)
+  - L[4]='University of Zurich'  <->  P[4]='University of Zurich'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Strasbourg'  <->  P[6]='University of Strasbourg'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Academy of Agriculture at Hohenheim'  <->  P[7]='Academy of Agriculture Hohenheim Württemberg'  (ratio=0.810, contain=False, reason=ratio>=0.80)
+  - L[7]='University of Strasbourg'  <->  P[9]='University of Würzburg'  (ratio=0.826, contain=False, reason=ratio>=0.80)
+  - L[8]='University of Giessen'  <->  P[8]='University of Giessen'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='University of Munich'  <->  P[10]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[15]='Columbia University'  <->  P[11]='Columbia University New York City'  (ratio=0.731, contain=True, reason=containment)
+  - L[16]='Weilheim'  <->  P[12]='Weilheim near Munich'  (ratio=0.571, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 4, 6, 7, 9, 8, 10, 11, 12]  |  Kendall τ: 0.9697
+Token edit distance: 7  |  edit_similarity: 0.7667
+Item precision=0.9231, recall=0.7059, f1=0.8000
+Unmatched label tokens: ['University of Würzburg', 'Zum Grünen Glas', 'Würzburg Physical Institute of the University of Würzburg', 'University of Würzburg', 'University of Würzburg']
+Unmatched pred tokens:  ['German Kaiser-Wilhelms-Universität Strasbourg']
+
+=== ID: 001 ===
+Label (raw): ['Rotterdam', 'Delft University of Technology', 'University of Leiden', 'Bonn', 'Paris', 'University of Utrecht', 'Veterinary School in Utrecht', 'Prussian Academy of Sciences in Berlin', 'University of Amsterdam', 'Germany', 'Steglitz', 'University of Berlin']
+Pred  (raw): ['Rotterdam, Netherlands', 'Delft University of Technology', 'University of Leiden', 'Bonn, Germany', 'Paris, France', 'University of Utrecht', 'Steglitz, near Berlin, Germany', 'Veterinary School in Utrecht', 'University of Amsterdam', 'University of Berlin']
+Label (norm): ['Rotterdam', 'Delft University of Technology', 'University of Leiden', 'Bonn', 'Paris', 'University of Utrecht', 'Veterinary School in Utrecht', 'Prussian Academy of Sciences in Berlin', 'University of Amsterdam', 'Germany', 'Steglitz', 'University of Berlin']
+Pred  (norm): ['Rotterdam Netherlands', 'Delft University of Technology', 'University of Leiden', 'Bonn Germany', 'Paris France', 'University of Utrecht', 'Steglitz near Berlin Germany', 'Veterinary School in Utrecht', 'University of Amsterdam', 'University of Berlin']
+Matches (10):
+  - L[0]='Rotterdam'  <->  P[0]='Rotterdam Netherlands'  (ratio=0.600, contain=True, reason=containment)
+  - L[1]='Delft University of Technology'  <->  P[1]='Delft University of Technology'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Leiden'  <->  P[2]='University of Leiden'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Bonn'  <->  P[3]='Bonn Germany'  (ratio=0.500, contain=True, reason=containment)
+  - L[4]='Paris'  <->  P[4]='Paris France'  (ratio=0.588, contain=True, reason=containment)
+  - L[5]='University of Utrecht'  <->  P[5]='University of Utrecht'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Veterinary School in Utrecht'  <->  P[7]='Veterinary School in Utrecht'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='University of Amsterdam'  <->  P[8]='University of Amsterdam'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Germany'  <->  P[6]='Steglitz near Berlin Germany'  (ratio=0.400, contain=True, reason=containment)
+  - L[11]='University of Berlin'  <->  P[9]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 7, 8, 6, 9]  |  Kendall τ: 0.9111
+Token edit distance: 4  |  edit_similarity: 0.8182
+Item precision=1.0000, recall=0.8333, f1=0.9091
+Unmatched label tokens: ['Prussian Academy of Sciences in Berlin', 'Steglitz']
+
+=== ID: 002 ===
+Label (raw): ['Hansdorf, Kreis Rosenberg, Province of Prussia', 'Kaiser-Wilhelm-Akademie, Berlin', 'Poland', "Wicherkiewicz's hospital, Poznan", 'University of Marburg', "Villa 'Behring', Capri", 'Marburg', "Villa 'Behring', Capri", 'Marburg, Hessen-Nassau']
+Pred  (raw): ['Hansdorf, Kreis Rosenberg, Province of Prussia', 'Berlin', 'Marburg', 'Poland', 'Poznan', 'Capri']
+Label (norm): ['Hansdorf Kreis Rosenberg Province of Prussia', 'Kaiser-Wilhelm-Akademie Berlin', 'Poland', "Wicherkiewicz's hospital Poznan", 'University of Marburg', "Villa 'Behring' Capri", 'Marburg', "Villa 'Behring' Capri", 'Marburg Hessen-Nassau']
+Pred  (norm): ['Hansdorf Kreis Rosenberg Province of Prussia', 'Berlin', 'Marburg', 'Poland', 'Poznan', 'Capri']
+Matches (6):
+  - L[0]='Hansdorf Kreis Rosenberg Province of Prussia'  <->  P[0]='Hansdorf Kreis Rosenberg Province of Prussia'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Kaiser-Wilhelm-Akademie Berlin'  <->  P[1]='Berlin'  (ratio=0.333, contain=True, reason=containment)
+  - L[2]='Poland'  <->  P[3]='Poland'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Wicherkiewicz's hospital Poznan'  <->  P[4]='Poznan'  (ratio=0.324, contain=True, reason=containment)
+  - L[4]='University of Marburg'  <->  P[2]='Marburg'  (ratio=0.500, contain=True, reason=containment)
+  - L[5]='Villa 'Behring' Capri'  <->  P[5]='Capri'  (ratio=0.385, contain=True, reason=containment)
+Kendall order: [0, 1, 3, 4, 2, 5]  |  Kendall τ: 0.7333
+Token edit distance: 5  |  edit_similarity: 0.6667
+Item precision=1.0000, recall=0.6667, f1=0.8000
+Unmatched label tokens: ['Marburg', "Villa 'Behring' Capri", 'Marburg Hessen-Nassau']
+
+=== ID: 003 ===
+Label (raw): ['Paris', "Prudhomme's uncle's house", 'Lycée Bonaparte', 'Paris', 'Creusot region', 'Châtenay-Malabry', 'Père-Lachaise']
+Pred  (raw): ['Paris', "Prudhomme's uncle's house", 'Creusot region', 'Châtenay-Malabry', 'Père-Lachaise in Paris']
+Label (norm): ['Paris', "Prudhomme's uncle's house", 'Lycée Bonaparte', 'Paris', 'Creusot region', 'Châtenay-Malabry', 'Père-Lachaise']
+Pred  (norm): ['Paris', "Prudhomme's uncle's house", 'Creusot region', 'Châtenay-Malabry', 'Père-Lachaise in Paris']
+Matches (5):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Prudhomme's uncle's house'  <->  P[1]='Prudhomme's uncle's house'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Paris'  <->  P[4]='Père-Lachaise in Paris'  (ratio=0.370, contain=True, reason=containment)
+  - L[4]='Creusot region'  <->  P[2]='Creusot region'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Châtenay-Malabry'  <->  P[3]='Châtenay-Malabry'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 4, 2, 3]  |  Kendall τ: 0.6000
+Token edit distance: 3  |  edit_similarity: 0.7500
+Item precision=1.0000, recall=0.7143, f1=0.8333
+Unmatched label tokens: ['Lycée Bonaparte', 'Père-Lachaise']
+
+=== ID: 004 ===
+Label (raw): ['Geneva', 'Algeria, Tunisia, and Sicily', 'Algeria', 'Solferino', 'Geneva', 'Paris', 'London', 'Heiden', 'Heidelberg', 'Heiden', 'Zürich']
+Pred  (raw): ['Geneva', 'Algeria', 'Tunisia', 'Sicily', 'Solferino', 'Geneva', 'Paris', 'Stuttgart', 'Rome', 'Corfu', 'Basel', 'Karlsruhe', 'London', 'Heiden']
+Label (norm): ['Geneva', 'Algeria Tunisia and Sicily', 'Algeria', 'Solferino', 'Geneva', 'Paris', 'London', 'Heiden', 'Heidelberg', 'Heiden', 'Zürich']
+Pred  (norm): ['Geneva', 'Algeria', 'Tunisia', 'Sicily', 'Solferino', 'Geneva', 'Paris', 'Stuttgart', 'Rome', 'Corfu', 'Basel', 'Karlsruhe', 'London', 'Heiden']
+Matches (7):
+  - L[0]='Geneva'  <->  P[0]='Geneva'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Algeria Tunisia and Sicily'  <->  P[1]='Algeria'  (ratio=0.424, contain=True, reason=containment)
+  - L[3]='Solferino'  <->  P[4]='Solferino'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Geneva'  <->  P[5]='Geneva'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Paris'  <->  P[6]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='London'  <->  P[12]='London'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Heiden'  <->  P[13]='Heiden'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 4, 5, 6, 12, 13]  |  Kendall τ: 1.0000
+Token edit distance: 9  |  edit_similarity: 0.6400
+Item precision=0.5000, recall=0.6364, f1=0.5600
+Unmatched label tokens: ['Algeria', 'Heidelberg', 'Heiden', 'Zürich']
+Unmatched pred tokens:  ['Tunisia', 'Sicily', 'Stuttgart', 'Rome', 'Corfu', 'Basel', 'Karlsruhe']
+
+=== ID: 005 ===
+Label (raw): ['Paris', 'Conseil de Droit', 'France', 'Paris', 'École de Médecine', 'Paris', 'France', 'Marseilles', 'Seine-et-Oise', '8th arrondissement of Paris', 'Chamber of Deputies', 'Lucerne', 'Milan', 'Paris']
+Pred  (raw): ['Paris', 'Pau', 'Montpellier', 'Bordeaux', 'Nice', 'Lucerne', 'Milan']
+Label (norm): ['Paris', 'Conseil de Droit', 'France', 'Paris', 'École de Médecine', 'Paris', 'France', 'Marseilles', 'Seine-et-Oise', '8th arrondissement of Paris', 'Chamber of Deputies', 'Lucerne', 'Milan', 'Paris']
+Pred  (norm): ['Paris', 'Pau', 'Montpellier', 'Bordeaux', 'Nice', 'Lucerne', 'Milan']
+Matches (3):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Lucerne'  <->  P[5]='Lucerne'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Milan'  <->  P[6]='Milan'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 11  |  edit_similarity: 0.4762
+Item precision=0.4286, recall=0.2143, f1=0.2857
+Unmatched label tokens: ['Conseil de Droit', 'France', 'Paris', 'École de Médecine', 'Paris', 'France', 'Marseilles', 'Seine-et-Oise', '8th arrondissement of Paris', 'Chamber of Deputies', 'Paris']
+Unmatched pred tokens:  ['Pau', 'Montpellier', 'Bordeaux', 'Nice']
+
+=== ID: 006 ===
+Label (raw): ['Arnhem, Gelderland, Netherlands', 'Hogere Burgerschool, Arnhem', 'Leiden University', 'Arnhem', 'Leiden University', 'University of Leiden', 'Royal Netherlands Academy of Arts and Sciences', 'Columbia University, USA', 'Leiden University', 'Teylers Museum in Haarlem, Netherlands', 'Waddenzee', 'Haarlem, Netherlands']
+Pred  (raw): ['Arnhem', 'Leiden University', 'University of Leiden', 'Columbia University', 'Cornell University', 'Teylers Museum', 'Haarlem']
+Label (norm): ['Arnhem Gelderland Netherlands', 'Hogere Burgerschool Arnhem', 'Leiden University', 'Arnhem', 'Leiden University', 'University of Leiden', 'Royal Netherlands Academy of Arts and Sciences', 'Columbia University USA', 'Leiden University', 'Teylers Museum in Haarlem Netherlands', 'Waddenzee', 'Haarlem Netherlands']
+Pred  (norm): ['Arnhem', 'Leiden University', 'University of Leiden', 'Columbia University', 'Cornell University', 'Teylers Museum', 'Haarlem']
+Matches (6):
+  - L[0]='Arnhem Gelderland Netherlands'  <->  P[0]='Arnhem'  (ratio=0.343, contain=True, reason=containment)
+  - L[2]='Leiden University'  <->  P[1]='Leiden University'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Leiden'  <->  P[2]='University of Leiden'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Columbia University USA'  <->  P[3]='Columbia University'  (ratio=0.905, contain=True, reason=containment)
+  - L[9]='Teylers Museum in Haarlem Netherlands'  <->  P[5]='Teylers Museum'  (ratio=0.549, contain=True, reason=containment)
+  - L[11]='Haarlem Netherlands'  <->  P[6]='Haarlem'  (ratio=0.538, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 6  |  edit_similarity: 0.6842
+Item precision=0.8571, recall=0.5000, f1=0.6316
+Unmatched label tokens: ['Hogere Burgerschool Arnhem', 'Arnhem', 'Leiden University', 'Royal Netherlands Academy of Arts and Sciences', 'Leiden University', 'Waddenzee']
+Unmatched pred tokens:  ['Cornell University']
+
+=== ID: 007 ===
+Label (raw): ['Zonnemaire', 'Zierikzee', 'Delft', 'University of Leiden', 'Strasbourg', 'Leiden', 'Amsterdam', 'University of Amsterdam', 'Amsterdam']
+Pred  (raw): ['Zonnemaire', 'Zierikzee', 'Delft', 'University of Leiden', 'Strasbourg', 'Leiden', 'Amsterdam', 'Haarlem']
+Label (norm): ['Zonnemaire', 'Zierikzee', 'Delft', 'University of Leiden', 'Strasbourg', 'Leiden', 'Amsterdam', 'University of Amsterdam', 'Amsterdam']
+Pred  (norm): ['Zonnemaire', 'Zierikzee', 'Delft', 'University of Leiden', 'Strasbourg', 'Leiden', 'Amsterdam', 'Haarlem']
+Matches (7):
+  - L[0]='Zonnemaire'  <->  P[0]='Zonnemaire'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Zierikzee'  <->  P[1]='Zierikzee'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Delft'  <->  P[2]='Delft'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Leiden'  <->  P[3]='University of Leiden'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Strasbourg'  <->  P[4]='Strasbourg'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Leiden'  <->  P[5]='Leiden'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Amsterdam'  <->  P[6]='Amsterdam'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 2  |  edit_similarity: 0.8824
+Item precision=0.8750, recall=0.7778, f1=0.8235
+Unmatched label tokens: ['University of Amsterdam', 'Amsterdam']
+Unmatched pred tokens:  ['Haarlem']
+
+=== ID: 008 ===
+Label (raw): ['University of Bonn', 'University of Strasbourg', 'University of Munich', 'University of Erlangen', 'University of Würzburg', 'University of Berlin', 'Berlin']
+Pred  (raw): ['Euskirchen', 'University of Bonn', 'University of Strasbourg', 'University of Munich', 'University of Erlangen', 'University of Würzburg', 'University of Berlin', 'Berlin']
+Label (norm): ['University of Bonn', 'University of Strasbourg', 'University of Munich', 'University of Erlangen', 'University of Würzburg', 'University of Berlin', 'Berlin']
+Pred  (norm): ['Euskirchen', 'University of Bonn', 'University of Strasbourg', 'University of Munich', 'University of Erlangen', 'University of Würzburg', 'University of Berlin', 'Berlin']
+Matches (7):
+  - L[0]='University of Bonn'  <->  P[1]='University of Bonn'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Strasbourg'  <->  P[2]='University of Strasbourg'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Munich'  <->  P[3]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Erlangen'  <->  P[4]='University of Erlangen'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Würzburg'  <->  P[5]='University of Würzburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Berlin'  <->  P[6]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Berlin'  <->  P[7]='Berlin'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 2, 3, 4, 5, 6, 7]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.9333
+Item precision=0.8750, recall=1.0000, f1=0.9333
+Unmatched pred tokens:  ['Euskirchen']
+
+=== ID: 009 ===
+Label (raw): ['Almora', 'England', 'Springhill', "St Bartholomew's Hospital Medical College", 'Army Medical School', 'India', 'Bombay Civil Hospital', 'Presidency General Hospital', 'Liverpool School of Tropical Medicine', 'University of Edinburgh', "King's College Hospital", 'Ross Institute and Hospital for Tropical Diseases', 'Putney Vale Cemetery']
+Pred  (raw): ['Almora', 'Isle of Wight', 'Ryde', 'Springhill', 'London', 'Madras', 'Moulmein', 'Baluchistan', 'Andaman Islands', 'Bangalore', 'Secunderabad', 'Sigur Ghat', 'Ooty', 'Bombay', 'Kherwara', 'Calcutta', 'Mahanad village', 'southern Assam', 'Liverpool', 'Thessaloniki', 'Italy', 'Putney Heath']
+Label (norm): ['Almora', 'England', 'Springhill', "St Bartholomew's Hospital Medical College", 'Army Medical School', 'India', 'Bombay Civil Hospital', 'Presidency General Hospital', 'Liverpool School of Tropical Medicine', 'University of Edinburgh', "King's College Hospital", 'Ross Institute and Hospital for Tropical Diseases', 'Putney Vale Cemetery']
+Pred  (norm): ['Almora', 'Isle of Wight', 'Ryde', 'Springhill', 'London', 'Madras', 'Moulmein', 'Baluchistan', 'Andaman Islands', 'Bangalore', 'Secunderabad', 'Sigur Ghat', 'Ooty', 'Bombay', 'Kherwara', 'Calcutta', 'Mahanad village', 'southern Assam', 'Liverpool', 'Thessaloniki', 'Italy', 'Putney Heath']
+Matches (4):
+  - L[0]='Almora'  <->  P[0]='Almora'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Springhill'  <->  P[3]='Springhill'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Bombay Civil Hospital'  <->  P[13]='Bombay'  (ratio=0.444, contain=True, reason=containment)
+  - L[8]='Liverpool School of Tropical Medicine'  <->  P[18]='Liverpool'  (ratio=0.391, contain=True, reason=containment)
+Kendall order: [0, 3, 13, 18]  |  Kendall τ: 1.0000
+Token edit distance: 19  |  edit_similarity: 0.4571
+Item precision=0.1818, recall=0.3077, f1=0.2286
+Unmatched label tokens: ['England', "St Bartholomew's Hospital Medical College", 'Army Medical School', 'India', 'Presidency General Hospital', 'University of Edinburgh', "King's College Hospital", 'Ross Institute and Hospital for Tropical Diseases', 'Putney Vale Cemetery']
+Unmatched pred tokens:  ['Isle of Wight', 'Ryde', 'London', 'Madras', 'Moulmein', 'Baluchistan', 'Andaman Islands', 'Bangalore', 'Secunderabad', 'Sigur Ghat', 'Ooty', 'Kherwara', 'Calcutta', 'Mahanad village', 'southern Assam', 'Thessaloniki', 'Italy', 'Putney Heath']
+
+=== ID: 010 ===
+Label (raw): ['Garding', 'Gymnasium Christianeum', 'University of Kiel', 'Rendsburg', 'University of Leipzig', 'University of Breslau', 'Berlin Academy of Sciences', 'Academy of Sciences in Berlin', 'University of Berlin', 'Marchstraße 6', 'Berlin Academy', 'Prussian House of Representatives', 'Reichstag', 'University of Berlin', 'Neue Freie Presse of Vienna']
+Pred  (raw): ['Garding', 'Bad Oldesloe', 'Altona', 'University of Kiel', 'France', 'Italy', 'Rendsburg', 'University of Leipzig', 'University of Zurich', 'University of Breslau', 'Berlin Academy of Sciences', 'German Archaeological Institute in Rome', 'University of Berlin', 'Marchstraße 6, Berlin']
+Label (norm): ['Garding', 'Gymnasium Christianeum', 'University of Kiel', 'Rendsburg', 'University of Leipzig', 'University of Breslau', 'Berlin Academy of Sciences', 'Academy of Sciences in Berlin', 'University of Berlin', 'Marchstraße 6', 'Berlin Academy', 'Prussian House of Representatives', 'Reichstag', 'University of Berlin', 'Neue Freie Presse of Vienna']
+Pred  (norm): ['Garding', 'Bad Oldesloe', 'Altona', 'University of Kiel', 'France', 'Italy', 'Rendsburg', 'University of Leipzig', 'University of Zurich', 'University of Breslau', 'Berlin Academy of Sciences', 'German Archaeological Institute in Rome', 'University of Berlin', 'Marchstraße 6 Berlin']
+Matches (9):
+  - L[0]='Garding'  <->  P[0]='Garding'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Kiel'  <->  P[3]='University of Kiel'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Rendsburg'  <->  P[6]='Rendsburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Leipzig'  <->  P[7]='University of Leipzig'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Breslau'  <->  P[9]='University of Breslau'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Berlin Academy of Sciences'  <->  P[10]='Berlin Academy of Sciences'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='University of Berlin'  <->  P[8]='University of Zurich'  (ratio=0.800, contain=False, reason=ratio>=0.80)
+  - L[9]='Marchstraße 6'  <->  P[13]='Marchstraße 6 Berlin'  (ratio=0.788, contain=True, reason=containment)
+  - L[13]='University of Berlin'  <->  P[12]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 3, 6, 7, 9, 10, 8, 13, 12]  |  Kendall τ: 0.8333
+Token edit distance: 11  |  edit_similarity: 0.6207
+Item precision=0.6429, recall=0.6000, f1=0.6207
+Unmatched label tokens: ['Gymnasium Christianeum', 'Academy of Sciences in Berlin', 'Berlin Academy', 'Prussian House of Representatives', 'Reichstag', 'Neue Freie Presse of Vienna']
+Unmatched pred tokens:  ['Bad Oldesloe', 'Altona', 'France', 'Italy', 'German Archaeological Institute in Rome']
+
+=== ID: 011 ===
+Label (raw): ['Geneva', 'Swiss federal Chancellery', 'Jura-Simplon Steel Company', 'International Peace Bureau', 'Bern']
+Pred  (raw): ['Geneva', 'Bern']
+Label (norm): ['Geneva', 'Swiss federal Chancellery', 'Jura-Simplon Steel Company', 'International Peace Bureau', 'Bern']
+Pred  (norm): ['Geneva', 'Bern']
+Matches (2):
+  - L[0]='Geneva'  <->  P[0]='Geneva'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Bern'  <->  P[1]='Bern'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.5714
+Item precision=1.0000, recall=0.4000, f1=0.5714
+Unmatched label tokens: ['Swiss federal Chancellery', 'Jura-Simplon Steel Company', 'International Peace Bureau']
+
+=== ID: 012 ===
+Label (raw): ['Tramelan', 'University of Heidelberg', 'Bern', 'Delémont', 'Bern', 'Switzerland', 'Bern']
+Pred  (raw): ['Tramelan, Switzerland', 'University of Basel', 'University of Heidelberg', 'University of Bern', 'University of Paris', 'Bern', 'Delémont', 'Rome']
+Label (norm): ['Tramelan', 'University of Heidelberg', 'Bern', 'Delémont', 'Bern', 'Switzerland', 'Bern']
+Pred  (norm): ['Tramelan Switzerland', 'University of Basel', 'University of Heidelberg', 'University of Bern', 'University of Paris', 'Bern', 'Delémont', 'Rome']
+Matches (5):
+  - L[0]='Tramelan'  <->  P[0]='Tramelan Switzerland'  (ratio=0.571, contain=True, reason=containment)
+  - L[1]='University of Heidelberg'  <->  P[2]='University of Heidelberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Bern'  <->  P[3]='University of Bern'  (ratio=0.364, contain=True, reason=containment)
+  - L[3]='Delémont'  <->  P[6]='Delémont'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Bern'  <->  P[5]='Bern'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 3, 6, 5]  |  Kendall τ: 0.8000
+Token edit distance: 4  |  edit_similarity: 0.7333
+Item precision=0.6250, recall=0.7143, f1=0.6667
+Unmatched label tokens: ['Switzerland', 'Bern']
+Unmatched pred tokens:  ['University of Basel', 'University of Paris', 'Rome']
+
+=== ID: 013 ===
+Label (raw): ['Paris', 'Lycée Louis-le-Grand school', 'École Polytechnique', 'École des Ponts et Chaussées', "Muséum National d'Histoire Naturelle", 'Department of Bridges and Highways', 'École Polytechnique', 'French Academy of Sciences', 'Académie des Sciences', 'Le Croisic']
+Pred  (raw): ['Paris, France', "Muséum National d'Histoire Naturelle", 'École Polytechnique', 'Le Croisic, France']
+Label (norm): ['Paris', 'Lycée Louis-le-Grand school', 'École Polytechnique', 'École des Ponts et Chaussées', "Muséum National d'Histoire Naturelle", 'Department of Bridges and Highways', 'École Polytechnique', 'French Academy of Sciences', 'Académie des Sciences', 'Le Croisic']
+Pred  (norm): ['Paris France', "Muséum National d'Histoire Naturelle", 'École Polytechnique', 'Le Croisic France']
+Matches (4):
+  - L[0]='Paris'  <->  P[0]='Paris France'  (ratio=0.588, contain=True, reason=containment)
+  - L[2]='École Polytechnique'  <->  P[2]='École Polytechnique'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Muséum National d'Histoire Naturelle'  <->  P[1]='Muséum National d'Histoire Naturelle'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Le Croisic'  <->  P[3]='Le Croisic France'  (ratio=0.741, contain=True, reason=containment)
+Kendall order: [0, 2, 1, 3]  |  Kendall τ: 0.6667
+Token edit distance: 6  |  edit_similarity: 0.5714
+Item precision=1.0000, recall=0.4000, f1=0.5714
+Unmatched label tokens: ['Lycée Louis-le-Grand school', 'École des Ponts et Chaussées', 'Department of Bridges and Highways', 'École Polytechnique', 'French Academy of Sciences', 'Académie des Sciences']
+
+=== ID: 014 ===
+Label (raw): ['Paris', 'University of Paris', 'ESPCI ParisTech', 'University of Paris', 'Royal Society of London', 'Paris', 'Rue Dauphine in Paris', 'Panthéon in Paris']
+Pred  (raw): ['Paris', 'University of Paris', 'London', 'Rue Dauphine', 'Quai de Conti', 'Panthéon']
+Label (norm): ['Paris', 'University of Paris', 'ESPCI ParisTech', 'University of Paris', 'Royal Society of London', 'Paris', 'Rue Dauphine in Paris', 'Panthéon in Paris']
+Pred  (norm): ['Paris', 'University of Paris', 'London', 'Rue Dauphine', 'Quai de Conti', 'Panthéon']
+Matches (5):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Paris'  <->  P[1]='University of Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Royal Society of London'  <->  P[2]='London'  (ratio=0.414, contain=True, reason=containment)
+  - L[6]='Rue Dauphine in Paris'  <->  P[3]='Rue Dauphine'  (ratio=0.727, contain=True, reason=containment)
+  - L[7]='Panthéon in Paris'  <->  P[5]='Panthéon'  (ratio=0.640, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 5]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.7143
+Item precision=0.8333, recall=0.6250, f1=0.7143
+Unmatched label tokens: ['ESPCI ParisTech', 'University of Paris', 'Paris']
+Unmatched pred tokens:  ['Quai de Conti']
+
+=== ID: 015 ===
+Label (raw): ['Warsaw', 'Paris', 'Warsaw', 'Passy', 'Paris Panthéon']
+Pred  (raw): ['Warsaw', 'Szczuki', 'Paris', 'Sceaux', 'Passy']
+Label (norm): ['Warsaw', 'Paris', 'Warsaw', 'Passy', 'Paris Panthéon']
+Pred  (norm): ['Warsaw', 'Szczuki', 'Paris', 'Sceaux', 'Passy']
+Matches (3):
+  - L[0]='Warsaw'  <->  P[0]='Warsaw'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Paris'  <->  P[2]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Passy'  <->  P[4]='Passy'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 4]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7000
+Item precision=0.6000, recall=0.6000, f1=0.6000
+Unmatched label tokens: ['Warsaw', 'Paris Panthéon']
+Unmatched pred tokens:  ['Szczuki', 'Sceaux']
+
+=== ID: 016 ===
+Label (raw): ['Vik', 'katedralskolan', 'Physical Institute of the Swedish Academy of Sciences', 'University of Uppsala', 'Stockholm University College', 'University of California', 'Nobel Institute', 'Nobel Institute for Physical Research']
+Pred  (raw): ['Vik', 'Uppsala', 'Stockholm', 'Riga', 'Würzburg', 'Graz', 'Amsterdam']
+Label (norm): ['Vik', 'katedralskolan', 'Physical Institute of the Swedish Academy of Sciences', 'University of Uppsala', 'Stockholm University College', 'University of California', 'Nobel Institute', 'Nobel Institute for Physical Research']
+Pred  (norm): ['Vik', 'Uppsala', 'Stockholm', 'Riga', 'Würzburg', 'Graz', 'Amsterdam']
+Matches (3):
+  - L[0]='Vik'  <->  P[0]='Vik'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Uppsala'  <->  P[1]='Uppsala'  (ratio=0.500, contain=True, reason=containment)
+  - L[4]='Stockholm University College'  <->  P[2]='Stockholm'  (ratio=0.486, contain=True, reason=containment)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 6  |  edit_similarity: 0.6000
+Item precision=0.4286, recall=0.3750, f1=0.4000
+Unmatched label tokens: ['katedralskolan', 'Physical Institute of the Swedish Academy of Sciences', 'University of California', 'Nobel Institute', 'Nobel Institute for Physical Research']
+Unmatched pred tokens:  ['Riga', 'Würzburg', 'Graz', 'Amsterdam']
+
+=== ID: 017 ===
+Label (raw): ['Tórshavn', 'Faroe Islands', 'Herlufsholm', 'Reykjavík', 'Copenhagen', 'Edinburgh', 'Copenhagen']
+Pred  (raw): ['Tórshavn, Faroe Islands', 'Herlufsholm, Denmark', 'Reykjavík, Iceland', 'Copenhagen, Denmark']
+Label (norm): ['Tórshavn', 'Faroe Islands', 'Herlufsholm', 'Reykjavík', 'Copenhagen', 'Edinburgh', 'Copenhagen']
+Pred  (norm): ['Tórshavn Faroe Islands', 'Herlufsholm Denmark', 'Reykjavík Iceland', 'Copenhagen Denmark']
+Matches (4):
+  - L[0]='Tórshavn'  <->  P[0]='Tórshavn Faroe Islands'  (ratio=0.533, contain=True, reason=containment)
+  - L[2]='Herlufsholm'  <->  P[1]='Herlufsholm Denmark'  (ratio=0.733, contain=True, reason=containment)
+  - L[3]='Reykjavík'  <->  P[2]='Reykjavík Iceland'  (ratio=0.692, contain=True, reason=containment)
+  - L[4]='Copenhagen'  <->  P[3]='Copenhagen Denmark'  (ratio=0.714, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=1.0000, recall=0.5714, f1=0.7273
+Unmatched label tokens: ['Faroe Islands', 'Edinburgh', 'Copenhagen']
+
+=== ID: 018 ===
+Label (raw): ['Bjørgan', 'Nesset Parsonage', 'Molde', 'Heltberg Latin School', 'University of Oslo', 'Christiania Theatre', 'Scandinavia', 'Aulestad', 'National Theatre', 'Paris']
+Pred  (raw): ['Bjørgan', 'Kvikne', 'Nesset', 'Molde', 'Christiania', 'University of Oslo', 'Copenhagen', 'Bergen', 'Europe', 'Aulestad', 'Gausdal', 'Germany', 'Paris']
+Label (norm): ['Bjørgan', 'Nesset Parsonage', 'Molde', 'Heltberg Latin School', 'University of Oslo', 'Christiania Theatre', 'Scandinavia', 'Aulestad', 'National Theatre', 'Paris']
+Pred  (norm): ['Bjørgan', 'Kvikne', 'Nesset', 'Molde', 'Christiania', 'University of Oslo', 'Copenhagen', 'Bergen', 'Europe', 'Aulestad', 'Gausdal', 'Germany', 'Paris']
+Matches (7):
+  - L[0]='Bjørgan'  <->  P[0]='Bjørgan'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Nesset Parsonage'  <->  P[2]='Nesset'  (ratio=0.545, contain=True, reason=containment)
+  - L[2]='Molde'  <->  P[3]='Molde'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Oslo'  <->  P[5]='University of Oslo'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Christiania Theatre'  <->  P[4]='Christiania'  (ratio=0.733, contain=True, reason=containment)
+  - L[7]='Aulestad'  <->  P[9]='Aulestad'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Paris'  <->  P[12]='Paris'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 3, 5, 4, 9, 12]  |  Kendall τ: 0.9048
+Token edit distance: 7  |  edit_similarity: 0.6957
+Item precision=0.5385, recall=0.7000, f1=0.6087
+Unmatched label tokens: ['Heltberg Latin School', 'Scandinavia', 'National Theatre']
+Unmatched pred tokens:  ['Kvikne', 'Copenhagen', 'Bergen', 'Europe', 'Gausdal', 'Germany']
+
+=== ID: 019 ===
+Label (raw): ['Fareham', 'London', 'Haggerston', 'The Hague', 'Haggerston', 'London']
+Pred  (raw): ['Fareham', 'London', 'Haggerston']
+Label (norm): ['Fareham', 'London', 'Haggerston', 'The Hague', 'Haggerston', 'London']
+Pred  (norm): ['Fareham', 'London', 'Haggerston']
+Matches (3):
+  - L[0]='Fareham'  <->  P[0]='Fareham'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='London'  <->  P[1]='London'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Haggerston'  <->  P[2]='Haggerston'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.6667
+Item precision=1.0000, recall=0.5000, f1=0.6667
+Unmatched label tokens: ['The Hague', 'Haggerston', 'London']
+
+=== ID: 020 ===
+Label (raw): ['Langford Grove in Maldon, Essex', 'University of Cambridge', 'Royal Society', 'University of Cambridge', 'Royal Institution', 'Royal Society', 'University of Cambridge', 'National Physical Laboratory', 'Society for Psychical Research', 'Witham, Essex', "All Saints' Church in Terling in Essex", "St Andrew's Chapel at Westminster Abbey"]
+Pred  (raw): ['Langford Grove in Maldon, Essex', 'Eton College', 'Harrow School', 'Trinity College, Cambridge', 'University of Cambridge', 'Royal Institution', 'National Physical Laboratory', 'Witham, Essex', "All Saints' Church in Terling in Essex"]
+Label (norm): ['Langford Grove in Maldon Essex', 'University of Cambridge', 'Royal Society', 'University of Cambridge', 'Royal Institution', 'Royal Society', 'University of Cambridge', 'National Physical Laboratory', 'Society for Psychical Research', 'Witham Essex', "All Saints' Church in Terling in Essex", "St Andrew's Chapel at Westminster Abbey"]
+Pred  (norm): ['Langford Grove in Maldon Essex', 'Eton College', 'Harrow School', 'Trinity College Cambridge', 'University of Cambridge', 'Royal Institution', 'National Physical Laboratory', 'Witham Essex', "All Saints' Church in Terling in Essex"]
+Matches (6):
+  - L[0]='Langford Grove in Maldon Essex'  <->  P[0]='Langford Grove in Maldon Essex'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Cambridge'  <->  P[4]='University of Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Royal Institution'  <->  P[5]='Royal Institution'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='National Physical Laboratory'  <->  P[6]='National Physical Laboratory'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Witham Essex'  <->  P[7]='Witham Essex'  (ratio=1.000, contain=True, reason=exact)
+  - L[10]='All Saints' Church in Terling in Essex'  <->  P[8]='All Saints' Church in Terling in Essex'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 4, 5, 6, 7, 8]  |  Kendall τ: 1.0000
+Token edit distance: 7  |  edit_similarity: 0.6667
+Item precision=0.6667, recall=0.5000, f1=0.5714
+Unmatched label tokens: ['Royal Society', 'University of Cambridge', 'Royal Society', 'University of Cambridge', 'Society for Psychical Research', "St Andrew's Chapel at Westminster Abbey"]
+Unmatched pred tokens:  ['Eton College', 'Harrow School', 'Trinity College Cambridge']
+
+=== ID: 021 ===
+Label (raw): ['2 Clifton Street', '1 Oakvale Place', 'University of Glasgow', 'University of Tübingen', 'University College of Bristol', 'University College London (UCL)', 'Buckingham Palace', 'English coast', 'Hazlemere', 'High Wycombe']
+Pred  (raw): ['2 Clifton Street, Glasgow', '1 Oakvale Place, Hillhead, Glasgow', 'University of Glasgow', 'University of Tübingen, Germany', 'University College of Bristol', 'University College London (UCL)', 'Hazlemere, Buckinghamshire']
+Label (norm): ['2 Clifton Street', '1 Oakvale Place', 'University of Glasgow', 'University of Tübingen', 'University College of Bristol', 'University College London UCL', 'Buckingham Palace', 'English coast', 'Hazlemere', 'High Wycombe']
+Pred  (norm): ['2 Clifton Street Glasgow', '1 Oakvale Place Hillhead Glasgow', 'University of Glasgow', 'University of Tübingen Germany', 'University College of Bristol', 'University College London UCL', 'Hazlemere Buckinghamshire']
+Matches (7):
+  - L[0]='2 Clifton Street'  <->  P[0]='2 Clifton Street Glasgow'  (ratio=0.800, contain=True, reason=containment)
+  - L[1]='1 Oakvale Place'  <->  P[1]='1 Oakvale Place Hillhead Glasgow'  (ratio=0.638, contain=True, reason=containment)
+  - L[2]='University of Glasgow'  <->  P[2]='University of Glasgow'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Tübingen'  <->  P[3]='University of Tübingen Germany'  (ratio=0.846, contain=True, reason=containment)
+  - L[4]='University College of Bristol'  <->  P[4]='University College of Bristol'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University College London UCL'  <->  P[5]='University College London UCL'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Hazlemere'  <->  P[6]='Hazlemere Buckinghamshire'  (ratio=0.529, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 4, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.8235
+Item precision=1.0000, recall=0.7000, f1=0.8235
+Unmatched label tokens: ['Buckingham Palace', 'English coast', 'High Wycombe']
+
+=== ID: 022 ===
+Label (raw): ['Ryazan', 'University of Saint Petersburg', 'Imperial Academy of Medical Surgery', "Physiological Laboratory at Botkin's clinic", 'Medical Military Academy', 'Leipzig and Breslau', 'Russia', 'St. Petersburg', 'Military Medical Academy', 'Institute of Experimental Medicine in St. Petersburg', 'Medical Military Academy', 'Pavlov Institute of Physiology of the Russian Academy of Sciences']
+Pred  (raw): ['Ryazan, Russian Empire', 'University of Saint Petersburg', 'Imperial Academy of Medical Surgery', 'Veterinary Institute', 'Medical Military Academy', 'Leipzig, Germany', 'Heidenhain laboratories in Breslau, Germany', 'Tomsk University, Siberia', 'University of Warsaw, Poland', 'Institute of Experimental Medicine in St. Petersburg', 'Volkovo Cemetery in St. Petersburg']
+Label (norm): ['Ryazan', 'University of Saint Petersburg', 'Imperial Academy of Medical Surgery', "Physiological Laboratory at Botkin's clinic", 'Medical Military Academy', 'Leipzig and Breslau', 'Russia', 'St Petersburg', 'Military Medical Academy', 'Institute of Experimental Medicine in St Petersburg', 'Medical Military Academy', 'Pavlov Institute of Physiology of the Russian Academy of Sciences']
+Pred  (norm): ['Ryazan Russian Empire', 'University of Saint Petersburg', 'Imperial Academy of Medical Surgery', 'Veterinary Institute', 'Medical Military Academy', 'Leipzig Germany', 'Heidenhain laboratories in Breslau Germany', 'Tomsk University Siberia', 'University of Warsaw Poland', 'Institute of Experimental Medicine in St Petersburg', 'Volkovo Cemetery in St Petersburg']
+Matches (5):
+  - L[0]='Ryazan'  <->  P[0]='Ryazan Russian Empire'  (ratio=0.444, contain=True, reason=containment)
+  - L[1]='University of Saint Petersburg'  <->  P[1]='University of Saint Petersburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Imperial Academy of Medical Surgery'  <->  P[2]='Imperial Academy of Medical Surgery'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Medical Military Academy'  <->  P[4]='Medical Military Academy'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='St Petersburg'  <->  P[9]='Institute of Experimental Medicine in St Petersburg'  (ratio=0.406, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 4, 9]  |  Kendall τ: 1.0000
+Token edit distance: 8  |  edit_similarity: 0.6522
+Item precision=0.4545, recall=0.4167, f1=0.4348
+Unmatched label tokens: ["Physiological Laboratory at Botkin's clinic", 'Leipzig and Breslau', 'Russia', 'Military Medical Academy', 'Institute of Experimental Medicine in St Petersburg', 'Medical Military Academy', 'Pavlov Institute of Physiology of the Russian Academy of Sciences']
+Unmatched pred tokens:  ['Veterinary Institute', 'Leipzig Germany', 'Heidenhain laboratories in Breslau Germany', 'Tomsk University Siberia', 'University of Warsaw Poland', 'Volkovo Cemetery in St Petersburg']
+
+=== ID: 023 ===
+Label (raw): ['Maillane', 'Saint-Michel-de-Frigolet', 'Aix-en-Provence', 'Dijon Cathedral', 'Arles', 'Maillane']
+Pred  (raw): ['Maillane', 'Saint-Rémy-de-Provence', 'Saint-Michel-de-Frigolet', 'Nîmes', 'Aix-en-Provence', 'Arles', 'Dijon']
+Label (norm): ['Maillane', 'Saint-Michel-de-Frigolet', 'Aix-en-Provence', 'Dijon Cathedral', 'Arles', 'Maillane']
+Pred  (norm): ['Maillane', 'Saint-Rémy-de-Provence', 'Saint-Michel-de-Frigolet', 'Nîmes', 'Aix-en-Provence', 'Arles', 'Dijon']
+Matches (5):
+  - L[0]='Maillane'  <->  P[0]='Maillane'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Saint-Michel-de-Frigolet'  <->  P[2]='Saint-Michel-de-Frigolet'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Aix-en-Provence'  <->  P[4]='Aix-en-Provence'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Dijon Cathedral'  <->  P[6]='Dijon'  (ratio=0.500, contain=True, reason=containment)
+  - L[4]='Arles'  <->  P[5]='Arles'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 4, 6, 5]  |  Kendall τ: 0.8000
+Token edit distance: 4  |  edit_similarity: 0.6923
+Item precision=0.7143, recall=0.8333, f1=0.7692
+Unmatched label tokens: ['Maillane']
+Unmatched pred tokens:  ['Saint-Rémy-de-Provence', 'Nîmes']
+
+=== ID: 025 ===
+Label (raw): ['Pressburg', 'Vienna and Budapest', 'Pressburg', 'Heidelberg', 'Budapest', 'Heidelberg', 'Kiel', 'Heidelberg', 'Messelhausen']
+Pred  (raw): ["Pressburg (Pozsony, today's Bratislava)", 'Vienna', 'Budapest', 'Heidelberg', 'Berlin', 'Aachen', 'Bonn', 'Breslau', 'Kiel', 'Messelhausen']
+Label (norm): ['Pressburg', 'Vienna and Budapest', 'Pressburg', 'Heidelberg', 'Budapest', 'Heidelberg', 'Kiel', 'Heidelberg', 'Messelhausen']
+Pred  (norm): ["Pressburg Pozsony today's Bratislava", 'Vienna', 'Budapest', 'Heidelberg', 'Berlin', 'Aachen', 'Bonn', 'Breslau', 'Kiel', 'Messelhausen']
+Matches (6):
+  - L[0]='Pressburg'  <->  P[0]='Pressburg Pozsony today's Bratislava'  (ratio=0.400, contain=True, reason=containment)
+  - L[1]='Vienna and Budapest'  <->  P[1]='Vienna'  (ratio=0.480, contain=True, reason=containment)
+  - L[3]='Heidelberg'  <->  P[3]='Heidelberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Budapest'  <->  P[2]='Budapest'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Kiel'  <->  P[8]='Kiel'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Messelhausen'  <->  P[9]='Messelhausen'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 3, 2, 8, 9]  |  Kendall τ: 0.8667
+Token edit distance: 6  |  edit_similarity: 0.6842
+Item precision=0.6000, recall=0.6667, f1=0.6316
+Unmatched label tokens: ['Pressburg', 'Heidelberg', 'Heidelberg']
+Unmatched pred tokens:  ['Berlin', 'Aachen', 'Bonn', 'Breslau']
+
+=== ID: 026 ===
+Label (raw): ['Kingdom of Bavaria', 'Müggelsheim farm', 'Friedrich Wilhelm Gymnasium', 'Berlin University', 'University of Heidelberg', 'Berlin', 'University of Ghent', 'Gewerbeinstitut Berlin', 'University of Strasbourg', 'University of Munich', 'Kingdom of Bavaria', 'Starnberg']
+Pred  (raw): ['Berlin', 'Müggelsheim farm', 'University of Heidelberg', 'University of Ghent', 'Gewerbeinstitut Berlin', 'University of Strasbourg', 'University of Munich', 'Starnberg']
+Label (norm): ['Kingdom of Bavaria', 'Müggelsheim farm', 'Friedrich Wilhelm Gymnasium', 'Berlin University', 'University of Heidelberg', 'Berlin', 'University of Ghent', 'Gewerbeinstitut Berlin', 'University of Strasbourg', 'University of Munich', 'Kingdom of Bavaria', 'Starnberg']
+Pred  (norm): ['Berlin', 'Müggelsheim farm', 'University of Heidelberg', 'University of Ghent', 'Gewerbeinstitut Berlin', 'University of Strasbourg', 'University of Munich', 'Starnberg']
+Matches (8):
+  - L[1]='Müggelsheim farm'  <->  P[1]='Müggelsheim farm'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Berlin University'  <->  P[0]='Berlin'  (ratio=0.522, contain=True, reason=containment)
+  - L[4]='University of Heidelberg'  <->  P[2]='University of Heidelberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Berlin'  <->  P[4]='Gewerbeinstitut Berlin'  (ratio=0.429, contain=True, reason=containment)
+  - L[6]='University of Ghent'  <->  P[3]='University of Ghent'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='University of Strasbourg'  <->  P[5]='University of Strasbourg'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='University of Munich'  <->  P[6]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Starnberg'  <->  P[7]='Starnberg'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 0, 2, 4, 3, 5, 6, 7]  |  Kendall τ: 0.8571
+Token edit distance: 6  |  edit_similarity: 0.7000
+Item precision=1.0000, recall=0.6667, f1=0.8000
+Unmatched label tokens: ['Kingdom of Bavaria', 'Friedrich Wilhelm Gymnasium', 'Gewerbeinstitut Berlin', 'Kingdom of Bavaria']
+
+=== ID: 027 ===
+Label (raw): ['Germany', 'General Hospital of Hamburg', "Idiot's Hospital of Langenhagen", 'Neimegk', 'Rakwitz', 'Germany', 'Wollstein in Prussian Posen', 'Germany', 'Institute of Plant Physiology', 'Breslau', 'Imperial Health Office', 'Germany', 'Berlin University', 'Germany', 'Royal Prussian Institute for Infectious Diseases', 'Germany', 'Royal Society', 'Sweden', 'Germany', 'East Africa', 'Germany', 'Baden-Baden', 'Worldwide']
+Pred  (raw): ['Clausthal, Germany', 'University of Göttingen', 'General Hospital of Hamburg', "Idiot's Hospital of Langenhagen", 'Neimegk', 'Rakwitz', 'Wollstein, Prussian Posen (now Wolsztyn, Poland)', 'University of Breslau (now the University of Wrocław)', 'Berlin', 'Alexandria, Egypt', 'Calcutta (now Kolkata), India', 'East Africa', 'Bugula research camp', 'German New Guinea']
+Label (norm): ['Germany', 'General Hospital of Hamburg', "Idiot's Hospital of Langenhagen", 'Neimegk', 'Rakwitz', 'Germany', 'Wollstein in Prussian Posen', 'Germany', 'Institute of Plant Physiology', 'Breslau', 'Imperial Health Office', 'Germany', 'Berlin University', 'Germany', 'Royal Prussian Institute for Infectious Diseases', 'Germany', 'Royal Society', 'Sweden', 'Germany', 'East Africa', 'Germany', 'Baden-Baden', 'Worldwide']
+Pred  (norm): ['Clausthal Germany', 'University of Göttingen', 'General Hospital of Hamburg', "Idiot's Hospital of Langenhagen", 'Neimegk', 'Rakwitz', 'Wollstein Prussian Posen now Wolsztyn Poland', 'University of Breslau now the University of Wrocław', 'Berlin', 'Alexandria Egypt', 'Calcutta now Kolkata India', 'East Africa', 'Bugula research camp', 'German New Guinea']
+Matches (8):
+  - L[0]='Germany'  <->  P[0]='Clausthal Germany'  (ratio=0.583, contain=True, reason=containment)
+  - L[1]='General Hospital of Hamburg'  <->  P[2]='General Hospital of Hamburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Idiot's Hospital of Langenhagen'  <->  P[3]='Idiot's Hospital of Langenhagen'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Neimegk'  <->  P[4]='Neimegk'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Rakwitz'  <->  P[5]='Rakwitz'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Breslau'  <->  P[7]='University of Breslau now the University of Wrocław'  (ratio=0.241, contain=True, reason=containment)
+  - L[12]='Berlin University'  <->  P[8]='Berlin'  (ratio=0.522, contain=True, reason=containment)
+  - L[19]='East Africa'  <->  P[11]='East Africa'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 3, 4, 5, 7, 8, 11]  |  Kendall τ: 1.0000
+Token edit distance: 16  |  edit_similarity: 0.5676
+Item precision=0.5714, recall=0.3478, f1=0.4324
+Unmatched label tokens: ['Germany', 'Wollstein in Prussian Posen', 'Germany', 'Institute of Plant Physiology', 'Imperial Health Office', 'Germany', 'Germany', 'Royal Prussian Institute for Infectious Diseases', 'Germany', 'Royal Society', 'Sweden', 'Germany', 'Germany', 'Baden-Baden', 'Worldwide']
+Unmatched pred tokens:  ['University of Göttingen', 'Wollstein Prussian Posen now Wolsztyn Poland', 'Alexandria Egypt', 'Calcutta now Kolkata India', 'Bugula research camp', 'German New Guinea']
+
+=== ID: 028 ===
+Label (raw): ['Wola Okrzejska', 'Russian Empire', 'Warsaw', 'Imperial University of Warsaw', 'Brussels and Paris', 'Congress Poland', 'United States', 'Europe', 'Poland', 'Warsaw', 'Istanbul', 'Spain', 'Africa', 'Odesa', 'Kraków', 'Warsaw', 'Switzerland', 'Grand Hotel du Lac in Vevey', 'Warsaw']
+Pred  (raw): ['Wola Okrzejska', 'Warsaw', 'Płońsk', 'Brussels', 'Paris', 'London', 'New York', 'San Francisco', 'California', 'Anaheim', 'Anaheim Landing', 'Santa Ana Mountains', 'Sierra Madre Mountains', 'San Jacinto Mountains', 'San Bernardino Mountains', 'Mojave Desert', 'Yosemite Valley', 'Virginia City', 'Lviv', 'Szczawnica', 'Krynica', 'Venice', 'Rome', 'Kraków', 'Istanbul', 'Spain', 'Africa', 'Oblęgorek', 'Vevey']
+Label (norm): ['Wola Okrzejska', 'Russian Empire', 'Warsaw', 'Imperial University of Warsaw', 'Brussels and Paris', 'Congress Poland', 'United States', 'Europe', 'Poland', 'Warsaw', 'Istanbul', 'Spain', 'Africa', 'Odesa', 'Kraków', 'Warsaw', 'Switzerland', 'Grand Hotel du Lac in Vevey', 'Warsaw']
+Pred  (norm): ['Wola Okrzejska', 'Warsaw', 'Płońsk', 'Brussels', 'Paris', 'London', 'New York', 'San Francisco', 'California', 'Anaheim', 'Anaheim Landing', 'Santa Ana Mountains', 'Sierra Madre Mountains', 'San Jacinto Mountains', 'San Bernardino Mountains', 'Mojave Desert', 'Yosemite Valley', 'Virginia City', 'Lviv', 'Szczawnica', 'Krynica', 'Venice', 'Rome', 'Kraków', 'Istanbul', 'Spain', 'Africa', 'Oblęgorek', 'Vevey']
+Matches (8):
+  - L[0]='Wola Okrzejska'  <->  P[0]='Wola Okrzejska'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Warsaw'  <->  P[1]='Warsaw'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Brussels and Paris'  <->  P[3]='Brussels'  (ratio=0.615, contain=True, reason=containment)
+  - L[10]='Istanbul'  <->  P[24]='Istanbul'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Spain'  <->  P[25]='Spain'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Africa'  <->  P[26]='Africa'  (ratio=1.000, contain=True, reason=exact)
+  - L[14]='Kraków'  <->  P[23]='Kraków'  (ratio=1.000, contain=True, reason=exact)
+  - L[17]='Grand Hotel du Lac in Vevey'  <->  P[28]='Vevey'  (ratio=0.312, contain=True, reason=containment)
+Kendall order: [0, 1, 3, 24, 25, 26, 23, 28]  |  Kendall τ: 0.7857
+Token edit distance: 26  |  edit_similarity: 0.4583
+Item precision=0.2759, recall=0.4211, f1=0.3333
+Unmatched label tokens: ['Russian Empire', 'Imperial University of Warsaw', 'Congress Poland', 'United States', 'Europe', 'Poland', 'Warsaw', 'Odesa', 'Warsaw', 'Switzerland', 'Warsaw']
+Unmatched pred tokens:  ['Płońsk', 'Paris', 'London', 'New York', 'San Francisco', 'California', 'Anaheim', 'Anaheim Landing', 'Santa Ana Mountains', 'Sierra Madre Mountains', 'San Jacinto Mountains', 'San Bernardino Mountains', 'Mojave Desert', 'Yosemite Valley', 'Virginia City', 'Lviv', 'Szczawnica', 'Krynica', 'Venice', 'Rome', 'Oblęgorek']
+
+=== ID: 029 ===
+Label (raw): ['Kinský Palace', 'Brno', 'Wiesbaden', 'Bad Homburg', 'Vienna', 'Paris', 'Vienna', 'Kutaisi', 'Tbilisi', 'Leipzig', 'Austria', 'Vienna', 'Berlin', 'Kristiania']
+Pred  (raw): ['Prague', 'Brno', 'Wiesbaden', 'Vienna', 'Klosterneuburg', 'Bad Homburg', 'Paris', 'Baden-Baden', 'Vienna', 'Mingrelia', 'Kutaisi', 'Tbilisi', 'Harmannsdorf Castle', 'Vienna', 'United States', 'Kristiania', 'London']
+Label (norm): ['Kinský Palace', 'Brno', 'Wiesbaden', 'Bad Homburg', 'Vienna', 'Paris', 'Vienna', 'Kutaisi', 'Tbilisi', 'Leipzig', 'Austria', 'Vienna', 'Berlin', 'Kristiania']
+Pred  (norm): ['Prague', 'Brno', 'Wiesbaden', 'Vienna', 'Klosterneuburg', 'Bad Homburg', 'Paris', 'Baden-Baden', 'Vienna', 'Mingrelia', 'Kutaisi', 'Tbilisi', 'Harmannsdorf Castle', 'Vienna', 'United States', 'Kristiania', 'London']
+Matches (10):
+  - L[1]='Brno'  <->  P[1]='Brno'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Wiesbaden'  <->  P[2]='Wiesbaden'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Bad Homburg'  <->  P[5]='Bad Homburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Vienna'  <->  P[3]='Vienna'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Paris'  <->  P[6]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Vienna'  <->  P[8]='Vienna'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Kutaisi'  <->  P[10]='Kutaisi'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Tbilisi'  <->  P[11]='Tbilisi'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Vienna'  <->  P[13]='Vienna'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='Kristiania'  <->  P[15]='Kristiania'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 2, 5, 3, 6, 8, 10, 11, 13, 15]  |  Kendall τ: 0.9556
+Token edit distance: 10  |  edit_similarity: 0.6774
+Item precision=0.5882, recall=0.7143, f1=0.6452
+Unmatched label tokens: ['Kinský Palace', 'Leipzig', 'Austria', 'Berlin']
+Unmatched pred tokens:  ['Prague', 'Klosterneuburg', 'Baden-Baden', 'Mingrelia', 'Harmannsdorf Castle', 'United States', 'London']
+
+=== ID: 030 ===
+Label (raw): ['Cheetham Hill, Manchester, Lancashire, England', 'Owens College in Manchester', 'Trinity College, Cambridge', 'Church of St. Mary the Less', 'University of Cambridge', 'Princeton University', 'Yale University', 'Oxford', 'Trinity College, Cambridge', 'Westminster Abbey']
+Pred  (raw): ['Cheetham Hill, Manchester, Lancashire, England', 'Owens College, Manchester', 'Trinity College, Cambridge', 'University of Cambridge', 'Princeton University', 'Yale University']
+Label (norm): ['Cheetham Hill Manchester Lancashire England', 'Owens College in Manchester', 'Trinity College Cambridge', 'Church of St Mary the Less', 'University of Cambridge', 'Princeton University', 'Yale University', 'Oxford', 'Trinity College Cambridge', 'Westminster Abbey']
+Pred  (norm): ['Cheetham Hill Manchester Lancashire England', 'Owens College Manchester', 'Trinity College Cambridge', 'University of Cambridge', 'Princeton University', 'Yale University']
+Matches (6):
+  - L[0]='Cheetham Hill Manchester Lancashire England'  <->  P[0]='Cheetham Hill Manchester Lancashire England'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Owens College in Manchester'  <->  P[1]='Owens College Manchester'  (ratio=0.941, contain=False, reason=ratio>=0.80)
+  - L[2]='Trinity College Cambridge'  <->  P[2]='Trinity College Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Cambridge'  <->  P[3]='University of Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Princeton University'  <->  P[4]='Princeton University'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Yale University'  <->  P[5]='Yale University'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.7500
+Item precision=1.0000, recall=0.6000, f1=0.7500
+Unmatched label tokens: ['Church of St Mary the Less', 'Oxford', 'Trinity College Cambridge', 'Westminster Abbey']
+
+=== ID: 031 ===
+Label (raw): ['Paris', 'Meaux', 'Paris', 'Stockholm', 'Paris']
+Pred  (raw): ['Paris', 'Meaux', 'Paris', 'Stockholm']
+Label (norm): ['Paris', 'Meaux', 'Paris', 'Stockholm', 'Paris']
+Pred  (norm): ['Paris', 'Meaux', 'Paris', 'Stockholm']
+Matches (4):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Meaux'  <->  P[1]='Meaux'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Paris'  <->  P[2]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Stockholm'  <->  P[3]='Stockholm'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8889
+Item precision=1.0000, recall=0.8000, f1=0.8889
+Unmatched label tokens: ['Paris']
+
+=== ID: 032 ===
+Label (raw): ['Corteno', 'University of Pavia', 'Hospital of the Chronically Ill', 'University of Pavia', 'University of Siena', 'University of Pavia', 'Collegio Borrmeo']
+Pred  (raw): ['Corteno', 'University of Pavia', 'San Matteo Hospital', 'Novara Hospital', 'Hospital of the Chronically Ill in Abbiategrasso', 'University of Siena', 'Collegio Borrmeo', 'Pavia']
+Label (norm): ['Corteno', 'University of Pavia', 'Hospital of the Chronically Ill', 'University of Pavia', 'University of Siena', 'University of Pavia', 'Collegio Borrmeo']
+Pred  (norm): ['Corteno', 'University of Pavia', 'San Matteo Hospital', 'Novara Hospital', 'Hospital of the Chronically Ill in Abbiategrasso', 'University of Siena', 'Collegio Borrmeo', 'Pavia']
+Matches (6):
+  - L[0]='Corteno'  <->  P[0]='Corteno'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Pavia'  <->  P[1]='University of Pavia'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Hospital of the Chronically Ill'  <->  P[4]='Hospital of the Chronically Ill in Abbiategrasso'  (ratio=0.785, contain=True, reason=containment)
+  - L[3]='University of Pavia'  <->  P[5]='University of Siena'  (ratio=0.842, contain=False, reason=ratio>=0.80)
+  - L[5]='University of Pavia'  <->  P[7]='Pavia'  (ratio=0.417, contain=True, reason=containment)
+  - L[6]='Collegio Borrmeo'  <->  P[6]='Collegio Borrmeo'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 4, 5, 7, 6]  |  Kendall τ: 0.8667
+Token edit distance: 4  |  edit_similarity: 0.7333
+Item precision=0.7500, recall=0.8571, f1=0.8000
+Unmatched label tokens: ['University of Siena']
+Unmatched pred tokens:  ['San Matteo Hospital', 'Novara Hospital']
+
+=== ID: 034 ===
+Label (raw): ['Valdicastello', 'Scuola Normale Superiore di Pisa', 'University of Bologna', 'San Marino', 'Casa Carducci']
+Pred  (raw): ['Valdicastello', 'Florence', 'Pisa', 'Pistoia', 'Bologna', 'San Marino']
+Label (norm): ['Valdicastello', 'Scuola Normale Superiore di Pisa', 'University of Bologna', 'San Marino', 'Casa Carducci']
+Pred  (norm): ['Valdicastello', 'Florence', 'Pisa', 'Pistoia', 'Bologna', 'San Marino']
+Matches (4):
+  - L[0]='Valdicastello'  <->  P[0]='Valdicastello'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Scuola Normale Superiore di Pisa'  <->  P[2]='Pisa'  (ratio=0.222, contain=True, reason=containment)
+  - L[2]='University of Bologna'  <->  P[4]='Bologna'  (ratio=0.500, contain=True, reason=containment)
+  - L[3]='San Marino'  <->  P[5]='San Marino'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=0.6667, recall=0.8000, f1=0.7273
+Unmatched label tokens: ['Casa Carducci']
+Unmatched pred tokens:  ['Florence', 'Pistoia']
+
+=== ID: 035 ===
+Label (raw): ['28 East 20th Street', 'Europe', 'Egypt', 'Harvard College', "St George's, Hanover Square", 'United States', 'Cuba', 'Dakota Territory', 'White House', 'United States']
+Pred  (raw): ['New York City', 'Dakotas', 'Cuba', 'New York', 'Central America', 'Amazon basin', 'Europe', 'Africa', 'South America']
+Label (norm): ['28 East 20th Street', 'Europe', 'Egypt', 'Harvard College', "St George's Hanover Square", 'United States', 'Cuba', 'Dakota Territory', 'White House', 'United States']
+Pred  (norm): ['New York City', 'Dakotas', 'Cuba', 'New York', 'Central America', 'Amazon basin', 'Europe', 'Africa', 'South America']
+Matches (2):
+  - L[1]='Europe'  <->  P[6]='Europe'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Cuba'  <->  P[2]='Cuba'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [6, 2]  |  Kendall τ: -1.0000
+Token edit distance: 10  |  edit_similarity: 0.4737
+Item precision=0.2222, recall=0.2000, f1=0.2105
+Unmatched label tokens: ['28 East 20th Street', 'Egypt', 'Harvard College', "St George's Hanover Square", 'United States', 'Dakota Territory', 'White House', 'United States']
+Unmatched pred tokens:  ['New York City', 'Dakotas', 'New York', 'Central America', 'Amazon basin', 'Africa', 'South America']
+
+=== ID: 039 ===
+Label (raw): ['Bombay', 'Lorne Lodge, 4 Campbell Road, Southsea', 'Bombay', 'British India', 'Simla', 'Belvedere House', 'Liverpool', 'All Souls Church in Langham Place', 'Vermont', 'United States', 'England', 'Torquay, Devon', 'Rottingdean, near Brighton, East Sussex', 'South Africa', 'United States', 'Japan', 'United States', "Bateman's", 'Stockholm', 'Middlesex Hospital', 'Golders Green Crematorium', "Poets' Corner, part of the South Transept of Westminster Abbey"]
+Pred  (raw): ['Bombay', 'Southsea, Portsmouth', 'Lorne Lodge, 4 Campbell Road, Southsea', 'The Grange, Fulham, London', 'Goldings Farm, Loughton', 'United Services College, Westward Ho!, Devon', 'Lahore', 'Simla', 'Allahabad', 'London', 'San Francisco', 'Portland, Oregon', 'Seattle, Washington', 'Victoria and Vancouver, British Columbia', 'Medicine Hat, Alberta', 'Yellowstone National Park', 'Salt Lake City', 'Omaha, Nebraska', 'Chicago', 'Beaver, Pennsylvania', 'Chautauqua', 'Niagara Falls', 'Toronto', 'Washington, D.C.', 'New York', 'Boston', 'Elmira, New York', 'Liverpool', 'Villiers Street, near Charing Cross, London', 'South Africa', 'Australia', 'New Zealand', 'India', 'Brattleboro, Vermont', 'Yokohama', 'Torquay, Devon', 'Groote Schuur, Cape Town', 'Rottingdean, near Brighton, East Sussex', "Bateman's, Burwash"]
+Label (norm): ['Bombay', 'Lorne Lodge 4 Campbell Road Southsea', 'Bombay', 'British India', 'Simla', 'Belvedere House', 'Liverpool', 'All Souls Church in Langham Place', 'Vermont', 'United States', 'England', 'Torquay Devon', 'Rottingdean near Brighton East Sussex', 'South Africa', 'United States', 'Japan', 'United States', "Bateman's", 'Stockholm', 'Middlesex Hospital', 'Golders Green Crematorium', "Poets' Corner part of the South Transept of Westminster Abbey"]
+Pred  (norm): ['Bombay', 'Southsea Portsmouth', 'Lorne Lodge 4 Campbell Road Southsea', 'The Grange Fulham London', 'Goldings Farm Loughton', 'United Services College Westward Ho Devon', 'Lahore', 'Simla', 'Allahabad', 'London', 'San Francisco', 'Portland Oregon', 'Seattle Washington', 'Victoria and Vancouver British Columbia', 'Medicine Hat Alberta', 'Yellowstone National Park', 'Salt Lake City', 'Omaha Nebraska', 'Chicago', 'Beaver Pennsylvania', 'Chautauqua', 'Niagara Falls', 'Toronto', 'Washington D C', 'New York', 'Boston', 'Elmira New York', 'Liverpool', 'Villiers Street near Charing Cross London', 'South Africa', 'Australia', 'New Zealand', 'India', 'Brattleboro Vermont', 'Yokohama', 'Torquay Devon', 'Groote Schuur Cape Town', 'Rottingdean near Brighton East Sussex', "Bateman's Burwash"]
+Matches (10):
+  - L[0]='Bombay'  <->  P[0]='Bombay'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Lorne Lodge 4 Campbell Road Southsea'  <->  P[2]='Lorne Lodge 4 Campbell Road Southsea'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='British India'  <->  P[32]='India'  (ratio=0.556, contain=True, reason=containment)
+  - L[4]='Simla'  <->  P[7]='Simla'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Liverpool'  <->  P[27]='Liverpool'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Vermont'  <->  P[33]='Brattleboro Vermont'  (ratio=0.538, contain=True, reason=containment)
+  - L[11]='Torquay Devon'  <->  P[35]='Torquay Devon'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Rottingdean near Brighton East Sussex'  <->  P[37]='Rottingdean near Brighton East Sussex'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='South Africa'  <->  P[29]='South Africa'  (ratio=1.000, contain=True, reason=exact)
+  - L[17]='Bateman's'  <->  P[38]='Bateman's Burwash'  (ratio=0.692, contain=True, reason=containment)
+Kendall order: [0, 2, 32, 7, 27, 33, 35, 37, 29, 38]  |  Kendall τ: 0.7333
+Token edit distance: 35  |  edit_similarity: 0.4262
+Item precision=0.2564, recall=0.4545, f1=0.3279
+Unmatched label tokens: ['Bombay', 'Belvedere House', 'All Souls Church in Langham Place', 'United States', 'England', 'United States', 'Japan', 'United States', 'Stockholm', 'Middlesex Hospital', 'Golders Green Crematorium', "Poets' Corner part of the South Transept of Westminster Abbey"]
+Unmatched pred tokens:  ['Southsea Portsmouth', 'The Grange Fulham London', 'Goldings Farm Loughton', 'United Services College Westward Ho Devon', 'Lahore', 'Allahabad', 'London', 'San Francisco', 'Portland Oregon', 'Seattle Washington', 'Victoria and Vancouver British Columbia', 'Medicine Hat Alberta', 'Yellowstone National Park', 'Salt Lake City', 'Omaha Nebraska', 'Chicago', 'Beaver Pennsylvania', 'Chautauqua', 'Niagara Falls', 'Toronto', 'Washington D C', 'New York', 'Boston', 'Elmira New York', 'Villiers Street near Charing Cross London', 'Australia', 'New Zealand', 'Yokohama', 'Groote Schuur Cape Town']
+
+=== ID: 040 ===
+Label (raw): ['Milan', 'Ivrea', 'Milan']
+Pred  (raw): ['Milan', 'Ivrea', 'Milan']
+Label (norm): ['Milan', 'Ivrea', 'Milan']
+Pred  (norm): ['Milan', 'Ivrea', 'Milan']
+Matches (3):
+  - L[0]='Milan'  <->  P[0]='Milan'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Ivrea'  <->  P[1]='Ivrea'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Milan'  <->  P[2]='Milan'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 0  |  edit_similarity: 1.0000
+Item precision=1.0000, recall=1.0000, f1=1.0000
+
+=== ID: 041 ===
+Label (raw): ['Autun', 'University of Dijon', 'Paris Institute of Political Studies', 'University of Paris', 'Ministry of Foreign Affairs', 'Hague Conventions', 'London Naval Conference']
+Pred  (raw): ['Autun', 'University of Dijon', 'Paris Institute of Political Studies', 'University of Paris', 'Ministry of Foreign Affairs', 'Hague Conventions', 'London Naval Conference']
+Label (norm): ['Autun', 'University of Dijon', 'Paris Institute of Political Studies', 'University of Paris', 'Ministry of Foreign Affairs', 'Hague Conventions', 'London Naval Conference']
+Pred  (norm): ['Autun', 'University of Dijon', 'Paris Institute of Political Studies', 'University of Paris', 'Ministry of Foreign Affairs', 'Hague Conventions', 'London Naval Conference']
+Matches (7):
+  - L[0]='Autun'  <->  P[0]='Autun'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Dijon'  <->  P[1]='University of Dijon'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Paris Institute of Political Studies'  <->  P[2]='Paris Institute of Political Studies'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Paris'  <->  P[3]='University of Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Ministry of Foreign Affairs'  <->  P[4]='Ministry of Foreign Affairs'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Hague Conventions'  <->  P[5]='Hague Conventions'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='London Naval Conference'  <->  P[6]='London Naval Conference'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 0  |  edit_similarity: 1.0000
+Item precision=1.0000, recall=1.0000, f1=1.0000
+
+=== ID: 042 ===
+Label (raw): ['Bonnevoie, Luxembourg', 'Paris', 'École normale supérieure, Paris', 'Heidelberg University', 'Paris', 'Sorbonne, Paris', 'Philosophical Society of Glasgow', 'Sorbonne, Paris', 'Academy of Sciences', 'Société française de photographie', 'Société Astronomique de France', 'Luxembourg City', 'steamer France']
+Pred  (raw): ['Bonnevoie, Luxembourg', 'Paris', 'Heidelberg University', 'Paris']
+Label (norm): ['Bonnevoie Luxembourg', 'Paris', 'École normale supérieure Paris', 'Heidelberg University', 'Paris', 'Sorbonne Paris', 'Philosophical Society of Glasgow', 'Sorbonne Paris', 'Academy of Sciences', 'Société française de photographie', 'Société Astronomique de France', 'Luxembourg City', 'steamer France']
+Pred  (norm): ['Bonnevoie Luxembourg', 'Paris', 'Heidelberg University', 'Paris']
+Matches (4):
+  - L[0]='Bonnevoie Luxembourg'  <->  P[0]='Bonnevoie Luxembourg'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Paris'  <->  P[1]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='École normale supérieure Paris'  <->  P[3]='Paris'  (ratio=0.286, contain=True, reason=containment)
+  - L[3]='Heidelberg University'  <->  P[2]='Heidelberg University'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 3, 2]  |  Kendall τ: 0.6667
+Token edit distance: 10  |  edit_similarity: 0.4118
+Item precision=1.0000, recall=0.3077, f1=0.4706
+Unmatched label tokens: ['Paris', 'Sorbonne Paris', 'Philosophical Society of Glasgow', 'Sorbonne Paris', 'Academy of Sciences', 'Société française de photographie', 'Société Astronomique de France', 'Luxembourg City', 'steamer France']
+
+=== ID: 043 ===
+Label (raw): ['Brightwater', 'Foxhill', 'Havelock', 'Nelson College', 'Canterbury College, University of New Zealand', 'Cavendish Laboratory, University of Cambridge', 'University of Cambridge', 'Cavendish Laboratory, University of Cambridge', 'McGill University', "St Paul's Anglican Church, Papanui", 'McGill University', 'American Philosophical Society', 'Victoria University of Manchester', 'Cavendish Laboratory, University of Cambridge', 'Cambridge', 'Westminster Abbey']
+Pred  (raw): ['Brightwater', 'Foxhill', 'Havelock', 'Nelson College', 'Canterbury College, University of New Zealand', 'Cavendish Laboratory, University of Cambridge', 'McGill University', 'Victoria University of Manchester', 'Cavendish Laboratory (return)']
+Label (norm): ['Brightwater', 'Foxhill', 'Havelock', 'Nelson College', 'Canterbury College University of New Zealand', 'Cavendish Laboratory University of Cambridge', 'University of Cambridge', 'Cavendish Laboratory University of Cambridge', 'McGill University', "St Paul's Anglican Church Papanui", 'McGill University', 'American Philosophical Society', 'Victoria University of Manchester', 'Cavendish Laboratory University of Cambridge', 'Cambridge', 'Westminster Abbey']
+Pred  (norm): ['Brightwater', 'Foxhill', 'Havelock', 'Nelson College', 'Canterbury College University of New Zealand', 'Cavendish Laboratory University of Cambridge', 'McGill University', 'Victoria University of Manchester', 'Cavendish Laboratory return']
+Matches (8):
+  - L[0]='Brightwater'  <->  P[0]='Brightwater'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Foxhill'  <->  P[1]='Foxhill'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Havelock'  <->  P[2]='Havelock'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Nelson College'  <->  P[3]='Nelson College'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Canterbury College University of New Zealand'  <->  P[4]='Canterbury College University of New Zealand'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Cavendish Laboratory University of Cambridge'  <->  P[5]='Cavendish Laboratory University of Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='McGill University'  <->  P[6]='McGill University'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Victoria University of Manchester'  <->  P[7]='Victoria University of Manchester'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 6, 7]  |  Kendall τ: 1.0000
+Token edit distance: 8  |  edit_similarity: 0.6800
+Item precision=0.8889, recall=0.5000, f1=0.6400
+Unmatched label tokens: ['University of Cambridge', 'Cavendish Laboratory University of Cambridge', "St Paul's Anglican Church Papanui", 'McGill University', 'American Philosophical Society', 'Cavendish Laboratory University of Cambridge', 'Cambridge', 'Westminster Abbey']
+Unmatched pred tokens:  ['Cavendish Laboratory return']
+
+=== ID: 044 ===
+Label (raw): ['Russian Empire', 'Kharkov Lycée', 'University of Würzburg', 'Heligoland', 'University of Giessen', 'University of Saint Petersburg', 'Imperial Novorossiya University', 'University of Saint Petersburg', 'Odessa', 'Odessa University', 'Sicily', 'Paris']
+Pred  (raw): ['Ivanovka', 'Kharkov Lycée', 'University of Würzburg', 'Kharkov Imperial University', 'Heligoland', 'University of Giessen', 'University of Munich', 'Naples', 'University of Göttingen', 'University of Saint Petersburg', 'Imperial Novorossiya University', 'Messina', 'Odessa', 'Paris']
+Label (norm): ['Russian Empire', 'Kharkov Lycée', 'University of Würzburg', 'Heligoland', 'University of Giessen', 'University of Saint Petersburg', 'Imperial Novorossiya University', 'University of Saint Petersburg', 'Odessa', 'Odessa University', 'Sicily', 'Paris']
+Pred  (norm): ['Ivanovka', 'Kharkov Lycée', 'University of Würzburg', 'Kharkov Imperial University', 'Heligoland', 'University of Giessen', 'University of Munich', 'Naples', 'University of Göttingen', 'University of Saint Petersburg', 'Imperial Novorossiya University', 'Messina', 'Odessa', 'Paris']
+Matches (8):
+  - L[1]='Kharkov Lycée'  <->  P[1]='Kharkov Lycée'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Würzburg'  <->  P[2]='University of Würzburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Heligoland'  <->  P[4]='Heligoland'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Giessen'  <->  P[5]='University of Giessen'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Saint Petersburg'  <->  P[9]='University of Saint Petersburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Imperial Novorossiya University'  <->  P[10]='Imperial Novorossiya University'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Odessa'  <->  P[12]='Odessa'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Paris'  <->  P[13]='Paris'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 2, 4, 5, 9, 10, 12, 13]  |  Kendall τ: 1.0000
+Token edit distance: 8  |  edit_similarity: 0.6923
+Item precision=0.5714, recall=0.6667, f1=0.6154
+Unmatched label tokens: ['Russian Empire', 'University of Saint Petersburg', 'Odessa University', 'Sicily']
+Unmatched pred tokens:  ['Ivanovka', 'Kharkov Imperial University', 'University of Munich', 'Naples', 'University of Göttingen', 'Messina']
+
+=== ID: 045 ===
+Label (raw): ['Strehlen', 'Leipzig', 'Charité', 'Charité in Berlin', 'synagogue in Neustadt', 'Charité medical school and teaching hospital in Berlin', 'Berlin University', 'Egypt and other countries', 'public hospital in Berlin-Moabit', 'Berlin Institute of Infectious Diseases', 'German Reich', 'Institute for Serum Research and Testing', 'Frankfurt am Main', 'University of Göttingen', 'Georg Speyer House in Frankfurt', 'Africa', 'Georg Speyer House in Frankfurt', 'University of Edinburgh', 'Bad Homburg vor der Höhe']
+Pred  (raw): ['Strehlen', 'Breslau', 'Wroclaw', 'Strasbourg', 'Freiburg im Breisgau', 'Leipzig', 'Berlin', 'Neustadt', 'Egypt', 'Berlin-Steglitz', 'Frankfurt am Main', 'Bad Homburg vor der Höhe']
+Label (norm): ['Strehlen', 'Leipzig', 'Charité', 'Charité in Berlin', 'synagogue in Neustadt', 'Charité medical school and teaching hospital in Berlin', 'Berlin University', 'Egypt and other countries', 'public hospital in Berlin-Moabit', 'Berlin Institute of Infectious Diseases', 'German Reich', 'Institute for Serum Research and Testing', 'Frankfurt am Main', 'University of Göttingen', 'Georg Speyer House in Frankfurt', 'Africa', 'Georg Speyer House in Frankfurt', 'University of Edinburgh', 'Bad Homburg vor der Höhe']
+Pred  (norm): ['Strehlen', 'Breslau', 'Wroclaw', 'Strasbourg', 'Freiburg im Breisgau', 'Leipzig', 'Berlin', 'Neustadt', 'Egypt', 'Berlin-Steglitz', 'Frankfurt am Main', 'Bad Homburg vor der Höhe']
+Matches (7):
+  - L[0]='Strehlen'  <->  P[0]='Strehlen'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Leipzig'  <->  P[5]='Leipzig'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Charité in Berlin'  <->  P[6]='Berlin'  (ratio=0.522, contain=True, reason=containment)
+  - L[4]='synagogue in Neustadt'  <->  P[7]='Neustadt'  (ratio=0.552, contain=True, reason=containment)
+  - L[7]='Egypt and other countries'  <->  P[8]='Egypt'  (ratio=0.333, contain=True, reason=containment)
+  - L[12]='Frankfurt am Main'  <->  P[10]='Frankfurt am Main'  (ratio=1.000, contain=True, reason=exact)
+  - L[18]='Bad Homburg vor der Höhe'  <->  P[11]='Bad Homburg vor der Höhe'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 5, 6, 7, 8, 10, 11]  |  Kendall τ: 1.0000
+Token edit distance: 16  |  edit_similarity: 0.4839
+Item precision=0.5833, recall=0.3684, f1=0.4516
+Unmatched label tokens: ['Charité', 'Charité medical school and teaching hospital in Berlin', 'Berlin University', 'public hospital in Berlin-Moabit', 'Berlin Institute of Infectious Diseases', 'German Reich', 'Institute for Serum Research and Testing', 'University of Göttingen', 'Georg Speyer House in Frankfurt', 'Africa', 'Georg Speyer House in Frankfurt', 'University of Edinburgh']
+Unmatched pred tokens:  ['Breslau', 'Wroclaw', 'Strasbourg', 'Freiburg im Breisgau', 'Berlin-Steglitz']
+
+=== ID: 046 ===
+Label (raw): ['Aurich', 'Göttingen University', 'University of Basel', 'University of Jena', 'Harvard University', 'New York University', 'Jena']
+Pred  (raw): ['Aurich', 'Göttingen University', 'Berlin University', 'Husum', 'Berlin', 'Frankfurt', 'University of Basel', 'University of Jena', 'Harvard University', 'New York University', 'Jena']
+Label (norm): ['Aurich', 'Göttingen University', 'University of Basel', 'University of Jena', 'Harvard University', 'New York University', 'Jena']
+Pred  (norm): ['Aurich', 'Göttingen University', 'Berlin University', 'Husum', 'Berlin', 'Frankfurt', 'University of Basel', 'University of Jena', 'Harvard University', 'New York University', 'Jena']
+Matches (7):
+  - L[0]='Aurich'  <->  P[0]='Aurich'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Göttingen University'  <->  P[1]='Göttingen University'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Basel'  <->  P[6]='University of Basel'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Jena'  <->  P[7]='University of Jena'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Harvard University'  <->  P[8]='Harvard University'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='New York University'  <->  P[9]='New York University'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Jena'  <->  P[10]='Jena'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 6, 7, 8, 9, 10]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.7778
+Item precision=0.6364, recall=1.0000, f1=0.7778
+Unmatched pred tokens:  ['Berlin University', 'Husum', 'Berlin', 'Frankfurt']
+
+=== ID: 047 ===
+Label (raw): ['Swedish']
+Pred  (raw): ['Sweden', 'Norway']
+Label (norm): ['Swedish']
+Pred  (norm): ['Sweden', 'Norway']
+Matches (0):
+Kendall order: []  |  Kendall τ: 0.0000
+Token edit distance: 2  |  edit_similarity: 0.3333
+Item precision=0.0000, recall=0.0000, f1=0.0000
+Unmatched label tokens: ['Swedish']
+Unmatched pred tokens:  ['Sweden', 'Norway']
+
+=== ID: 048 ===
+Label (raw): ['Næstved', 'Copenhagen']
+Pred  (raw): ['Næstved', 'Copenhagen']
+Label (norm): ['Næstved', 'Copenhagen']
+Pred  (norm): ['Næstved', 'Copenhagen']
+Matches (2):
+  - L[0]='Næstved'  <->  P[0]='Næstved'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Copenhagen'  <->  P[1]='Copenhagen'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1]  |  Kendall τ: 1.0000
+Token edit distance: 0  |  edit_similarity: 1.0000
+Item precision=1.0000, recall=1.0000, f1=1.0000
+
+=== ID: 050 ===
+Label (raw): ['Palazzo Marescalchi', 'Villa Griffone', "Father's estate", 'United Kingdom', 'Bristol Channel', 'La Spezia', 'Wimereux', 'Sandy Hook', 'Signal Hill', 'SS Philadelphia', 'Glace Bay', 'South Wellfleet', 'Brownsea Island', 'Clifden', 'New Street Works factory', 'Marconi Research Centre', 'Vatican']
+Pred  (raw): ['Bologna', 'Bedford', 'Tuscany', 'Florence', 'Livorno', 'Villa Griffone, Pontecchio', 'London', 'Dover', 'Salisbury Plain', 'Flat Holm Island', 'Lavernock Point', 'Brean Down Fort', 'La Spezia', 'Ballycastle', 'Rathlin Island', 'Wimereux', 'South Foreland Lighthouse', 'Haven Hotel, Sandbanks', 'Brownsea Island', 'East Goodwin lightship', 'Sandy Hook, New Jersey', 'Rosslare Strand', 'Poldhu', 'Clifden', "Signal Hill, St. John's", 'Glace Bay', 'South Wellfleet', 'Rome']
+Label (norm): ['Palazzo Marescalchi', 'Villa Griffone', "Father's estate", 'United Kingdom', 'Bristol Channel', 'La Spezia', 'Wimereux', 'Sandy Hook', 'Signal Hill', 'SS Philadelphia', 'Glace Bay', 'South Wellfleet', 'Brownsea Island', 'Clifden', 'New Street Works factory', 'Marconi Research Centre', 'Vatican']
+Pred  (norm): ['Bologna', 'Bedford', 'Tuscany', 'Florence', 'Livorno', 'Villa Griffone Pontecchio', 'London', 'Dover', 'Salisbury Plain', 'Flat Holm Island', 'Lavernock Point', 'Brean Down Fort', 'La Spezia', 'Ballycastle', 'Rathlin Island', 'Wimereux', 'South Foreland Lighthouse', 'Haven Hotel Sandbanks', 'Brownsea Island', 'East Goodwin lightship', 'Sandy Hook New Jersey', 'Rosslare Strand', 'Poldhu', 'Clifden', "Signal Hill St John's", 'Glace Bay', 'South Wellfleet', 'Rome']
+Matches (9):
+  - L[1]='Villa Griffone'  <->  P[5]='Villa Griffone Pontecchio'  (ratio=0.718, contain=True, reason=containment)
+  - L[5]='La Spezia'  <->  P[12]='La Spezia'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Wimereux'  <->  P[15]='Wimereux'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Sandy Hook'  <->  P[20]='Sandy Hook New Jersey'  (ratio=0.645, contain=True, reason=containment)
+  - L[8]='Signal Hill'  <->  P[24]='Signal Hill St John's'  (ratio=0.688, contain=True, reason=containment)
+  - L[10]='Glace Bay'  <->  P[25]='Glace Bay'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='South Wellfleet'  <->  P[26]='South Wellfleet'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Brownsea Island'  <->  P[18]='Brownsea Island'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='Clifden'  <->  P[23]='Clifden'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [5, 12, 15, 20, 24, 25, 26, 18, 23]  |  Kendall τ: 0.6111
+Token edit distance: 24  |  edit_similarity: 0.4667
+Item precision=0.3214, recall=0.5294, f1=0.4000
+Unmatched label tokens: ['Palazzo Marescalchi', "Father's estate", 'United Kingdom', 'Bristol Channel', 'SS Philadelphia', 'New Street Works factory', 'Marconi Research Centre', 'Vatican']
+Unmatched pred tokens:  ['Bologna', 'Bedford', 'Tuscany', 'Florence', 'Livorno', 'London', 'Dover', 'Salisbury Plain', 'Flat Holm Island', 'Lavernock Point', 'Brean Down Fort', 'Ballycastle', 'Rathlin Island', 'South Foreland Lighthouse', 'Haven Hotel Sandbanks', 'East Goodwin lightship', 'Rosslare Strand', 'Poldhu', 'Rome']
+
+=== ID: 051 ===
+Label (raw): ['Riga', 'University of Dorpat', 'Riga Polytechnicum', 'Leipzig University', 'Harvard University', 'Leipzig University', 'Leipzig', 'Groβbothen', 'Leipzig', 'Großbothen']
+Pred  (raw): ['Riga, Russian Empire (now Latvia)', 'University of Dorpat (now the University of Tartu, Estonia)', 'Riga Polytechnicum (now Riga Technical University)', 'Leipzig University', 'Harvard University', 'Großbothen, Saxony']
+Label (norm): ['Riga', 'University of Dorpat', 'Riga Polytechnicum', 'Leipzig University', 'Harvard University', 'Leipzig University', 'Leipzig', 'Groβbothen', 'Leipzig', 'Großbothen']
+Pred  (norm): ['Riga Russian Empire now Latvia', 'University of Dorpat now the University of Tartu Estonia', 'Riga Polytechnicum now Riga Technical University', 'Leipzig University', 'Harvard University', 'Großbothen Saxony']
+Matches (6):
+  - L[0]='Riga'  <->  P[0]='Riga Russian Empire now Latvia'  (ratio=0.235, contain=True, reason=containment)
+  - L[1]='University of Dorpat'  <->  P[1]='University of Dorpat now the University of Tartu Estonia'  (ratio=0.526, contain=True, reason=containment)
+  - L[2]='Riga Polytechnicum'  <->  P[2]='Riga Polytechnicum now Riga Technical University'  (ratio=0.545, contain=True, reason=containment)
+  - L[3]='Leipzig University'  <->  P[3]='Leipzig University'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Harvard University'  <->  P[4]='Harvard University'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Großbothen'  <->  P[5]='Großbothen Saxony'  (ratio=0.741, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.7500
+Item precision=1.0000, recall=0.6000, f1=0.7500
+Unmatched label tokens: ['Leipzig University', 'Leipzig', 'Groβbothen', 'Leipzig']
+
+=== ID: 052 ===
+Label (raw): ['Bern', 'Bern Minster', 'Burgdorf', 'University of Bern', 'Bern', 'Zürich', 'Berlin', 'London', 'Paris', 'Bern', 'University Surgical Clinic at the Inselspital', 'Bern', 'Villette', 'Inselspital', 'Bern', 'Europe', 'Bern', 'Inselspital', 'Prague', 'Bern', 'German Society of Surgery', 'Bern', 'University of Bern', 'Ulmenhof', 'Bern']
+Pred  (raw): ['Bern', 'Burgdorf', 'Bern', 'Zürich', 'Leipzig', 'Berlin', 'London', 'Paris', 'Bern']
+Label (norm): ['Bern', 'Bern Minster', 'Burgdorf', 'University of Bern', 'Bern', 'Zürich', 'Berlin', 'London', 'Paris', 'Bern', 'University Surgical Clinic at the Inselspital', 'Bern', 'Villette', 'Inselspital', 'Bern', 'Europe', 'Bern', 'Inselspital', 'Prague', 'Bern', 'German Society of Surgery', 'Bern', 'University of Bern', 'Ulmenhof', 'Bern']
+Pred  (norm): ['Bern', 'Burgdorf', 'Bern', 'Zürich', 'Leipzig', 'Berlin', 'London', 'Paris', 'Bern']
+Matches (8):
+  - L[0]='Bern'  <->  P[0]='Bern'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Bern Minster'  <->  P[2]='Bern'  (ratio=0.500, contain=True, reason=containment)
+  - L[2]='Burgdorf'  <->  P[1]='Burgdorf'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Bern'  <->  P[8]='Bern'  (ratio=0.364, contain=True, reason=containment)
+  - L[4]='Bern'  <->  P[5]='Berlin'  (ratio=0.800, contain=False, reason=ratio>=0.80)
+  - L[5]='Zürich'  <->  P[3]='Zürich'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='London'  <->  P[6]='London'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Paris'  <->  P[7]='Paris'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 1, 8, 5, 3, 6, 7]  |  Kendall τ: 0.5714
+Token edit distance: 20  |  edit_similarity: 0.4118
+Item precision=0.8889, recall=0.3200, f1=0.4706
+Unmatched label tokens: ['Berlin', 'Bern', 'University Surgical Clinic at the Inselspital', 'Bern', 'Villette', 'Inselspital', 'Bern', 'Europe', 'Bern', 'Inselspital', 'Prague', 'Bern', 'German Society of Surgery', 'Bern', 'University of Bern', 'Ulmenhof', 'Bern']
+Unmatched pred tokens:  ['Leipzig']
+
+=== ID: 053 ===
+Label (raw): ['Mårbacka, Värmland', 'Karlskoga Church Rectory', 'Högre lärarinneseminariet in Stockholm', 'Mårbacka estate', 'Landskrona', 'Falun', 'American Colony in Jerusalem', 'Sweden', 'Uppsala University', 'Sweden', 'Stockholm', 'Sweden', "University of Greifswald's Faculty of Arts", 'Finland', 'Sweden', 'Östra Ämtervik in Sunne', 'Mårbacka']
+Pred  (raw): ['Mårbacka', 'Karlskoga Church Rectory', 'Stockholm', 'Landskrona', 'Jerusalem', 'Italy', 'Palestine', 'Falun']
+Label (norm): ['Mårbacka Värmland', 'Karlskoga Church Rectory', 'Högre lärarinneseminariet in Stockholm', 'Mårbacka estate', 'Landskrona', 'Falun', 'American Colony in Jerusalem', 'Sweden', 'Uppsala University', 'Sweden', 'Stockholm', 'Sweden', "University of Greifswald's Faculty of Arts", 'Finland', 'Sweden', 'Östra Ämtervik in Sunne', 'Mårbacka']
+Pred  (norm): ['Mårbacka', 'Karlskoga Church Rectory', 'Stockholm', 'Landskrona', 'Jerusalem', 'Italy', 'Palestine', 'Falun']
+Matches (6):
+  - L[0]='Mårbacka Värmland'  <->  P[0]='Mårbacka'  (ratio=0.640, contain=True, reason=containment)
+  - L[1]='Karlskoga Church Rectory'  <->  P[1]='Karlskoga Church Rectory'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Högre lärarinneseminariet in Stockholm'  <->  P[2]='Stockholm'  (ratio=0.383, contain=True, reason=containment)
+  - L[4]='Landskrona'  <->  P[3]='Landskrona'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Falun'  <->  P[7]='Falun'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='American Colony in Jerusalem'  <->  P[4]='Jerusalem'  (ratio=0.486, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 7, 4]  |  Kendall τ: 0.8667
+Token edit distance: 12  |  edit_similarity: 0.5200
+Item precision=0.7500, recall=0.3529, f1=0.4800
+Unmatched label tokens: ['Mårbacka estate', 'Sweden', 'Uppsala University', 'Sweden', 'Stockholm', 'Sweden', "University of Greifswald's Faculty of Arts", 'Finland', 'Sweden', 'Östra Ämtervik in Sunne', 'Mårbacka']
+Unmatched pred tokens:  ['Italy', 'Palestine']
+
+=== ID: 054 ===
+Label (raw): ['Ostend', 'Catholic University of Leuven', 'Belgium', 'The Hague', 'Lucerne']
+Pred  (raw): ['Ostend', 'Catholic University of Leuven', 'Hague', 'Lucerne']
+Label (norm): ['Ostend', 'Catholic University of Leuven', 'Belgium', 'The Hague', 'Lucerne']
+Pred  (norm): ['Ostend', 'Catholic University of Leuven', 'Hague', 'Lucerne']
+Matches (4):
+  - L[0]='Ostend'  <->  P[0]='Ostend'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Catholic University of Leuven'  <->  P[1]='Catholic University of Leuven'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='The Hague'  <->  P[2]='Hague'  (ratio=0.714, contain=True, reason=containment)
+  - L[4]='Lucerne'  <->  P[3]='Lucerne'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8889
+Item precision=1.0000, recall=0.8000, f1=0.8889
+Unmatched label tokens: ['Belgium']
+
+=== ID: 055 ===
+Label (raw): ['La Flèche', 'Paris', 'London', 'The Hague', 'Le Mans and Sarthe']
+Pred  (raw): ['La Flèche', 'Paris', 'Montenegro', 'Ottoman Empire', 'Netherlands', 'Great Britain', 'Tunisia', 'London', 'United States', 'Le Mans', 'Sarthe']
+Label (norm): ['La Flèche', 'Paris', 'London', 'The Hague', 'Le Mans and Sarthe']
+Pred  (norm): ['La Flèche', 'Paris', 'Montenegro', 'Ottoman Empire', 'Netherlands', 'Great Britain', 'Tunisia', 'London', 'United States', 'Le Mans', 'Sarthe']
+Matches (4):
+  - L[0]='La Flèche'  <->  P[0]='La Flèche'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Paris'  <->  P[1]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='London'  <->  P[7]='London'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Le Mans and Sarthe'  <->  P[9]='Le Mans'  (ratio=0.560, contain=True, reason=containment)
+Kendall order: [0, 1, 7, 9]  |  Kendall τ: 1.0000
+Token edit distance: 7  |  edit_similarity: 0.5625
+Item precision=0.3636, recall=0.8000, f1=0.5000
+Unmatched label tokens: ['The Hague']
+Unmatched pred tokens:  ['Montenegro', 'Ottoman Empire', 'Netherlands', 'Great Britain', 'Tunisia', 'United States', 'Sarthe']
+
+=== ID: 056 ===
+Label (raw): ['Leiden', 'Leiden University', 'Deventer', 'The Hague', 'Leiden University', 'Municipal University of Amsterdam', 'Amsterdam']
+Pred  (raw): ['Leiden', 'Deventer', 'The Hague', 'Amsterdam']
+Label (norm): ['Leiden', 'Leiden University', 'Deventer', 'The Hague', 'Leiden University', 'Municipal University of Amsterdam', 'Amsterdam']
+Pred  (norm): ['Leiden', 'Deventer', 'The Hague', 'Amsterdam']
+Matches (4):
+  - L[0]='Leiden'  <->  P[0]='Leiden'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Deventer'  <->  P[1]='Deventer'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='The Hague'  <->  P[2]='The Hague'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Municipal University of Amsterdam'  <->  P[3]='Amsterdam'  (ratio=0.429, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=1.0000, recall=0.5714, f1=0.7273
+Unmatched label tokens: ['Leiden University', 'Leiden University', 'Amsterdam']
+
+=== ID: 057 ===
+Label (raw): ['Königsberg', 'Stettin (Szczecin)', 'Potsdam', 'University of Göttingen', 'University of Berlin', 'University of Göttingen', 'University of Bonn', 'University of Göttingen', 'Göttingen']
+Pred  (raw): ['Königsberg', 'Stettin (Szczecin)', 'Potsdam', 'University of Göttingen', 'University of Berlin', 'University of Bonn']
+Label (norm): ['Königsberg', 'Stettin Szczecin', 'Potsdam', 'University of Göttingen', 'University of Berlin', 'University of Göttingen', 'University of Bonn', 'University of Göttingen', 'Göttingen']
+Pred  (norm): ['Königsberg', 'Stettin Szczecin', 'Potsdam', 'University of Göttingen', 'University of Berlin', 'University of Bonn']
+Matches (6):
+  - L[0]='Königsberg'  <->  P[0]='Königsberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Stettin Szczecin'  <->  P[1]='Stettin Szczecin'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Potsdam'  <->  P[2]='Potsdam'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Göttingen'  <->  P[3]='University of Göttingen'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Berlin'  <->  P[4]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='University of Bonn'  <->  P[5]='University of Bonn'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.8000
+Item precision=1.0000, recall=0.6667, f1=0.8000
+Unmatched label tokens: ['University of Göttingen', 'University of Göttingen', 'Göttingen']
+
+=== ID: 058 ===
+Label (raw): ['Germany', 'University of Strassburg', 'University of Rostock', 'University of Strassburg', 'University of Berlin', 'University of Marburg', 'Heidelberg University', 'United States', 'Edinburgh, Scotland', 'Heidelberg University', 'England', 'Heidelberg, Germany', 'University of Rostock']
+Pred  (raw): ['Rostock, Germany', 'University of Strassburg', 'University of Berlin', 'University of Marburg', 'Heidelberg University', 'United States', 'Johns Hopkins', 'University of California at Berkeley', 'University of Chicago', 'New York City', 'University of Edinburgh', 'England']
+Label (norm): ['Germany', 'University of Strassburg', 'University of Rostock', 'University of Strassburg', 'University of Berlin', 'University of Marburg', 'Heidelberg University', 'United States', 'Edinburgh Scotland', 'Heidelberg University', 'England', 'Heidelberg Germany', 'University of Rostock']
+Pred  (norm): ['Rostock Germany', 'University of Strassburg', 'University of Berlin', 'University of Marburg', 'Heidelberg University', 'United States', 'Johns Hopkins', 'University of California at Berkeley', 'University of Chicago', 'New York City', 'University of Edinburgh', 'England']
+Matches (8):
+  - L[0]='Germany'  <->  P[0]='Rostock Germany'  (ratio=0.636, contain=True, reason=containment)
+  - L[1]='University of Strassburg'  <->  P[1]='University of Strassburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Strassburg'  <->  P[3]='University of Marburg'  (ratio=0.844, contain=False, reason=ratio>=0.80)
+  - L[4]='University of Berlin'  <->  P[2]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Marburg'  <->  P[10]='University of Edinburgh'  (ratio=0.818, contain=False, reason=ratio>=0.80)
+  - L[6]='Heidelberg University'  <->  P[4]='Heidelberg University'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='United States'  <->  P[5]='United States'  (ratio=1.000, contain=True, reason=exact)
+  - L[10]='England'  <->  P[11]='England'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 3, 2, 10, 4, 5, 11]  |  Kendall τ: 0.7857
+Token edit distance: 9  |  edit_similarity: 0.6400
+Item precision=0.6667, recall=0.6154, f1=0.6400
+Unmatched label tokens: ['University of Rostock', 'Edinburgh Scotland', 'Heidelberg University', 'Heidelberg Germany', 'University of Rostock']
+Unmatched pred tokens:  ['Johns Hopkins', 'University of California at Berkeley', 'University of Chicago', 'New York City']
+
+=== ID: 059 ===
+Label (raw): ['Heiliggeiststraße', 'Friedrich-Wilhelms-Gymnasium', 'Tunnel über der Spree', 'University of Berlin', 'Italy', 'Munich', 'Meran', 'Munich', 'Waldfriedhof']
+Pred  (raw): ['Berlin', 'Bonn', 'Italy', 'Munich']
+Label (norm): ['Heiliggeiststraße', 'Friedrich-Wilhelms-Gymnasium', 'Tunnel über der Spree', 'University of Berlin', 'Italy', 'Munich', 'Meran', 'Munich', 'Waldfriedhof']
+Pred  (norm): ['Berlin', 'Bonn', 'Italy', 'Munich']
+Matches (3):
+  - L[3]='University of Berlin'  <->  P[0]='Berlin'  (ratio=0.462, contain=True, reason=containment)
+  - L[4]='Italy'  <->  P[2]='Italy'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Munich'  <->  P[3]='Munich'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 7  |  edit_similarity: 0.4615
+Item precision=0.7500, recall=0.3333, f1=0.4615
+Unmatched label tokens: ['Heiliggeiststraße', 'Friedrich-Wilhelms-Gymnasium', 'Tunnel über der Spree', 'Meran', 'Munich', 'Waldfriedhof']
+Unmatched pred tokens:  ['Bonn']
+
+=== ID: 060 ===
+Label (raw): ['Gaffken', 'Drachenstein', 'Rastenburg', 'Heidelberg', 'University of Göttingen and the University of Berlin', 'Laboratory of Hermann von Helmholtz', 'RWTH Aachen University', 'University of Würzburg', 'Columbia University', 'University of Munich']
+Pred  (raw): ['Gaffken', 'Drachenstein', 'Rastenburg', 'Heidelberg', 'University of Göttingen', 'University of Berlin', 'RWTH Aachen University', 'University of Würzburg', 'University of Munich', 'Columbia University']
+Label (norm): ['Gaffken', 'Drachenstein', 'Rastenburg', 'Heidelberg', 'University of Göttingen and the University of Berlin', 'Laboratory of Hermann von Helmholtz', 'RWTH Aachen University', 'University of Würzburg', 'Columbia University', 'University of Munich']
+Pred  (norm): ['Gaffken', 'Drachenstein', 'Rastenburg', 'Heidelberg', 'University of Göttingen', 'University of Berlin', 'RWTH Aachen University', 'University of Würzburg', 'University of Munich', 'Columbia University']
+Matches (9):
+  - L[0]='Gaffken'  <->  P[0]='Gaffken'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Drachenstein'  <->  P[1]='Drachenstein'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Rastenburg'  <->  P[2]='Rastenburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Heidelberg'  <->  P[3]='Heidelberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Göttingen and the University of Berlin'  <->  P[4]='University of Göttingen'  (ratio=0.613, contain=True, reason=containment)
+  - L[6]='RWTH Aachen University'  <->  P[6]='RWTH Aachen University'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='University of Würzburg'  <->  P[7]='University of Würzburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Columbia University'  <->  P[9]='Columbia University'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='University of Munich'  <->  P[8]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 6, 7, 9, 8]  |  Kendall τ: 0.9444
+Token edit distance: 3  |  edit_similarity: 0.8500
+Item precision=0.9000, recall=0.9000, f1=0.9000
+Unmatched label tokens: ['Laboratory of Hermann von Helmholtz']
+Unmatched pred tokens:  ['University of Berlin']
+
+=== ID: 061 ===
+Label (raw): ['Landskrona', 'University of Uppsala', 'Stockholm', 'Norra begravningsplatsen']
+Pred  (raw): ['Landskrona', 'University of Uppsala', 'Stockholm']
+Label (norm): ['Landskrona', 'University of Uppsala', 'Stockholm', 'Norra begravningsplatsen']
+Pred  (norm): ['Landskrona', 'University of Uppsala', 'Stockholm']
+Matches (3):
+  - L[0]='Landskrona'  <->  P[0]='Landskrona'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Uppsala'  <->  P[1]='University of Uppsala'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Stockholm'  <->  P[2]='Stockholm'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8571
+Item precision=1.0000, recall=0.7500, f1=0.8571
+Unmatched label tokens: ['Norra begravningsplatsen']
+
+=== ID: 062 ===
+Label (raw): ['Ghent', 'Jesuit College of Sainte-Barbe', 'University of Ghent', 'Paris', 'Passy', 'Grasse', 'Nice', 'United States', 'Nice']
+Pred  (raw): ['Ghent, Belgium', 'Paris, France', 'Passy, Paris', 'Normandy', 'Grasse, France', 'Benedictine Abbey of St. Wandrille, Normandy', 'Nice, France', 'Monte Estoril, Portugal', 'Nice, France']
+Label (norm): ['Ghent', 'Jesuit College of Sainte-Barbe', 'University of Ghent', 'Paris', 'Passy', 'Grasse', 'Nice', 'United States', 'Nice']
+Pred  (norm): ['Ghent Belgium', 'Paris France', 'Passy Paris', 'Normandy', 'Grasse France', 'Benedictine Abbey of St Wandrille Normandy', 'Nice France', 'Monte Estoril Portugal', 'Nice France']
+Matches (6):
+  - L[0]='Ghent'  <->  P[0]='Ghent Belgium'  (ratio=0.556, contain=True, reason=containment)
+  - L[3]='Paris'  <->  P[1]='Paris France'  (ratio=0.588, contain=True, reason=containment)
+  - L[4]='Passy'  <->  P[2]='Passy Paris'  (ratio=0.625, contain=True, reason=containment)
+  - L[5]='Grasse'  <->  P[4]='Grasse France'  (ratio=0.632, contain=True, reason=containment)
+  - L[6]='Nice'  <->  P[6]='Nice France'  (ratio=0.533, contain=True, reason=containment)
+  - L[8]='Nice'  <->  P[8]='Nice France'  (ratio=0.533, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 4, 6, 8]  |  Kendall τ: 1.0000
+Token edit distance: 5  |  edit_similarity: 0.7222
+Item precision=0.6667, recall=0.6667, f1=0.6667
+Unmatched label tokens: ['Jesuit College of Sainte-Barbe', 'University of Ghent', 'United States']
+Unmatched pred tokens:  ['Normandy', 'Benedictine Abbey of St Wandrille Normandy', 'Monte Estoril Portugal']
+
+=== ID: 063 ===
+Label (raw): ['Amsterdam', 'University of Amsterdam and Leiden University', 'University of Amsterdam', 'The Hague']
+Pred  (raw): ['Amsterdam', 'Leiden', 'The Hague']
+Label (norm): ['Amsterdam', 'University of Amsterdam and Leiden University', 'University of Amsterdam', 'The Hague']
+Pred  (norm): ['Amsterdam', 'Leiden', 'The Hague']
+Matches (3):
+  - L[0]='Amsterdam'  <->  P[0]='Amsterdam'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Amsterdam and Leiden University'  <->  P[1]='Leiden'  (ratio=0.235, contain=True, reason=containment)
+  - L[3]='The Hague'  <->  P[2]='The Hague'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8571
+Item precision=1.0000, recall=0.7500, f1=0.8571
+Unmatched label tokens: ['University of Amsterdam']
+
+=== ID: 064 ===
+Label (raw): ['Vienna, Austria', 'Berlin, Germany', 'Switzerland', 'Vienna, Austria', 'Feuerhalle Simmering, Vienna, Austria']
+Pred  (raw): ['Vienna', 'Berlin', 'Switzerland']
+Label (norm): ['Vienna Austria', 'Berlin Germany', 'Switzerland', 'Vienna Austria', 'Feuerhalle Simmering Vienna Austria']
+Pred  (norm): ['Vienna', 'Berlin', 'Switzerland']
+Matches (3):
+  - L[0]='Vienna Austria'  <->  P[0]='Vienna'  (ratio=0.600, contain=True, reason=containment)
+  - L[1]='Berlin Germany'  <->  P[1]='Berlin'  (ratio=0.600, contain=True, reason=containment)
+  - L[2]='Switzerland'  <->  P[2]='Switzerland'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2]  |  Kendall τ: 1.0000
+Token edit distance: 2  |  edit_similarity: 0.7500
+Item precision=1.0000, recall=0.6000, f1=0.7500
+Unmatched label tokens: ['Vienna Austria', 'Feuerhalle Simmering Vienna Austria']
+
+=== ID: 065 ===
+Label (raw): ['Stenstorp', 'Stockholm', 'Chalmers University of Technology', 'Gas Accumulator Company', 'AGA', 'Lidingö', 'Villa Ekbacken']
+Pred  (raw): ['Stenstorp', 'Stockholm', 'Chalmers University of Technology', 'Lidingö']
+Label (norm): ['Stenstorp', 'Stockholm', 'Chalmers University of Technology', 'Gas Accumulator Company', 'AGA', 'Lidingö', 'Villa Ekbacken']
+Pred  (norm): ['Stenstorp', 'Stockholm', 'Chalmers University of Technology', 'Lidingö']
+Matches (4):
+  - L[0]='Stenstorp'  <->  P[0]='Stenstorp'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Stockholm'  <->  P[1]='Stockholm'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Chalmers University of Technology'  <->  P[2]='Chalmers University of Technology'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Lidingö'  <->  P[3]='Lidingö'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=1.0000, recall=0.5714, f1=0.7273
+Unmatched label tokens: ['Gas Accumulator Company', 'AGA', 'Villa Ekbacken']
+
+=== ID: 066 ===
+Label (raw): ['University of Lyon', 'Lyon', 'University of Nancy', 'Sorbonne University', 'Lyon']
+Pred  (raw): ['Lyon', 'University of Lyon', 'University of Nancy', 'Sorbonne University']
+Label (norm): ['University of Lyon', 'Lyon', 'University of Nancy', 'Sorbonne University', 'Lyon']
+Pred  (norm): ['Lyon', 'University of Lyon', 'University of Nancy', 'Sorbonne University']
+Matches (4):
+  - L[0]='University of Lyon'  <->  P[0]='Lyon'  (ratio=0.364, contain=True, reason=containment)
+  - L[1]='Lyon'  <->  P[1]='University of Lyon'  (ratio=0.364, contain=True, reason=containment)
+  - L[2]='University of Nancy'  <->  P[2]='University of Nancy'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Sorbonne University'  <->  P[3]='Sorbonne University'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8889
+Item precision=1.0000, recall=0.8000, f1=0.8889
+Unmatched label tokens: ['Lyon']
+
+=== ID: 067 ===
+Label (raw): ['Carcassonne', 'École Normale Supérieure', 'College de France', 'Faculty of Science', 'University of Toulouse', 'Toulouse', 'Carcassonne', 'Toulouse']
+Pred  (raw): ['Carcassonne', 'École Normale Supérieure', 'College de France', 'Faculty of Science', 'University of Toulouse', 'Toulouse']
+Label (norm): ['Carcassonne', 'École Normale Supérieure', 'College de France', 'Faculty of Science', 'University of Toulouse', 'Toulouse', 'Carcassonne', 'Toulouse']
+Pred  (norm): ['Carcassonne', 'École Normale Supérieure', 'College de France', 'Faculty of Science', 'University of Toulouse', 'Toulouse']
+Matches (6):
+  - L[0]='Carcassonne'  <->  P[0]='Carcassonne'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='École Normale Supérieure'  <->  P[1]='École Normale Supérieure'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='College de France'  <->  P[2]='College de France'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Faculty of Science'  <->  P[3]='Faculty of Science'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Toulouse'  <->  P[4]='University of Toulouse'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Toulouse'  <->  P[5]='Toulouse'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 2  |  edit_similarity: 0.8571
+Item precision=1.0000, recall=0.7500, f1=0.8571
+Unmatched label tokens: ['Carcassonne', 'Toulouse']
+
+=== ID: 068 ===
+Label (raw): ['Sainte-Foy-lès-Lyon, Rhône', 'Lourdes', 'Montreal, Canada', 'Chicago, Illinois', 'New York', "Queen's University of Belfast, Princeton University, California, New York, Brown University, and Columbia University", 'Ile Illiec', 'Île Saint-Gildas', 'Sainte-Foy-lès-Lyon, Rhône']
+Pred  (raw): ['Sainte-Foy-lès-Lyon, Rhône', 'Lourdes', 'Montreal, Canada', 'Chicago, Illinois', 'New York', 'Île Saint-Gildas']
+Label (norm): ['Sainte-Foy-lès-Lyon Rhône', 'Lourdes', 'Montreal Canada', 'Chicago Illinois', 'New York', "Queen's University of Belfast Princeton University California New York Brown University and Columbia University", 'Ile Illiec', 'Île Saint-Gildas', 'Sainte-Foy-lès-Lyon Rhône']
+Pred  (norm): ['Sainte-Foy-lès-Lyon Rhône', 'Lourdes', 'Montreal Canada', 'Chicago Illinois', 'New York', 'Île Saint-Gildas']
+Matches (6):
+  - L[0]='Sainte-Foy-lès-Lyon Rhône'  <->  P[0]='Sainte-Foy-lès-Lyon Rhône'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Lourdes'  <->  P[1]='Lourdes'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Montreal Canada'  <->  P[2]='Montreal Canada'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Chicago Illinois'  <->  P[3]='Chicago Illinois'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='New York'  <->  P[4]='New York'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Île Saint-Gildas'  <->  P[5]='Île Saint-Gildas'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.8000
+Item precision=1.0000, recall=0.6667, f1=0.8000
+Unmatched label tokens: ["Queen's University of Belfast Princeton University California New York Brown University and Columbia University", 'Ile Illiec', 'Sainte-Foy-lès-Lyon Rhône']
+
+=== ID: 069 ===
+Label (raw): ['Obersalzbrunn', 'Village school', 'Realschule', 'Lohnig', 'Royal Art and Vocational School', 'University of Jena', 'Rome', 'Radebeul', 'Charlottenburg', 'Schreiberhau', 'Agnetendorf', 'Monte Verità in Locarno', 'United States', 'Germany', 'Agnieszków']
+Pred  (raw): ['Obersalzbrunn (Szczawno-Zdrój)', 'Breslau (Wrocław)', 'Lohnig (Łagiewniki Średzkie)', 'Rome', 'Dresden', 'Berlin', 'Radebeul', 'Rügen', 'Hiddensee', 'Erkner', 'Charlottenburg (Berlin)', 'Schreiberhau (Szklarska Poręba)', 'Agnetendorf (Jagniątków)', 'Monte Verità (Locarno)', 'United States', 'Agnieszków (Jagniątków)']
+Label (norm): ['Obersalzbrunn', 'Village school', 'Realschule', 'Lohnig', 'Royal Art and Vocational School', 'University of Jena', 'Rome', 'Radebeul', 'Charlottenburg', 'Schreiberhau', 'Agnetendorf', 'Monte Verità in Locarno', 'United States', 'Germany', 'Agnieszków']
+Pred  (norm): ['Obersalzbrunn Szczawno-Zdrój', 'Breslau Wrocław', 'Lohnig Łagiewniki Średzkie', 'Rome', 'Dresden', 'Berlin', 'Radebeul', 'Rügen', 'Hiddensee', 'Erkner', 'Charlottenburg Berlin', 'Schreiberhau Szklarska Poręba', 'Agnetendorf Jagniątków', 'Monte Verità Locarno', 'United States', 'Agnieszków Jagniątków']
+Matches (10):
+  - L[0]='Obersalzbrunn'  <->  P[0]='Obersalzbrunn Szczawno-Zdrój'  (ratio=0.634, contain=True, reason=containment)
+  - L[3]='Lohnig'  <->  P[2]='Lohnig Łagiewniki Średzkie'  (ratio=0.375, contain=True, reason=containment)
+  - L[6]='Rome'  <->  P[3]='Rome'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Radebeul'  <->  P[6]='Radebeul'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Charlottenburg'  <->  P[10]='Charlottenburg Berlin'  (ratio=0.800, contain=True, reason=containment)
+  - L[9]='Schreiberhau'  <->  P[11]='Schreiberhau Szklarska Poręba'  (ratio=0.585, contain=True, reason=containment)
+  - L[10]='Agnetendorf'  <->  P[12]='Agnetendorf Jagniątków'  (ratio=0.667, contain=True, reason=containment)
+  - L[11]='Monte Verità in Locarno'  <->  P[13]='Monte Verità Locarno'  (ratio=0.930, contain=False, reason=ratio>=0.80)
+  - L[12]='United States'  <->  P[14]='United States'  (ratio=1.000, contain=True, reason=exact)
+  - L[14]='Agnieszków'  <->  P[15]='Agnieszków Jagniątków'  (ratio=0.645, contain=True, reason=containment)
+Kendall order: [0, 2, 3, 6, 10, 11, 12, 13, 14, 15]  |  Kendall τ: 1.0000
+Token edit distance: 9  |  edit_similarity: 0.7097
+Item precision=0.6250, recall=0.6667, f1=0.6452
+Unmatched label tokens: ['Village school', 'Realschule', 'Royal Art and Vocational School', 'University of Jena', 'Germany']
+Unmatched pred tokens:  ['Breslau Wrocław', 'Dresden', 'Berlin', 'Rügen', 'Hiddensee', 'Erkner']
+
+=== ID: 070 ===
+Label (raw): ['Clinton, New York', 'Hamilton College', 'New York City', 'United States', 'New York City', 'Washington', 'United States', 'Philippines and Cuba', 'United States', 'New York', 'United States', 'New York', 'United States', 'Russia', 'New York', 'United States', 'Washington', 'The Hague, Netherlands', 'United States', 'New York City']
+Pred  (raw): ['Clinton, New York', 'Washington, D.C.', 'New York City', 'Russia']
+Label (norm): ['Clinton New York', 'Hamilton College', 'New York City', 'United States', 'New York City', 'Washington', 'United States', 'Philippines and Cuba', 'United States', 'New York', 'United States', 'New York', 'United States', 'Russia', 'New York', 'United States', 'Washington', 'The Hague Netherlands', 'United States', 'New York City']
+Pred  (norm): ['Clinton New York', 'Washington D C', 'New York City', 'Russia']
+Matches (4):
+  - L[0]='Clinton New York'  <->  P[0]='Clinton New York'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='New York City'  <->  P[2]='New York City'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Washington'  <->  P[1]='Washington D C'  (ratio=0.833, contain=True, reason=containment)
+  - L[13]='Russia'  <->  P[3]='Russia'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 1, 3]  |  Kendall τ: 0.6667
+Token edit distance: 17  |  edit_similarity: 0.2917
+Item precision=1.0000, recall=0.2000, f1=0.3333
+Unmatched label tokens: ['Hamilton College', 'United States', 'New York City', 'United States', 'Philippines and Cuba', 'United States', 'New York', 'United States', 'New York', 'United States', 'New York', 'United States', 'Washington', 'The Hague Netherlands', 'United States', 'New York City']
+
+=== ID: 071 ===
+Label (raw): ['University of Groningen', 'University of Heidelberg', 'University of Groningen', 'Delft Polytechnic', 'University of Leiden', 'Museum Boerhaave']
+Pred  (raw): ['Groningen, Netherlands', 'University of Groningen', 'University of Heidelberg', 'Delft Polytechnic', 'University of Leiden']
+Label (norm): ['University of Groningen', 'University of Heidelberg', 'University of Groningen', 'Delft Polytechnic', 'University of Leiden', 'Museum Boerhaave']
+Pred  (norm): ['Groningen Netherlands', 'University of Groningen', 'University of Heidelberg', 'Delft Polytechnic', 'University of Leiden']
+Matches (4):
+  - L[0]='University of Groningen'  <->  P[1]='University of Groningen'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Heidelberg'  <->  P[2]='University of Heidelberg'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Delft Polytechnic'  <->  P[3]='Delft Polytechnic'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Leiden'  <->  P[4]='University of Leiden'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 2, 3, 4]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=0.8000, recall=0.6667, f1=0.7273
+Unmatched label tokens: ['University of Groningen', 'Museum Boerhaave']
+Unmatched pred tokens:  ['Groningen Netherlands']
+
+=== ID: 072 ===
+Label (raw): ['Mulhouse, Alsace', 'ETH Zurich', 'Swiss Federal Institute', 'University of Zürich', 'Swiss Federal Institute', 'University of Zurich', 'Switzerland', 'University of Zurich', 'Zurich']
+Pred  (raw): ['Mulhouse, Alsace', 'ETH Zurich', 'University of Zurich', 'Paris', 'Zurich']
+Label (norm): ['Mulhouse Alsace', 'ETH Zurich', 'Swiss Federal Institute', 'University of Zürich', 'Swiss Federal Institute', 'University of Zurich', 'Switzerland', 'University of Zurich', 'Zurich']
+Pred  (norm): ['Mulhouse Alsace', 'ETH Zurich', 'University of Zurich', 'Paris', 'Zurich']
+Matches (4):
+  - L[0]='Mulhouse Alsace'  <->  P[0]='Mulhouse Alsace'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='ETH Zurich'  <->  P[1]='ETH Zurich'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Zürich'  <->  P[2]='University of Zurich'  (ratio=0.950, contain=False, reason=ratio>=0.80)
+  - L[5]='University of Zurich'  <->  P[4]='Zurich'  (ratio=0.462, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 4]  |  Kendall τ: 1.0000
+Token edit distance: 5  |  edit_similarity: 0.6429
+Item precision=0.8000, recall=0.4444, f1=0.5714
+Unmatched label tokens: ['Swiss Federal Institute', 'Swiss Federal Institute', 'Switzerland', 'University of Zurich', 'Zurich']
+Unmatched pred tokens:  ['Paris']
+
+=== ID: 073 ===
+Label (raw): ['Paris', 'Lycee Bonaparte', 'University in Paris', 'Salpêtrière hospital', 'Collège de France', 'French coast of Atlantic Ocean', 'Societé de Biologie', 'Institut Métapsychique International']
+Pred  (raw): ['Paris', 'Salpêtrière hospital, Paris', 'Collège de France, Paris', 'French coast of Atlantic Ocean']
+Label (norm): ['Paris', 'Lycee Bonaparte', 'University in Paris', 'Salpêtrière hospital', 'Collège de France', 'French coast of Atlantic Ocean', 'Societé de Biologie', 'Institut Métapsychique International']
+Pred  (norm): ['Paris', 'Salpêtrière hospital Paris', 'Collège de France Paris', 'French coast of Atlantic Ocean']
+Matches (4):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Salpêtrière hospital'  <->  P[1]='Salpêtrière hospital Paris'  (ratio=0.870, contain=True, reason=containment)
+  - L[4]='Collège de France'  <->  P[2]='Collège de France Paris'  (ratio=0.850, contain=True, reason=containment)
+  - L[5]='French coast of Atlantic Ocean'  <->  P[3]='French coast of Atlantic Ocean'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.6667
+Item precision=1.0000, recall=0.5000, f1=0.6667
+Unmatched label tokens: ['Lycee Bonaparte', 'University in Paris', 'Societé de Biologie', 'Institut Métapsychique International']
+
+=== ID: 074 ===
+Label (raw): ['Jorasanko mansion', 'Santiniketan estate and Amritsar', 'Jorosanko', 'Brighton, East Sussex', 'Bengal', 'Shelaidaha', 'Santiniketan', 'London', 'United States', 'United Kingdom', 'Sylhet', 'Surul', 'Buenos Aires', 'Naples', 'Hungary', 'Southeast Asia', 'Iran', 'Persia and Iraq', 'Sri Lanka', 'Jorasanko mansion']
+Pred  (raw): ['Calcutta', 'Santiniketan', 'Amritsar', 'Dalhousie', 'Brighton, East Sussex, England', 'London', 'Butterton, Staffordshire', 'Mexico', 'Buenos Aires', 'Naples', 'Rome', 'Hungary', 'Balatonfüred', 'Bali', 'Java', 'Kuala Lumpur', 'Malacca', 'Penang', 'Siam', 'Singapore', 'Birmingham', 'Paris', 'Denmark', 'Switzerland', 'Germany', 'Soviet Union', 'Persia', 'Iraq', 'Sri Lanka']
+Label (norm): ['Jorasanko mansion', 'Santiniketan estate and Amritsar', 'Jorosanko', 'Brighton East Sussex', 'Bengal', 'Shelaidaha', 'Santiniketan', 'London', 'United States', 'United Kingdom', 'Sylhet', 'Surul', 'Buenos Aires', 'Naples', 'Hungary', 'Southeast Asia', 'Iran', 'Persia and Iraq', 'Sri Lanka', 'Jorasanko mansion']
+Pred  (norm): ['Calcutta', 'Santiniketan', 'Amritsar', 'Dalhousie', 'Brighton East Sussex England', 'London', 'Butterton Staffordshire', 'Mexico', 'Buenos Aires', 'Naples', 'Rome', 'Hungary', 'Balatonfüred', 'Bali', 'Java', 'Kuala Lumpur', 'Malacca', 'Penang', 'Siam', 'Singapore', 'Birmingham', 'Paris', 'Denmark', 'Switzerland', 'Germany', 'Soviet Union', 'Persia', 'Iraq', 'Sri Lanka']
+Matches (8):
+  - L[1]='Santiniketan estate and Amritsar'  <->  P[1]='Santiniketan'  (ratio=0.545, contain=True, reason=containment)
+  - L[3]='Brighton East Sussex'  <->  P[4]='Brighton East Sussex England'  (ratio=0.833, contain=True, reason=containment)
+  - L[7]='London'  <->  P[5]='London'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Buenos Aires'  <->  P[8]='Buenos Aires'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='Naples'  <->  P[9]='Naples'  (ratio=1.000, contain=True, reason=exact)
+  - L[14]='Hungary'  <->  P[11]='Hungary'  (ratio=1.000, contain=True, reason=exact)
+  - L[17]='Persia and Iraq'  <->  P[26]='Persia'  (ratio=0.571, contain=True, reason=containment)
+  - L[18]='Sri Lanka'  <->  P[28]='Sri Lanka'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 4, 5, 8, 9, 11, 26, 28]  |  Kendall τ: 1.0000
+Token edit distance: 26  |  edit_similarity: 0.4694
+Item precision=0.2759, recall=0.4000, f1=0.3265
+Unmatched label tokens: ['Jorasanko mansion', 'Jorosanko', 'Bengal', 'Shelaidaha', 'Santiniketan', 'United States', 'United Kingdom', 'Sylhet', 'Surul', 'Southeast Asia', 'Iran', 'Jorasanko mansion']
+Unmatched pred tokens:  ['Calcutta', 'Amritsar', 'Dalhousie', 'Butterton Staffordshire', 'Mexico', 'Rome', 'Balatonfüred', 'Bali', 'Java', 'Kuala Lumpur', 'Malacca', 'Penang', 'Siam', 'Singapore', 'Birmingham', 'Paris', 'Denmark', 'Switzerland', 'Germany', 'Soviet Union', 'Iraq']
+
+=== ID: 075 ===
+Label (raw): ['Brussels', 'Free University of Brussels', 'Belgium', 'Free University of Brussels', 'Belgian Senate', 'International Peace Bureau', 'Belgian Senate', 'Paris', 'World Congress of Universal Documentation', 'Les Amis Philanthropes', 'Brussels']
+Pred  (raw): ['Brussels', 'Free University of Brussels', 'The Hague', 'Paris', 'League of Nations Assembly']
+Label (norm): ['Brussels', 'Free University of Brussels', 'Belgium', 'Free University of Brussels', 'Belgian Senate', 'International Peace Bureau', 'Belgian Senate', 'Paris', 'World Congress of Universal Documentation', 'Les Amis Philanthropes', 'Brussels']
+Pred  (norm): ['Brussels', 'Free University of Brussels', 'The Hague', 'Paris', 'League of Nations Assembly']
+Matches (3):
+  - L[0]='Brussels'  <->  P[0]='Brussels'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Free University of Brussels'  <->  P[1]='Free University of Brussels'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Paris'  <->  P[3]='Paris'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 3]  |  Kendall τ: 1.0000
+Token edit distance: 8  |  edit_similarity: 0.5000
+Item precision=0.6000, recall=0.2727, f1=0.3750
+Unmatched label tokens: ['Belgium', 'Free University of Brussels', 'Belgian Senate', 'International Peace Bureau', 'Belgian Senate', 'World Congress of Universal Documentation', 'Les Amis Philanthropes', 'Brussels']
+Unmatched pred tokens:  ['The Hague', 'League of Nations Assembly']
+
+=== ID: 076 ===
+Label (raw): ['Pfaffendorf', 'Strassburg', 'University of Strassburg', 'Friedrich-Wilhelms-University of Berlin', 'Ludwig Maximilian University of Munich (LMU)', 'Berlin', 'University of Zurich', 'University of Frankfurt', 'University of Berlin', 'Kaiser-Wilhelm Institut für Physik', 'University of Berlin', 'Hechingen', 'Kaiser-Wilhelm Institut für Physik (KWIP)', 'Göttingen', 'Max-Planck Institut für physikalische Chemie und Elektrochemie', 'Ludwig Maximilian University of Munich (LMU)', 'Berlin']
+Pred  (raw): ['Pfaffendorf', 'Strassburg', 'University of Göttingen', 'Ludwig Maximilian University of Munich', 'Friedrich-Wilhelms-University of Berlin', 'University of Zurich', 'University of Frankfurt', 'University of Würzburg', 'University of Berlin', 'Berlin-Dahlem', 'Hechingen', 'Huntingdon, England', 'Farm Hall', 'Göttingen', 'London', 'Braunschweig']
+Label (norm): ['Pfaffendorf', 'Strassburg', 'University of Strassburg', 'Friedrich-Wilhelms-University of Berlin', 'Ludwig Maximilian University of Munich LMU', 'Berlin', 'University of Zurich', 'University of Frankfurt', 'University of Berlin', 'Kaiser-Wilhelm Institut für Physik', 'University of Berlin', 'Hechingen', 'Kaiser-Wilhelm Institut für Physik KWIP', 'Göttingen', 'Max-Planck Institut für physikalische Chemie und Elektrochemie', 'Ludwig Maximilian University of Munich LMU', 'Berlin']
+Pred  (norm): ['Pfaffendorf', 'Strassburg', 'University of Göttingen', 'Ludwig Maximilian University of Munich', 'Friedrich-Wilhelms-University of Berlin', 'University of Zurich', 'University of Frankfurt', 'University of Würzburg', 'University of Berlin', 'Berlin-Dahlem', 'Hechingen', 'Huntingdon England', 'Farm Hall', 'Göttingen', 'London', 'Braunschweig']
+Matches (11):
+  - L[0]='Pfaffendorf'  <->  P[0]='Pfaffendorf'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Strassburg'  <->  P[1]='Strassburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Strassburg'  <->  P[7]='University of Würzburg'  (ratio=0.826, contain=False, reason=ratio>=0.80)
+  - L[3]='Friedrich-Wilhelms-University of Berlin'  <->  P[4]='Friedrich-Wilhelms-University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Ludwig Maximilian University of Munich LMU'  <->  P[3]='Ludwig Maximilian University of Munich'  (ratio=0.950, contain=True, reason=containment)
+  - L[5]='Berlin'  <->  P[8]='University of Berlin'  (ratio=0.462, contain=True, reason=containment)
+  - L[6]='University of Zurich'  <->  P[5]='University of Zurich'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='University of Frankfurt'  <->  P[6]='University of Frankfurt'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Hechingen'  <->  P[10]='Hechingen'  (ratio=1.000, contain=True, reason=exact)
+  - L[13]='Göttingen'  <->  P[2]='University of Göttingen'  (ratio=0.562, contain=True, reason=containment)
+  - L[16]='Berlin'  <->  P[9]='Berlin-Dahlem'  (ratio=0.632, contain=True, reason=containment)
+Kendall order: [0, 1, 7, 4, 3, 8, 5, 6, 10, 2, 9]  |  Kendall τ: 0.4545
+Token edit distance: 11  |  edit_similarity: 0.6667
+Item precision=0.6875, recall=0.6471, f1=0.6667
+Unmatched label tokens: ['University of Berlin', 'Kaiser-Wilhelm Institut für Physik', 'University of Berlin', 'Kaiser-Wilhelm Institut für Physik KWIP', 'Max-Planck Institut für physikalische Chemie und Elektrochemie', 'Ludwig Maximilian University of Munich LMU']
+Unmatched pred tokens:  ['Huntingdon England', 'Farm Hall', 'Göttingen', 'London', 'Braunschweig']
+
+=== ID: 077 ===
+Label (raw): ['Germantown', 'Newport', 'Europe', 'Haverford College', 'Harvard University', 'University of Göttingen', 'Harvard University', 'Wolcott Gibbs Memorial Laboratory', 'Cambridge']
+Pred  (raw): ['Germantown, Pennsylvania', 'Newport, Rhode Island', 'Europe', 'England', 'Haverford College, Pennsylvania', 'Harvard University', 'University of Göttingen, Germany', 'Cambridge, Massachusetts']
+Label (norm): ['Germantown', 'Newport', 'Europe', 'Haverford College', 'Harvard University', 'University of Göttingen', 'Harvard University', 'Wolcott Gibbs Memorial Laboratory', 'Cambridge']
+Pred  (norm): ['Germantown Pennsylvania', 'Newport Rhode Island', 'Europe', 'England', 'Haverford College Pennsylvania', 'Harvard University', 'University of Göttingen Germany', 'Cambridge Massachusetts']
+Matches (7):
+  - L[0]='Germantown'  <->  P[0]='Germantown Pennsylvania'  (ratio=0.606, contain=True, reason=containment)
+  - L[1]='Newport'  <->  P[1]='Newport Rhode Island'  (ratio=0.519, contain=True, reason=containment)
+  - L[2]='Europe'  <->  P[2]='Europe'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Haverford College'  <->  P[4]='Haverford College Pennsylvania'  (ratio=0.723, contain=True, reason=containment)
+  - L[4]='Harvard University'  <->  P[5]='Harvard University'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Göttingen'  <->  P[6]='University of Göttingen Germany'  (ratio=0.852, contain=True, reason=containment)
+  - L[8]='Cambridge'  <->  P[7]='Cambridge Massachusetts'  (ratio=0.562, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 4, 5, 6, 7]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.8235
+Item precision=0.8750, recall=0.7778, f1=0.8235
+Unmatched label tokens: ['Harvard University', 'Wolcott Gibbs Memorial Laboratory']
+Unmatched pred tokens:  ['England']
+
+=== ID: 078 ===
+Label (raw): ['Vienna, Austria-Hungary', 'Vienna University', 'Vienna', 'Russian prisoner of war camp', 'Uppsala University Faculty of Medicine', 'Uppsala']
+Pred  (raw): ['Vienna, Austria-Hungary', 'Russian prisoner of war camp', 'Nobel Prize awards ceremony', 'Uppsala University Faculty of Medicine']
+Label (norm): ['Vienna Austria-Hungary', 'Vienna University', 'Vienna', 'Russian prisoner of war camp', 'Uppsala University Faculty of Medicine', 'Uppsala']
+Pred  (norm): ['Vienna Austria-Hungary', 'Russian prisoner of war camp', 'Nobel Prize awards ceremony', 'Uppsala University Faculty of Medicine']
+Matches (3):
+  - L[0]='Vienna Austria-Hungary'  <->  P[0]='Vienna Austria-Hungary'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Russian prisoner of war camp'  <->  P[1]='Russian prisoner of war camp'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Uppsala University Faculty of Medicine'  <->  P[3]='Uppsala University Faculty of Medicine'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 3]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.6000
+Item precision=0.7500, recall=0.5000, f1=0.6000
+Unmatched label tokens: ['Vienna University', 'Vienna', 'Uppsala']
+Unmatched pred tokens:  ['Nobel Prize awards ceremony']
+
+=== ID: 079 ===
+Label (raw): ['Westward, near Wigton, Cumberland, England', 'Market Harborough, Leicestershire', 'Trinity College, Cambridge', 'University of Adelaide, Australia', 'Adelaide', 'University of Adelaide, Australia', 'Great Britain and Europe', 'Dunedin, New Zealand', 'England', 'University of Leeds', 'University College London', 'Aberdour Scotland', 'Admiralty', 'University College London', 'Royal Institution', 'Royal Society']
+Pred  (raw): ['Westward, near Wigton, Cumberland, England', 'Market Harborough, Leicestershire', "King William's College, Isle of Man", 'Trinity College, Cambridge', 'University of Adelaide, Australia', 'Great Britain and Europe', 'University of Leeds', 'University College London', 'Aberdour, Scotland', 'Harwich', 'Royal Institution, London']
+Label (norm): ['Westward near Wigton Cumberland England', 'Market Harborough Leicestershire', 'Trinity College Cambridge', 'University of Adelaide Australia', 'Adelaide', 'University of Adelaide Australia', 'Great Britain and Europe', 'Dunedin New Zealand', 'England', 'University of Leeds', 'University College London', 'Aberdour Scotland', 'Admiralty', 'University College London', 'Royal Institution', 'Royal Society']
+Pred  (norm): ['Westward near Wigton Cumberland England', 'Market Harborough Leicestershire', "King William's College Isle of Man", 'Trinity College Cambridge', 'University of Adelaide Australia', 'Great Britain and Europe', 'University of Leeds', 'University College London', 'Aberdour Scotland', 'Harwich', 'Royal Institution London']
+Matches (9):
+  - L[0]='Westward near Wigton Cumberland England'  <->  P[0]='Westward near Wigton Cumberland England'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Market Harborough Leicestershire'  <->  P[1]='Market Harborough Leicestershire'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Trinity College Cambridge'  <->  P[3]='Trinity College Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Adelaide Australia'  <->  P[4]='University of Adelaide Australia'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Great Britain and Europe'  <->  P[5]='Great Britain and Europe'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='University of Leeds'  <->  P[6]='University of Leeds'  (ratio=1.000, contain=True, reason=exact)
+  - L[10]='University College London'  <->  P[7]='University College London'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='Aberdour Scotland'  <->  P[8]='Aberdour Scotland'  (ratio=1.000, contain=True, reason=exact)
+  - L[14]='Royal Institution'  <->  P[10]='Royal Institution London'  (ratio=0.829, contain=True, reason=containment)
+Kendall order: [0, 1, 3, 4, 5, 6, 7, 8, 10]  |  Kendall τ: 1.0000
+Token edit distance: 8  |  edit_similarity: 0.7037
+Item precision=0.8182, recall=0.5625, f1=0.6667
+Unmatched label tokens: ['Adelaide', 'University of Adelaide Australia', 'Dunedin New Zealand', 'England', 'Admiralty', 'University College London', 'Royal Society']
+Unmatched pred tokens:  ["King William's College Isle of Man", 'Harwich']
+
+=== ID: 080 ===
+Label (raw): ["Queen's School, North Adelaide", 'University of Adelaide', 'Trinity College, Cambridge', 'Victoria University of Manchester', 'National Physical Laboratory in Teddington', 'Cambridge', 'Cavendish Laboratory, Cambridge', 'Royal Institution in London', 'Waldringfield, Ipswich, Suffolk', 'Trinity College, Cambridge']
+Pred  (raw): ['Adelaide, South Australia', 'North Adelaide', "St Peter's College, Adelaide", 'University of Adelaide', 'University of Leeds, England', 'Trinity College, Cambridge', 'Cavendish Laboratory, Cambridge', 'Royal Engineers, Leicestershire battery', 'Victoria University of Manchester', 'National Physical Laboratory, Teddington', 'Munich', 'Royal Institution, London', 'Waldringfield, Ipswich, Suffolk']
+Label (norm): ["Queen's School North Adelaide", 'University of Adelaide', 'Trinity College Cambridge', 'Victoria University of Manchester', 'National Physical Laboratory in Teddington', 'Cambridge', 'Cavendish Laboratory Cambridge', 'Royal Institution in London', 'Waldringfield Ipswich Suffolk', 'Trinity College Cambridge']
+Pred  (norm): ['Adelaide South Australia', 'North Adelaide', "St Peter's College Adelaide", 'University of Adelaide', 'University of Leeds England', 'Trinity College Cambridge', 'Cavendish Laboratory Cambridge', 'Royal Engineers Leicestershire battery', 'Victoria University of Manchester', 'National Physical Laboratory Teddington', 'Munich', 'Royal Institution London', 'Waldringfield Ipswich Suffolk']
+Matches (8):
+  - L[0]='Queen's School North Adelaide'  <->  P[1]='North Adelaide'  (ratio=0.651, contain=True, reason=containment)
+  - L[1]='University of Adelaide'  <->  P[3]='University of Adelaide'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Trinity College Cambridge'  <->  P[5]='Trinity College Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Victoria University of Manchester'  <->  P[8]='Victoria University of Manchester'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='National Physical Laboratory in Teddington'  <->  P[9]='National Physical Laboratory Teddington'  (ratio=0.963, contain=False, reason=ratio>=0.80)
+  - L[5]='Cambridge'  <->  P[6]='Cavendish Laboratory Cambridge'  (ratio=0.462, contain=True, reason=containment)
+  - L[7]='Royal Institution in London'  <->  P[11]='Royal Institution London'  (ratio=0.941, contain=False, reason=ratio>=0.80)
+  - L[8]='Waldringfield Ipswich Suffolk'  <->  P[12]='Waldringfield Ipswich Suffolk'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [1, 3, 5, 8, 9, 6, 11, 12]  |  Kendall τ: 0.8571
+Token edit distance: 8  |  edit_similarity: 0.6522
+Item precision=0.6154, recall=0.8000, f1=0.6957
+Unmatched label tokens: ['Cavendish Laboratory Cambridge', 'Trinity College Cambridge']
+Unmatched pred tokens:  ['Adelaide South Australia', "St Peter's College Adelaide", 'University of Leeds England', 'Royal Engineers Leicestershire battery', 'Munich']
+
+=== ID: 081 ===
+Label (raw): ['Karlsruhe', 'Karlsruhe Gymnasium', 'Technical School', 'University of Munich', 'ETH Zürich', 'University of Berlin', 'Munich', 'Germany', 'Switzerland', 'Muralto']
+Pred  (raw): ['Karlsruhe', 'Nuremberg', 'University of Munich', 'ETH Zürich', 'University of Berlin', 'Dahlem', 'Munich', 'Switzerland', 'Muralto']
+Label (norm): ['Karlsruhe', 'Karlsruhe Gymnasium', 'Technical School', 'University of Munich', 'ETH Zürich', 'University of Berlin', 'Munich', 'Germany', 'Switzerland', 'Muralto']
+Pred  (norm): ['Karlsruhe', 'Nuremberg', 'University of Munich', 'ETH Zürich', 'University of Berlin', 'Dahlem', 'Munich', 'Switzerland', 'Muralto']
+Matches (7):
+  - L[0]='Karlsruhe'  <->  P[0]='Karlsruhe'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Munich'  <->  P[2]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='ETH Zürich'  <->  P[3]='ETH Zürich'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Berlin'  <->  P[4]='University of Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Munich'  <->  P[6]='Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Switzerland'  <->  P[7]='Switzerland'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Muralto'  <->  P[8]='Muralto'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2, 3, 4, 6, 7, 8]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.7895
+Item precision=0.7778, recall=0.7000, f1=0.7368
+Unmatched label tokens: ['Karlsruhe Gymnasium', 'Technical School', 'Germany']
+Unmatched pred tokens:  ['Nuremberg', 'Dahlem']
+
+=== ID: 082 ===
+Label (raw): ['Clamecy, Nièvre', 'École normale supérieure', 'Rome', 'France', 'École des Hautes Études Sociales', 'Sorbonne', 'French Institute in Florence', 'Moscow', 'Vézelay']
+Pred  (raw): ['Clamecy, Nièvre', 'École normale supérieure', 'Rome', 'Paris', 'Florence', 'Switzerland', 'Moscow', 'Villeneuve', 'Vézelay']
+Label (norm): ['Clamecy Nièvre', 'École normale supérieure', 'Rome', 'France', 'École des Hautes Études Sociales', 'Sorbonne', 'French Institute in Florence', 'Moscow', 'Vézelay']
+Pred  (norm): ['Clamecy Nièvre', 'École normale supérieure', 'Rome', 'Paris', 'Florence', 'Switzerland', 'Moscow', 'Villeneuve', 'Vézelay']
+Matches (6):
+  - L[0]='Clamecy Nièvre'  <->  P[0]='Clamecy Nièvre'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='École normale supérieure'  <->  P[1]='École normale supérieure'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Rome'  <->  P[2]='Rome'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='French Institute in Florence'  <->  P[4]='Florence'  (ratio=0.444, contain=True, reason=containment)
+  - L[7]='Moscow'  <->  P[6]='Moscow'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Vézelay'  <->  P[8]='Vézelay'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 4, 6, 8]  |  Kendall τ: 1.0000
+Token edit distance: 5  |  edit_similarity: 0.7222
+Item precision=0.6667, recall=0.6667, f1=0.6667
+Unmatched label tokens: ['France', 'École des Hautes Études Sociales', 'Sorbonne']
+Unmatched pred tokens:  ['Paris', 'Switzerland', 'Villeneuve']
+
+=== ID: 083 ===
+Label (raw): ['Olshammar', 'Beskowska skolan', 'Academy of Stockholm', 'Europe, Africa and the Orient', 'Övralid']
+Pred  (raw): ['Olshammar', 'Stockholm', 'Europe', 'Africa', 'Orient', 'Övralid']
+Label (norm): ['Olshammar', 'Beskowska skolan', 'Academy of Stockholm', 'Europe Africa and the Orient', 'Övralid']
+Pred  (norm): ['Olshammar', 'Stockholm', 'Europe', 'Africa', 'Orient', 'Övralid']
+Matches (4):
+  - L[0]='Olshammar'  <->  P[0]='Olshammar'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Academy of Stockholm'  <->  P[1]='Stockholm'  (ratio=0.621, contain=True, reason=containment)
+  - L[3]='Europe Africa and the Orient'  <->  P[2]='Europe'  (ratio=0.353, contain=True, reason=containment)
+  - L[4]='Övralid'  <->  P[5]='Övralid'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 5]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.7273
+Item precision=0.6667, recall=0.8000, f1=0.7273
+Unmatched label tokens: ['Beskowska skolan']
+Unmatched pred tokens:  ['Africa', 'Orient']
+
+=== ID: 084 ===
+Label (raw): ['Widnes', 'Liverpool Institute', 'Liverpool University', 'Trinity College, Cambridge', 'Cavendish Laboratory', "King's College, Cambridge", 'University of Edinburgh', 'Hermitage of Braid', 'Edinburgh']
+Pred  (raw): ['Widnes, England', 'Liverpool Institute', 'Liverpool University', 'Trinity College, Cambridge', "King's College, Cambridge", 'University of Edinburgh', 'Hermitage of Braid, Edinburgh']
+Label (norm): ['Widnes', 'Liverpool Institute', 'Liverpool University', 'Trinity College Cambridge', 'Cavendish Laboratory', "King's College Cambridge", 'University of Edinburgh', 'Hermitage of Braid', 'Edinburgh']
+Pred  (norm): ['Widnes England', 'Liverpool Institute', 'Liverpool University', 'Trinity College Cambridge', "King's College Cambridge", 'University of Edinburgh', 'Hermitage of Braid Edinburgh']
+Matches (7):
+  - L[0]='Widnes'  <->  P[0]='Widnes England'  (ratio=0.600, contain=True, reason=containment)
+  - L[1]='Liverpool Institute'  <->  P[1]='Liverpool Institute'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Liverpool University'  <->  P[2]='Liverpool University'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Trinity College Cambridge'  <->  P[3]='Trinity College Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='King's College Cambridge'  <->  P[4]='King's College Cambridge'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='University of Edinburgh'  <->  P[5]='University of Edinburgh'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Hermitage of Braid'  <->  P[6]='Hermitage of Braid Edinburgh'  (ratio=0.783, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 4, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 2  |  edit_similarity: 0.8750
+Item precision=1.0000, recall=0.7778, f1=0.8750
+Unmatched label tokens: ['Cavendish Laboratory', 'Edinburgh']
+
+=== ID: 085 ===
+Label (raw): ['Zealand', 'Germany', 'Zealand', 'Germany', 'Denmark', 'Thailand']
+Pred  (raw): ['Zealand', 'Germany', 'India']
+Label (norm): ['Zealand', 'Germany', 'Zealand', 'Germany', 'Denmark', 'Thailand']
+Pred  (norm): ['Zealand', 'Germany', 'India']
+Matches (2):
+  - L[0]='Zealand'  <->  P[0]='Zealand'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Germany'  <->  P[1]='Germany'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.5556
+Item precision=0.6667, recall=0.3333, f1=0.4444
+Unmatched label tokens: ['Zealand', 'Germany', 'Denmark', 'Thailand']
+Unmatched pred tokens:  ['India']
+
+=== ID: 086 ===
+Label (raw): ['Denmark', 'Polyteknisk Læreanstalt', 'Rørvig Kirke cemetery']
+Pred  (raw): ['Jutland', 'Zealand', 'Rørvig Kirke']
+Label (norm): ['Denmark', 'Polyteknisk Læreanstalt', 'Rørvig Kirke cemetery']
+Pred  (norm): ['Jutland', 'Zealand', 'Rørvig Kirke']
+Matches (1):
+  - L[2]='Rørvig Kirke cemetery'  <->  P[2]='Rørvig Kirke'  (ratio=0.727, contain=True, reason=containment)
+Kendall order: [2]  |  Kendall τ: 0.0000
+Token edit distance: 2  |  edit_similarity: 0.6667
+Item precision=0.3333, recall=0.3333, f1=0.3333
+Unmatched label tokens: ['Denmark', 'Polyteknisk Læreanstalt']
+Unmatched pred tokens:  ['Jutland', 'Zealand']
+
+=== ID: 087 ===
+Label (raw): ['Kiel, Holstein', 'Munich', 'University of Munich', 'Friedrich Wilhelms University in Berlin', 'University of Kiel', 'Kiel', 'Friedrich-Wilhelms-Universität in Berlin', 'Germany', 'Vienna', 'Columbia University in New York City', 'Berlin University', 'Germany', 'Berlin', "Berlin's Plötzensee Prison", 'Germany', 'Göttingen']
+Pred  (raw): ['Kiel, Holstein', 'Munich', 'University of Munich', 'Friedrich Wilhelms University, Berlin', 'Columbia University, New York City', 'Berlin-Grunewald', 'Göttingen']
+Label (norm): ['Kiel Holstein', 'Munich', 'University of Munich', 'Friedrich Wilhelms University in Berlin', 'University of Kiel', 'Kiel', 'Friedrich-Wilhelms-Universität in Berlin', 'Germany', 'Vienna', 'Columbia University in New York City', 'Berlin University', 'Germany', 'Berlin', "Berlin's Plötzensee Prison", 'Germany', 'Göttingen']
+Pred  (norm): ['Kiel Holstein', 'Munich', 'University of Munich', 'Friedrich Wilhelms University Berlin', 'Columbia University New York City', 'Berlin-Grunewald', 'Göttingen']
+Matches (7):
+  - L[0]='Kiel Holstein'  <->  P[0]='Kiel Holstein'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Munich'  <->  P[1]='Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Munich'  <->  P[2]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Friedrich Wilhelms University in Berlin'  <->  P[3]='Friedrich Wilhelms University Berlin'  (ratio=0.960, contain=False, reason=ratio>=0.80)
+  - L[9]='Columbia University in New York City'  <->  P[4]='Columbia University New York City'  (ratio=0.957, contain=False, reason=ratio>=0.80)
+  - L[12]='Berlin'  <->  P[5]='Berlin-Grunewald'  (ratio=0.545, contain=True, reason=containment)
+  - L[15]='Göttingen'  <->  P[6]='Göttingen'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 6]  |  Kendall τ: 1.0000
+Token edit distance: 9  |  edit_similarity: 0.6087
+Item precision=1.0000, recall=0.4375, f1=0.6087
+Unmatched label tokens: ['University of Kiel', 'Kiel', 'Friedrich-Wilhelms-Universität in Berlin', 'Germany', 'Vienna', 'Berlin University', 'Germany', "Berlin's Plötzensee Prison", 'Germany']
+
+=== ID: 088 ===
+Label (raw): ['Breslau, Kingdom of Prussia', 'Friedrich Wilhelm University', 'Heidelberg University', 'Friedrich Wilhelm University', 'University of Jena', 'University of Karlsruhe', 'Kaiser Wilhelm Institute for Physical Chemistry and Electrochemistry', 'Second Battle of Ypres', 'Germany', 'Japan', 'Germany', 'Kaiser Wilhelm Institute', 'Cambridge', 'Sieff Research Institute', 'Basel']
+Pred  (raw): ['Breslau, Kingdom of Prussia (now Wrocław, Poland)', 'Berlin, Germany', 'Heidelberg, Germany', 'Charlottenburg, Germany', 'Budapest, Hungary', 'Austria', 'Zürich, Switzerland', 'Jena, Germany', 'Karlsruhe, Germany', 'Silesia', 'Saxony', 'Ypres, Belgium', 'Japan', 'Paris, France', 'Spain', 'Switzerland', 'Cambridge, England', 'Basel, Switzerland']
+Label (norm): ['Breslau Kingdom of Prussia', 'Friedrich Wilhelm University', 'Heidelberg University', 'Friedrich Wilhelm University', 'University of Jena', 'University of Karlsruhe', 'Kaiser Wilhelm Institute for Physical Chemistry and Electrochemistry', 'Second Battle of Ypres', 'Germany', 'Japan', 'Germany', 'Kaiser Wilhelm Institute', 'Cambridge', 'Sieff Research Institute', 'Basel']
+Pred  (norm): ['Breslau Kingdom of Prussia now Wrocław Poland', 'Berlin Germany', 'Heidelberg Germany', 'Charlottenburg Germany', 'Budapest Hungary', 'Austria', 'Zürich Switzerland', 'Jena Germany', 'Karlsruhe Germany', 'Silesia', 'Saxony', 'Ypres Belgium', 'Japan', 'Paris France', 'Spain', 'Switzerland', 'Cambridge England', 'Basel Switzerland']
+Matches (6):
+  - L[0]='Breslau Kingdom of Prussia'  <->  P[0]='Breslau Kingdom of Prussia now Wrocław Poland'  (ratio=0.732, contain=True, reason=containment)
+  - L[8]='Germany'  <->  P[1]='Berlin Germany'  (ratio=0.667, contain=True, reason=containment)
+  - L[9]='Japan'  <->  P[12]='Japan'  (ratio=1.000, contain=True, reason=exact)
+  - L[10]='Germany'  <->  P[2]='Heidelberg Germany'  (ratio=0.560, contain=True, reason=containment)
+  - L[12]='Cambridge'  <->  P[16]='Cambridge England'  (ratio=0.692, contain=True, reason=containment)
+  - L[14]='Basel'  <->  P[17]='Basel Switzerland'  (ratio=0.455, contain=True, reason=containment)
+Kendall order: [0, 1, 12, 2, 16, 17]  |  Kendall τ: 0.8667
+Token edit distance: 15  |  edit_similarity: 0.5455
+Item precision=0.3333, recall=0.4000, f1=0.3636
+Unmatched label tokens: ['Friedrich Wilhelm University', 'Heidelberg University', 'Friedrich Wilhelm University', 'University of Jena', 'University of Karlsruhe', 'Kaiser Wilhelm Institute for Physical Chemistry and Electrochemistry', 'Second Battle of Ypres', 'Kaiser Wilhelm Institute', 'Sieff Research Institute']
+Unmatched pred tokens:  ['Charlottenburg Germany', 'Budapest Hungary', 'Austria', 'Zürich Switzerland', 'Jena Germany', 'Karlsruhe Germany', 'Silesia', 'Saxony', 'Ypres Belgium', 'Paris France', 'Spain', 'Switzerland']
+
+=== ID: 089 ===
+Label (raw): ['Schickenhof, Kingdom of Bavaria (now Freihung)', 'University of Munich', 'University of Göttingen', 'Hannover', 'RWTH Aachen University', 'University of Greifswald', 'University of Würzburg', 'German Research Foundation', 'Physikalisch-Technische Reichsanstalt', 'Gut Eppenstatt near Traunstein in Upper Bavaria']
+Pred  (raw): ['Schickenhof, Kingdom of Bavaria (now Freihung)', 'Bayreuth Gymnasium', 'Regensburg', 'University of Munich', 'University of Göttingen', 'Leibniz University Hannover', 'RWTH Aachen University', 'University of Greifswald', 'University of Würzburg', 'Gut Eppenstatt near Traunstein in Upper Bavaria', 'Schönau am Königssee']
+Label (norm): ['Schickenhof Kingdom of Bavaria now Freihung', 'University of Munich', 'University of Göttingen', 'Hannover', 'RWTH Aachen University', 'University of Greifswald', 'University of Würzburg', 'German Research Foundation', 'Physikalisch-Technische Reichsanstalt', 'Gut Eppenstatt near Traunstein in Upper Bavaria']
+Pred  (norm): ['Schickenhof Kingdom of Bavaria now Freihung', 'Bayreuth Gymnasium', 'Regensburg', 'University of Munich', 'University of Göttingen', 'Leibniz University Hannover', 'RWTH Aachen University', 'University of Greifswald', 'University of Würzburg', 'Gut Eppenstatt near Traunstein in Upper Bavaria', 'Schönau am Königssee']
+Matches (8):
+  - L[0]='Schickenhof Kingdom of Bavaria now Freihung'  <->  P[0]='Schickenhof Kingdom of Bavaria now Freihung'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Munich'  <->  P[3]='University of Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Göttingen'  <->  P[4]='University of Göttingen'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Hannover'  <->  P[5]='Leibniz University Hannover'  (ratio=0.457, contain=True, reason=containment)
+  - L[4]='RWTH Aachen University'  <->  P[6]='RWTH Aachen University'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='University of Greifswald'  <->  P[7]='University of Greifswald'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='University of Würzburg'  <->  P[8]='University of Würzburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Gut Eppenstatt near Traunstein in Upper Bavaria'  <->  P[9]='Gut Eppenstatt near Traunstein in Upper Bavaria'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 3, 4, 5, 6, 7, 8, 9]  |  Kendall τ: 1.0000
+Token edit distance: 5  |  edit_similarity: 0.7619
+Item precision=0.7273, recall=0.8000, f1=0.7619
+Unmatched label tokens: ['German Research Foundation', 'Physikalisch-Technische Reichsanstalt']
+Unmatched pred tokens:  ['Bayreuth Gymnasium', 'Regensburg', 'Schönau am Königssee']
+
+=== ID: 090 ===
+Label (raw): ['Soignies', 'Free University of Brussels', 'Pasteur Institute in Paris', 'Brussels', 'Université Libre de Bruxelles']
+Pred  (raw): ['Soignies, Belgium', 'Free University of Brussels', 'Pasteur Institute in Paris', 'Brussels']
+Label (norm): ['Soignies', 'Free University of Brussels', 'Pasteur Institute in Paris', 'Brussels', 'Université Libre de Bruxelles']
+Pred  (norm): ['Soignies Belgium', 'Free University of Brussels', 'Pasteur Institute in Paris', 'Brussels']
+Matches (4):
+  - L[0]='Soignies'  <->  P[0]='Soignies Belgium'  (ratio=0.667, contain=True, reason=containment)
+  - L[1]='Free University of Brussels'  <->  P[1]='Free University of Brussels'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Pasteur Institute in Paris'  <->  P[2]='Pasteur Institute in Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Brussels'  <->  P[3]='Brussels'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.8889
+Item precision=1.0000, recall=0.8000, f1=0.8889
+Unmatched label tokens: ['Université Libre de Bruxelles']
+
+=== ID: 091 ===
+Label (raw): ['Liestal', 'Basel', 'University of Zurich', 'University of Zurich, Heidelberg, Basel', 'Russia', 'Russia, Finland', 'Bern, La Neuveville', 'Basel', 'Lucerne']
+Pred  (raw): ['Liestal', 'Basel', 'University of Zurich', 'Heidelberg', 'Russia', 'Finland', 'Bern', 'La Neuveville', 'Lucerne']
+Label (norm): ['Liestal', 'Basel', 'University of Zurich', 'University of Zurich Heidelberg Basel', 'Russia', 'Russia Finland', 'Bern La Neuveville', 'Basel', 'Lucerne']
+Pred  (norm): ['Liestal', 'Basel', 'University of Zurich', 'Heidelberg', 'Russia', 'Finland', 'Bern', 'La Neuveville', 'Lucerne']
+Matches (8):
+  - L[0]='Liestal'  <->  P[0]='Liestal'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Basel'  <->  P[1]='Basel'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='University of Zurich'  <->  P[2]='University of Zurich'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='University of Zurich Heidelberg Basel'  <->  P[3]='Heidelberg'  (ratio=0.426, contain=True, reason=containment)
+  - L[4]='Russia'  <->  P[4]='Russia'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Russia Finland'  <->  P[5]='Finland'  (ratio=0.667, contain=True, reason=containment)
+  - L[6]='Bern La Neuveville'  <->  P[6]='Bern'  (ratio=0.364, contain=True, reason=containment)
+  - L[8]='Lucerne'  <->  P[8]='Lucerne'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 5, 6, 8]  |  Kendall τ: 1.0000
+Token edit distance: 1  |  edit_similarity: 0.9444
+Item precision=0.8889, recall=0.8889, f1=0.8889
+Unmatched label tokens: ['Basel']
+Unmatched pred tokens:  ['La Neuveville']
+
+=== ID: 092 ===
+Label (raw): ['Staunton, Virginia', 'Augusta, Georgia', 'Davidson College', 'College of New Jersey', 'University of Virginia School of Law', 'Atlanta', 'Johns Hopkins University', 'Bryn Mawr College', 'Wesleyan University', 'College of New Jersey', 'Princeton University', 'New Jersey', 'United States', 'Washington National Cathedral']
+Pred  (raw): ['Staunton, Virginia', 'Augusta, Georgia', 'Columbia, South Carolina', 'Davidson, North Carolina', 'Princeton, New Jersey', 'Charlottesville, Virginia', 'Wilmington, North Carolina', 'Atlanta, Georgia', 'Baltimore, Maryland', 'Bryn Mawr, Pennsylvania', 'Middletown, Connecticut', 'Bermuda', 'Paris, France']
+Label (norm): ['Staunton Virginia', 'Augusta Georgia', 'Davidson College', 'College of New Jersey', 'University of Virginia School of Law', 'Atlanta', 'Johns Hopkins University', 'Bryn Mawr College', 'Wesleyan University', 'College of New Jersey', 'Princeton University', 'New Jersey', 'United States', 'Washington National Cathedral']
+Pred  (norm): ['Staunton Virginia', 'Augusta Georgia', 'Columbia South Carolina', 'Davidson North Carolina', 'Princeton New Jersey', 'Charlottesville Virginia', 'Wilmington North Carolina', 'Atlanta Georgia', 'Baltimore Maryland', 'Bryn Mawr Pennsylvania', 'Middletown Connecticut', 'Bermuda', 'Paris France']
+Matches (4):
+  - L[0]='Staunton Virginia'  <->  P[0]='Staunton Virginia'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Augusta Georgia'  <->  P[1]='Augusta Georgia'  (ratio=1.000, contain=True, reason=exact)
+  - L[5]='Atlanta'  <->  P[7]='Atlanta Georgia'  (ratio=0.636, contain=True, reason=containment)
+  - L[11]='New Jersey'  <->  P[4]='Princeton New Jersey'  (ratio=0.667, contain=True, reason=containment)
+Kendall order: [0, 1, 7, 4]  |  Kendall τ: 0.6667
+Token edit distance: 12  |  edit_similarity: 0.5556
+Item precision=0.3077, recall=0.2857, f1=0.2963
+Unmatched label tokens: ['Davidson College', 'College of New Jersey', 'University of Virginia School of Law', 'Johns Hopkins University', 'Bryn Mawr College', 'Wesleyan University', 'College of New Jersey', 'Princeton University', 'United States', 'Washington National Cathedral']
+Unmatched pred tokens:  ['Columbia South Carolina', 'Davidson North Carolina', 'Charlottesville Virginia', 'Wilmington North Carolina', 'Baltimore Maryland', 'Bryn Mawr Pennsylvania', 'Middletown Connecticut', 'Bermuda', 'Paris France']
+
+=== ID: 093 ===
+Label (raw): ['Fleurier', 'Neuchâtel', 'ETH Zurich', 'International Bureau of Weights and Measures', 'Observatoire de Paris – Section de Meudon', 'Institute of Physics in London', 'Sèvres']
+Pred  (raw): ['Fleurier, Switzerland', 'Neuchâtel, Switzerland', 'ETH Zurich, Switzerland', 'Institute of Physics, London', 'Observatoire de Paris – Section de Meudon, France', 'Sèvres, France']
+Label (norm): ['Fleurier', 'Neuchâtel', 'ETH Zurich', 'International Bureau of Weights and Measures', 'Observatoire de Paris Section de Meudon', 'Institute of Physics in London', 'Sèvres']
+Pred  (norm): ['Fleurier Switzerland', 'Neuchâtel Switzerland', 'ETH Zurich Switzerland', 'Institute of Physics London', 'Observatoire de Paris Section de Meudon France', 'Sèvres France']
+Matches (6):
+  - L[0]='Fleurier'  <->  P[0]='Fleurier Switzerland'  (ratio=0.571, contain=True, reason=containment)
+  - L[1]='Neuchâtel'  <->  P[1]='Neuchâtel Switzerland'  (ratio=0.600, contain=True, reason=containment)
+  - L[2]='ETH Zurich'  <->  P[2]='ETH Zurich Switzerland'  (ratio=0.625, contain=True, reason=containment)
+  - L[4]='Observatoire de Paris Section de Meudon'  <->  P[4]='Observatoire de Paris Section de Meudon France'  (ratio=0.918, contain=True, reason=containment)
+  - L[5]='Institute of Physics in London'  <->  P[3]='Institute of Physics London'  (ratio=0.947, contain=False, reason=ratio>=0.80)
+  - L[6]='Sèvres'  <->  P[5]='Sèvres France'  (ratio=0.632, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 4, 3, 5]  |  Kendall τ: 0.8667
+Token edit distance: 2  |  edit_similarity: 0.8462
+Item precision=1.0000, recall=0.8571, f1=0.9231
+Unmatched label tokens: ['International Bureau of Weights and Measures']
+
+=== ID: 094 ===
+Label (raw): ['Briesen in West Prussia', 'Zürich', 'Graz', 'Würzburg', 'University of Leipzig', 'Leipzig', 'Göttingen', 'Munich', 'Göttingen', 'Berlin', 'Brussels', 'France', 'Berlin University', 'Institute of Physical Chemistry at Berlin', 'England and Brazil', 'Oxford', 'Gau, Lower Silesia, East Prussia']
+Pred  (raw): ['Briesen (now Wąbrzeźno, Poland)', 'Graudenz (now Grudziądz)', 'Zürich', 'Berlin', 'Graz', 'Würzburg', 'Leipzig', 'Heidelberg', 'Göttingen', 'Munich', 'Berlin', 'Zürich', 'Brussels', 'Berlin', 'France', 'Göttingen', 'Berlin', 'Oxford', 'Gau, Lower Silesia, East Prussia (now Niwica, Poland)', 'Berlin', 'Göttingen']
+Label (norm): ['Briesen in West Prussia', 'Zürich', 'Graz', 'Würzburg', 'University of Leipzig', 'Leipzig', 'Göttingen', 'Munich', 'Göttingen', 'Berlin', 'Brussels', 'France', 'Berlin University', 'Institute of Physical Chemistry at Berlin', 'England and Brazil', 'Oxford', 'Gau Lower Silesia East Prussia']
+Pred  (norm): ['Briesen now Wąbrzeźno Poland', 'Graudenz now Grudziądz', 'Zürich', 'Berlin', 'Graz', 'Würzburg', 'Leipzig', 'Heidelberg', 'Göttingen', 'Munich', 'Berlin', 'Zürich', 'Brussels', 'Berlin', 'France', 'Göttingen', 'Berlin', 'Oxford', 'Gau Lower Silesia East Prussia now Niwica Poland', 'Berlin', 'Göttingen']
+Matches (14):
+  - L[1]='Zürich'  <->  P[2]='Zürich'  (ratio=1.000, contain=True, reason=exact)
+  - L[2]='Graz'  <->  P[4]='Graz'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Würzburg'  <->  P[5]='Würzburg'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='University of Leipzig'  <->  P[6]='Leipzig'  (ratio=0.500, contain=True, reason=containment)
+  - L[6]='Göttingen'  <->  P[8]='Göttingen'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Munich'  <->  P[9]='Munich'  (ratio=1.000, contain=True, reason=exact)
+  - L[8]='Göttingen'  <->  P[15]='Göttingen'  (ratio=1.000, contain=True, reason=exact)
+  - L[9]='Berlin'  <->  P[3]='Berlin'  (ratio=1.000, contain=True, reason=exact)
+  - L[10]='Brussels'  <->  P[12]='Brussels'  (ratio=1.000, contain=True, reason=exact)
+  - L[11]='France'  <->  P[14]='France'  (ratio=1.000, contain=True, reason=exact)
+  - L[12]='Berlin University'  <->  P[10]='Berlin'  (ratio=0.522, contain=True, reason=containment)
+  - L[13]='Institute of Physical Chemistry at Berlin'  <->  P[13]='Berlin'  (ratio=0.255, contain=True, reason=containment)
+  - L[15]='Oxford'  <->  P[17]='Oxford'  (ratio=1.000, contain=True, reason=exact)
+  - L[16]='Gau Lower Silesia East Prussia'  <->  P[18]='Gau Lower Silesia East Prussia now Niwica Poland'  (ratio=0.769, contain=True, reason=containment)
+Kendall order: [2, 4, 5, 6, 8, 9, 15, 3, 12, 14, 10, 13, 17, 18]  |  Kendall τ: 0.7143
+Token edit distance: 12  |  edit_similarity: 0.6842
+Item precision=0.6667, recall=0.8235, f1=0.7368
+Unmatched label tokens: ['Briesen in West Prussia', 'Leipzig', 'England and Brazil']
+Unmatched pred tokens:  ['Briesen now Wąbrzeźno Poland', 'Graudenz now Grudziądz', 'Heidelberg', 'Zürich', 'Berlin', 'Berlin', 'Göttingen']
+
+=== ID: 095 ===
+Label (raw): ['Grenaa', 'University of Copenhagen', 'Denmark', 'Nordisk Insulinlaboratorium', 'Denmark', 'University of Copenhagen']
+Pred  (raw): ['Grenaa', 'Aarhus', 'University of Copenhagen']
+Label (norm): ['Grenaa', 'University of Copenhagen', 'Denmark', 'Nordisk Insulinlaboratorium', 'Denmark', 'University of Copenhagen']
+Pred  (norm): ['Grenaa', 'Aarhus', 'University of Copenhagen']
+Matches (2):
+  - L[0]='Grenaa'  <->  P[0]='Grenaa'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='University of Copenhagen'  <->  P[2]='University of Copenhagen'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 2]  |  Kendall τ: 1.0000
+Token edit distance: 4  |  edit_similarity: 0.5556
+Item precision=0.6667, recall=0.3333, f1=0.4444
+Unmatched label tokens: ['Denmark', 'Nordisk Insulinlaboratorium', 'Denmark', 'University of Copenhagen']
+Unmatched pred tokens:  ['Aarhus']
+
+=== ID: 096 ===
+Label (raw): ['Lom', 'Hamsund, Hamarøy', 'Lom', 'America', 'Kristiania', 'Hamarøy', 'Nørholm', 'Grimstad', 'Hamarøy']
+Pred  (raw): ['Lom', 'Hamsund, Hamarøy', 'America', 'Kristiania (now Oslo)', 'Hamarøy', 'Larvik', 'Nørholm between Lillesand and Grimstad', 'Grimstad']
+Label (norm): ['Lom', 'Hamsund Hamarøy', 'Lom', 'America', 'Kristiania', 'Hamarøy', 'Nørholm', 'Grimstad', 'Hamarøy']
+Pred  (norm): ['Lom', 'Hamsund Hamarøy', 'America', 'Kristiania now Oslo', 'Hamarøy', 'Larvik', 'Nørholm between Lillesand and Grimstad', 'Grimstad']
+Matches (7):
+  - L[0]='Lom'  <->  P[0]='Lom'  (ratio=1.000, contain=True, reason=exact)
+  - L[1]='Hamsund Hamarøy'  <->  P[1]='Hamsund Hamarøy'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='America'  <->  P[2]='America'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Kristiania'  <->  P[3]='Kristiania now Oslo'  (ratio=0.690, contain=True, reason=containment)
+  - L[5]='Hamarøy'  <->  P[4]='Hamarøy'  (ratio=1.000, contain=True, reason=exact)
+  - L[6]='Nørholm'  <->  P[6]='Nørholm between Lillesand and Grimstad'  (ratio=0.311, contain=True, reason=containment)
+  - L[7]='Grimstad'  <->  P[7]='Grimstad'  (ratio=1.000, contain=True, reason=exact)
+Kendall order: [0, 1, 2, 3, 4, 6, 7]  |  Kendall τ: 1.0000
+Token edit distance: 3  |  edit_similarity: 0.8235
+Item precision=0.8750, recall=0.7778, f1=0.8235
+Unmatched label tokens: ['Lom', 'Hamarøy']
+Unmatched pred tokens:  ['Larvik']
+
+=== ID: 097 ===
+Label (raw): ['Paris', 'University', 'Department of public works', 'Tarn', 'Haute-Garonne', 'Paris', 'Chamber', 'Reims', 'Ministry of Public Instruction', "Émile Loubet's cabinet", 'Ministry of Justice', 'Ministry of Public Instruction', 'Chamber', 'Department of Marne', 'Sarrien cabinet', 'Hague Conferences', 'Council of the League of Nations', 'Natural History Museum Paris society']
+Pred  (raw): ['Paris', 'Tarn', 'Haute-Garonne', 'Reims', 'Algeciras', 'Hague']
+Label (norm): ['Paris', 'University', 'Department of public works', 'Tarn', 'Haute-Garonne', 'Paris', 'Chamber', 'Reims', 'Ministry of Public Instruction', "Émile Loubet's cabinet", 'Ministry of Justice', 'Ministry of Public Instruction', 'Chamber', 'Department of Marne', 'Sarrien cabinet', 'Hague Conferences', 'Council of the League of Nations', 'Natural History Museum Paris society']
+Pred  (norm): ['Paris', 'Tarn', 'Haute-Garonne', 'Reims', 'Algeciras', 'Hague']
+Matches (5):
+  - L[0]='Paris'  <->  P[0]='Paris'  (ratio=1.000, contain=True, reason=exact)
+  - L[3]='Tarn'  <->  P[1]='Tarn'  (ratio=1.000, contain=True, reason=exact)
+  - L[4]='Haute-Garonne'  <->  P[2]='Haute-Garonne'  (ratio=1.000, contain=True, reason=exact)
+  - L[7]='Reims'  <->  P[3]='Reims'  (ratio=1.000, contain=True, reason=exact)
+  - L[15]='Hague Conferences'  <->  P[5]='Hague'  (ratio=0.455, contain=True, reason=containment)
+Kendall order: [0, 1, 2, 3, 5]  |  Kendall τ: 1.0000
+Token edit distance: 13  |  edit_similarity: 0.4583
+Item precision=0.8333, recall=0.2778, f1=0.4167
+Unmatched label tokens: ['University', 'Department of public works', 'Paris', 'Chamber', 'Ministry of Public Instruction', "Émile Loubet's cabinet", 'Ministry of Justice', 'Ministry of Public Instruction', 'Chamber', 'Department of Marne', 'Sarrien cabinet', 'Council of the League of Nations', 'Natural History Museum Paris society']
+Unmatched pred tokens:  ['Algeciras']
+
+Overall:
+precision: 0.646267
+recall: 0.561105
+f1: 0.600683
+kendall_tau: 0.906048
+edit_simlar: 0.684534
+
+Saved per-id metrics to: logs/celebrity_biographies/per_id_metrics.csv
+Saved detailed JSONL logs to: logs/celebrity_biographies/metrics_debug.jsonl
+Saved raw model outputs to: logs/celebrity_biographies/preds_raw

@@ -10,72 +10,15 @@ import random
 from Levenshtein import distance,ratio
 from scipy import stats
 import jsonlines    
-import re
-import unicodedata
-from Levenshtein import distance as char_distance, ratio as char_ratio
-import numpy as np
-from itertools import product
-from Levenshtein import ratio as char_ratio
-try:
-    from scipy.optimize import linear_sum_assignment
-    HAS_HUNGARIAN = True
-except Exception:
-    HAS_HUNGARIAN = False
-
+import re, unicodedata
 
 RUN_INFERENCE = False  # set True only when you want to re-run LLM inference
 LABELS_PATH = "datasets/travel_blogs/labels.txt"
 PREDS_PATH  = "datasets/travel_blogs/preds.txt"
-# --- add near the imports ---
-
-
-
-def place_sim(a: str, b: str) -> float:
-    """Similarity between two normalized place names."""
-    if not a or not b:
-        return 0.0
-    if a == b:
-        return 1.0
-    r = char_ratio(a, b)
-    # containment bonus (e.g., "Hague" in "The Hague")
-    if a in b or b in a:
-        r = max(r, 0.92)
-    return r
-
-
-def best_matches(labels, preds, thr=0.80):
-    """
-    Find a maximum-score 1-1 alignment between labels and preds
-    and keep only edges with similarity >= thr.
-    Returns: list of (i_label, j_pred, sim), sorted by j_pred (pred order).
-    """
-    if not labels or not preds:
-        return []
-
-    L, P = len(labels), len(preds)
-    S = np.zeros((L, P), dtype=float)
-    for i, j in product(range(L), range(P)):
-        S[i, j] = place_sim(labels[i], preds[j])
-
-    if HAS_HUNGARIAN:
-        cost = 1.0 - S  # maximize S == minimize cost
-        li, pj = linear_sum_assignment(cost)
-        pairs = [(i, j, S[i, j]) for i, j in zip(li, pj) if S[i, j] >= thr]
-    else:
-        # fallback: greedy non-conflicting edges
-        edges = sorted(((S[i, j], i, j) for i in range(L) for j in range(P)), reverse=True)
-        usedL, usedP, pairs = set(), set(), []
-        for s, i, j in edges:
-            if s < thr: break
-            if i in usedL or j in usedP: continue
-            usedL.add(i); usedP.add(j); pairs.append((i, j, s))
-
-    # stable order by prediction index (useful for downstream)
-    pairs.sort(key=lambda x: x[1])
-    return pairs
-
+TEXT_PATH = "datasets/travel_blogs/texts.txt"
 
 client = OpenAI()
+
 
 def chatbot(prompt, text):
     completion = client.chat.completions.create(
@@ -89,6 +32,8 @@ def chatbot(prompt, text):
     )
     return completion.choices[0].message.content
 
+    
+
 # # Parse output and post-processing
 
 def remove_adjacent_duplicates(lst):
@@ -98,19 +43,6 @@ def remove_adjacent_duplicates(lst):
             new_list.append(lst[i])
     return new_list
 
-# Normalize a single place name conservatively
-def normalize_place(s: str) -> str:
-    if not isinstance(s, str):
-        s = str(s) if s is not None else ""
-    s = s.strip()
-    # unify to NFC (safe for CJK)
-    s = unicodedata.normalize("NFC", s)
-    # standardize parentheses variants to plain "()", then optionally drop inner note
-    s = re.sub(r"\s*\(.*?\)\s*$", "", s)
-    # collapse internal whitespace
-    s = re.sub(r"\s+", "", s)
-    return s
-
 def json2places(track_json):
     try:
         dfs = []
@@ -119,9 +51,9 @@ def json2places(track_json):
                 continue
             tract = [track for track in actor.get("Track",[]) if type(track) == dict]
             df = pd.DataFrame(tract)
-            df['Actor'] = actor.get('Actor', 'Actor')
+            df['Actor'] = actor['Actor']
             dfs.append(df)
-        dfs = pd.concat(dfs) if dfs else pd.DataFrame(columns=["Place","Actor"])
+        dfs = pd.concat(dfs)
         if "Place" not in dfs.columns:
             dfs['Place'] = "XXX"
         dfs = dfs[(dfs['Place'] != 'XXX') & (dfs['Place'] != 'Unknown') & (dfs['Place'] != '')].reset_index(drop=True)
@@ -130,16 +62,10 @@ def json2places(track_json):
         actor_counts = dfs['Actor'].value_counts()
         most_common_actor = actor_counts.idxmax()
         pred = dfs[dfs['Actor'] == most_common_actor].reset_index(drop=True).Place.to_list()
-
-        # NEW: normalize and de-dup adjacent after normalization
-        pred = [normalize_place(p) for p in pred if isinstance(p, str)]
-        pred = [p for p in pred if p]  # drop empties
-
         pred = remove_adjacent_duplicates(pred)
         return pred
-    except Exception:
+    except:
         return []
-
 
 # # Calculate evaluation metrics
 
@@ -157,7 +83,6 @@ def get_pred(jsonl_file):
     return df
 
 def token_levenshtein(a, b):
-    """Edit distance on token sequences (lists), like Levenshtein but for lists."""
     n, m = len(a), len(b)
     if n == 0: return m
     if m == 0: return n
@@ -165,65 +90,93 @@ def token_levenshtein(a, b):
     for i in range(n+1): dp[i][0] = i
     for j in range(m+1): dp[0][j] = j
     for i in range(1, n+1):
-        ai = a[i-1]
         for j in range(1, m+1):
-            cost = 0 if ai == b[j-1] else 1
-            dp[i][j] = min(
-                dp[i-1][j] + 1,      # deletion
-                dp[i][j-1] + 1,      # insertion
-                dp[i-1][j-1] + cost  # substitution
-            )
+            cost = 0 if a[i-1] == b[j-1] else 1
+            dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+cost)
     return dp[n][m]
 
+# --- NEW: Chinese-safe normalization ---
+def normalize_place(s: str) -> str:
+    """Normalize place names while preserving CJK and trimming noisy suffixes."""
+    if not isinstance(s, str):
+        return ""
+    s = unicodedata.normalize("NFKC", s).strip().lower()      # keep CJK, normalize widths
+    # keep ascii word chars, space, and CJK block; drop punctuation/symbols
+    s = re.sub(r"[^\w\u4e00-\u9fff\s]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+
+    # light aliasing / canonicalization (extend as needed)
+    # s = (s.replace("北京市", "北京")
+    #        .replace("上海市", "上海")
+    #        .replace("廣州", "广州")
+    #        .replace("臺北", "台北")
+    #        .replace("臺灣", "台湾"))
+
+    # remove very common administrative/POI suffixes at the END (avoid over-trimming)
+    # s = re.sub(r"(省|市|区|縣|县|镇|乡|村|旗|盟|自治州|特别行政区|"
+    #            r"景区|风景区|公园|古城|老街|大学|学院|火车站|地铁站|车站|机场)$", "", s)
+    return s
+
+# --- REPLACE your cal_index with this version ---
 def cal_index(index, label, pred):
-    # Normalize
+    # 1) Normalize (CJK-safe)
     label = [normalize_place(x) for x in label if x]
     pred  = [normalize_place(x) for x in pred  if x]
 
-    # (optional) remove adjacent dups post-normalization
-    def dedup_adj(xs):
-        out = []
-        for x in xs:
-            if not out or out[-1] != x:
-                out.append(x)
-        return out
-    label = dedup_adj(label)
-    pred  = dedup_adj(pred)
-
-
-    # === LN: number of label places.   PN: number of predicted places ===
+    TP = 0
     LN, PN = len(label), len(pred)
 
-    # === TP: True Positive ===
-    pairs = best_matches(label, pred, thr=0.80)     # ← replace greedy loop
-    TP = len(pairs)
+    # sequences used for token edit distance
+    sequences_l = label.copy()
+    sequences_p = pred.copy()
 
-    # === Calculate Kendall_tau ===
-    if TP >= 2:
-        label_idx = [i for (i, _, _) in pairs]
-        pred_idx  = [j for (_, j, _) in pairs]
-        kt = stats.kendalltau(label_idx, pred_idx, nan_policy='omit')[0]
-        Kendall_tau = 0.0 if (kt is None or np.isnan(kt)) else float(kt)
+    # matching state
+    match_flags  = [False] * PN        # whether pred[j] is already matched
+    match_labels = [None] * LN         # matched token at label position i
+    match_preds  = [None] * PN         # matched token at pred position j
+
+    # 2) Greedy one-pass matching (exact OR fuzzy OR containment)
+    # Slightly lower ratio threshold for short Chinese tokens.
+    for i, l in enumerate(label):
+        for j, p in enumerate(pred):
+            if match_flags[j]:
+                continue
+            if (l == p) or (ratio(l, p) >= 0.75) or (l and p and (l in p or p in l)):
+                TP += 1
+                match_flags[j]  = True
+                sequences_p[j]  = l       # align for token edit distance
+                match_labels[i] = l
+                match_preds[j]  = l
+                break
+
+    # 3) Kendall τ on positions (NOT on raw strings)
+    # build token -> list of pred indices where it was matched
+    idx_map = {}
+    for j, tok in enumerate(match_preds):
+        if tok is None:
+            continue
+        idx_map.setdefault(tok, []).append(j)
+
+    # in gold (label) order, collect the corresponding pred indices
+    pred_idx_order = []
+    for tok in match_labels:
+        if tok is None:
+            continue
+        if tok in idx_map and idx_map[tok]:
+            pred_idx_order.append(idx_map[tok].pop(0))
+
+    if len(pred_idx_order) >= 2:
+        Kend = stats.kendalltau(range(len(pred_idx_order)), pred_idx_order)[0]
+        Kendall_tau = 0.0 if str(Kend) == 'nan' else float(Kend)
     else:
         Kendall_tau = 0.0
 
-    # Keep your original distance/similarity behavior
-    sequences_l = label
-    sequences_p = pred
-
-    # Optional: align matched slots so edit distance gives zero cost on those
-    # (not required for τ, but preserves your original intent)
-    sequences_p = list(sequences_p)
-    for (i, j, _) in pairs:
-        sequences_p[j] = sequences_l[i]
-
-    # === edit silimarity ===
+    # 4) Token-level edit distance & similarity
     dis = token_levenshtein(sequences_l, sequences_p)
     denom = (len(sequences_l) + len(sequences_p))
-    edit_simlar = 0.0 if denom == 0 else 1 - dis / denom
+    edit_simlar = 1 - dis / denom if denom > 0 else 0.0
 
     return index, TP, LN, PN, Kendall_tau, dis, edit_simlar
-
 
 
 def cal_index_df(merge):
@@ -233,32 +186,22 @@ def cal_index_df(merge):
     return index
 
 
+# --- OPTIONAL: make the aggregator safe for empty matches ---
 def cal_index_all(merge):
-    index = merge.apply(lambda x: cal_index(x['id'], x.label, x.pred), axis=1, result_type='expand')
-    index.columns = ['id', 'TP', 'LN', 'PN', 'Kendall_tau', 'dis', 'edit_simlar']
+    idx = merge.apply(lambda x: cal_index(x['id'], x.label, x.pred), axis=1, result_type='expand')
+    idx.columns = ['id', 'TP', 'LN', 'PN', 'Kendall_tau', 'dis', 'edit_simlar']
 
-    TP_sum, PN_sum, LN_sum = index.TP.sum(), index.PN.sum(), index.LN.sum()
-    precision = 0.0 if PN_sum == 0 else TP_sum / PN_sum
-    recall    = 0.0 if LN_sum == 0 else TP_sum / LN_sum
+    tp_sum = float(idx.TP.sum())
+    pn_sum = float(idx.PN.sum())
+    ln_sum = float(idx.LN.sum())
+
+    precision = (tp_sum / pn_sum) if pn_sum else 0.0
+    recall    = (tp_sum / ln_sum) if ln_sum else 0.0
     f1 = 0.0 if (precision + recall) == 0 else 2 * precision * recall / (precision + recall)
-    edit_simlar = index.edit_simlar.mean()
-    kendall_tau = 0.0 if TP_sum == 0 else float((index.Kendall_tau * index.TP).sum() / TP_sum)
-    return {'precision': precision, 'recall': recall, 'f1': f1, 'kendall_tau': kendall_tau, 'edit_simlar': edit_simlar}
+    edit_simlar = float(idx.edit_simlar.mean()) if len(idx) else 0.0
 
-def parse_llm_json(raw_text: str):
-    """Parse LLM output that may include prose or ```json fences; return a Python obj."""
-    if not isinstance(raw_text, str):
-        return raw_text
-    m = re.search(r"```(?:json)?\s*(.*?)```", raw_text, flags=re.I|re.S)
-    if m:
-        raw_text = m.group(1)
-    obj = json_repair.loads(raw_text)
-    if isinstance(obj, str):
-        try:
-            obj = json_repair.loads(obj)
-        except Exception:
-            pass
-    return obj
+    kendall_tau = float((idx.Kendall_tau * idx.TP).sum() / tp_sum) if tp_sum else 0.0
+    return {'precision': precision, 'recall': recall, 'f1': f1, 'kendall_tau': kendall_tau, 'edit_simlar': edit_simlar}
 
 
 
@@ -293,8 +236,8 @@ if __name__ == "__main__":
 
     ### 3.2.3 人工标注的文本—轨迹配对
     def random_sample():
-        text_df = pd.DataFrame(jsonlines.open("datasets/travel_blogs/texts.txt"))
-        label_df = pd.DataFrame(jsonlines.open("datasets/travel_blogs/labels.txt"))
+        text_df = pd.DataFrame(jsonlines.open(TEXT_PATH))
+        label_df = pd.DataFrame(jsonlines.open(LABELS_PATH))
         data = pd.merge(text_df, label_df, on='id')
         sample = data.sample(1)
         return sample.text, sample.label
@@ -340,54 +283,40 @@ if __name__ == "__main__":
 '''
 
 
-    # 2. Load data and (optionally) extract trajectory
-    text_jsonl = "datasets/travel_blogs/texts.txt"
-
+    # 2. Load data and extract trajectory
+    # text_jsonl = "datasets/travel_blogs/texts.txt"
+    
     if RUN_INFERENCE:
-        text_df = pd.DataFrame(jsonlines.open(text_jsonl))
+        text_df = pd.DataFrame(jsonlines.open(TEXT_PATH))
+
         pred_df = pd.DataFrame(columns=['id', 'pred'])
 
         for id, text in text_df[['id', 'text']].values:
             try:
-                output_raw = chatbot(prompt_template, text)
-                obj = parse_llm_json(output_raw)
+                output = chatbot(prompt_template, text)
+                output = json_repair.loads(output)
 
-                # Normalize to list-of-actors
-                if isinstance(obj, dict):
-                    actors = [obj]
-                elif isinstance(obj, list):
-                    actors = obj
+                # --- Minimal normalization: accept either list or dict ---
+                if isinstance(output, dict):
+                    actors = [output]
+                elif isinstance(output, list):
+                    # keep only dict entries if the model mixed types
+                    actors = [o for o in output if isinstance(o, dict)]
                 else:
-                    raise ValueError("Unsupported LLM output root type.")
+                    actors = []
 
-                actor_block = next((a for a in actors if isinstance(a, dict) and 'Track' in a), None)
-                if actor_block is None:
-                    raise ValueError("No actor block with 'Track' found.")
+                # If nothing usable, fall back to empty
+                result = actors  # json2places expects a list of {"Actor":..., "Track":[{"Place":...}, ...]}
 
-                actor = actor_block.get('Actor', 'Actor')
-                track = actor_block.get('Track', [])
-
-                norm_track = []
-                for t in track:
-                    if isinstance(t, dict) and 'Place' in t and isinstance(t['Place'], str):
-                        norm_track.append({'Place': t['Place']})
-                    elif isinstance(t, str):
-                        norm_track.append({'Place': t})
-                    elif isinstance(t, dict) and len(t) == 1:
-                        val = next(iter(t.values()))
-                        if isinstance(val, str):
-                            norm_track.append({'Place': val})
-
-                result = [{"Actor": actor, "Track": norm_track}]
                 pred_df = pred_df.append({'id': id, 'pred': result}, ignore_index=True)
 
             except Exception as e:
                 print(f"Error: {id}")
                 print(e)
-            
-            time.sleep(1)
+            time.sleep(0.5)
 
-        pred_df.to_json(PREDS_PATH, orient='records', lines=True)
+        pred_df.to_json(PREDS_PATH, orient='records', lines=True, force_ascii=False) 
+    
     else:
         # Sanity check: ensure preds file exists when skipping inference
         if not os.path.exists(PREDS_PATH):
@@ -397,10 +326,7 @@ if __name__ == "__main__":
     label_df = get_label(LABELS_PATH)   # -> columns: id, label (list[str])
     pred_df  = get_pred(PREDS_PATH)     # -> columns: id, pred  (list[str])
 
-    # Keep only needed columns, then merge by id
-    merge = pd.merge(label_df[['id', 'label']], pred_df[['id', 'pred']], on='id', how='inner')
-
-    # Per-id metrics table
+    merge = pd.merge(label_df, pred_df, on='id', how='inner')
     index = cal_index_df(merge)
     print(index)
 

@@ -1,0 +1,35 @@
+{
+  "id": "012",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Charles Albert Gobat\",\n        \"Track\": [\n            {\"Place\": \"Tramelan, Switzerland\"},\n            {\"Place\": \"University of Basel\"},\n            {\"Place\": \"University of Heidelberg\"},\n            {\"Place\": \"University of Bern\"},\n            {\"Place\": \"University of Paris\"},\n            {\"Place\": \"Bern\"},\n            {\"Place\": \"Delémont\"},\n            {\"Place\": \"Rome\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Charles Albert Gobat",
+      "Track": [
+        {
+          "Place": "Tramelan, Switzerland"
+        },
+        {
+          "Place": "University of Basel"
+        },
+        {
+          "Place": "University of Heidelberg"
+        },
+        {
+          "Place": "University of Bern"
+        },
+        {
+          "Place": "University of Paris"
+        },
+        {
+          "Place": "Bern"
+        },
+        {
+          "Place": "Delémont"
+        },
+        {
+          "Place": "Rome"
+        }
+      ]
+    }
+  ]
+}

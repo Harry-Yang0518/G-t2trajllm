@@ -1,0 +1,20 @@
+{
+  "id": "095",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"August Krogh\",\n        \"Track\": [\n            {\"Place\": \"Grenaa\"},\n            {\"Place\": \"Aarhus\"},\n            {\"Place\": \"University of Copenhagen\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "August Krogh",
+      "Track": [
+        {
+          "Place": "Grenaa"
+        },
+        {
+          "Place": "Aarhus"
+        },
+        {
+          "Place": "University of Copenhagen"
+        }
+      ]
+    }
+  ]
+}

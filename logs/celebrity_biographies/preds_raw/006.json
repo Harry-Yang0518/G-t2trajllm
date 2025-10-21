@@ -1,0 +1,29 @@
+{
+  "id": "006",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Hendrik Lorentz\",\n        \"Track\": [\n            {\"Place\": \"Arnhem\"},\n            {\"Place\": \"Leiden University\"},\n            {\"Place\": \"University of Leiden\"},\n            {\"Place\": \"Columbia University\"},\n            {\"Place\": \"Cornell University\"},\n            {\"Place\": \"Teylers Museum in Haarlem\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Hendrik Lorentz",
+      "Track": [
+        {
+          "Place": "Arnhem"
+        },
+        {
+          "Place": "Leiden University"
+        },
+        {
+          "Place": "University of Leiden"
+        },
+        {
+          "Place": "Columbia University"
+        },
+        {
+          "Place": "Cornell University"
+        },
+        {
+          "Place": "Teylers Museum in Haarlem"
+        }
+      ]
+    }
+  ]
+}

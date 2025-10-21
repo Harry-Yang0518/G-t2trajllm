@@ -1,0 +1,29 @@
+{
+  "id": "097",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Léon Victor Auguste Bourgeois\",\n        \"Track\": [\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Tarn\"},\n            {\"Place\": \"Haute-Garonne\"},\n            {\"Place\": \"Reims\"},\n            {\"Place\": \"Algeciras\"},\n            {\"Place\": \"Hague\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Léon Victor Auguste Bourgeois",
+      "Track": [
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Tarn"
+        },
+        {
+          "Place": "Haute-Garonne"
+        },
+        {
+          "Place": "Reims"
+        },
+        {
+          "Place": "Algeciras"
+        },
+        {
+          "Place": "Hague"
+        }
+      ]
+    }
+  ]
+}

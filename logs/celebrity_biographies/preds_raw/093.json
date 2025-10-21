@@ -1,0 +1,29 @@
+{
+  "id": "093",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Charles Édouard Guillaume\",\n        \"Track\": [\n            {\"Place\": \"Fleurier, Switzerland\"},\n            {\"Place\": \"Neuchâtel, Switzerland\"},\n            {\"Place\": \"ETH Zurich, Switzerland\"},\n            {\"Place\": \"Institute of Physics, London\"},\n            {\"Place\": \"Observatoire de Paris – Section de Meudon, France\"},\n            {\"Place\": \"Sèvres, France\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Charles Édouard Guillaume",
+      "Track": [
+        {
+          "Place": "Fleurier, Switzerland"
+        },
+        {
+          "Place": "Neuchâtel, Switzerland"
+        },
+        {
+          "Place": "ETH Zurich, Switzerland"
+        },
+        {
+          "Place": "Institute of Physics, London"
+        },
+        {
+          "Place": "Observatoire de Paris – Section de Meudon, France"
+        },
+        {
+          "Place": "Sèvres, France"
+        }
+      ]
+    }
+  ]
+}

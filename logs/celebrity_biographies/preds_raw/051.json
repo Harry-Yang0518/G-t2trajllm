@@ -1,0 +1,29 @@
+{
+  "id": "051",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Wilhelm Ostwald\",\n        \"Track\": [\n            {\"Place\": \"Riga, Russian Empire (now Latvia)\"},\n            {\"Place\": \"University of Dorpat (now the University of Tartu, Estonia)\"},\n            {\"Place\": \"Riga Polytechnicum (now Riga Technical University)\"},\n            {\"Place\": \"Leipzig University\"},\n            {\"Place\": \"Harvard University\"},\n            {\"Place\": \"Großbothen, Saxony\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Wilhelm Ostwald",
+      "Track": [
+        {
+          "Place": "Riga, Russian Empire (now Latvia)"
+        },
+        {
+          "Place": "University of Dorpat (now the University of Tartu, Estonia)"
+        },
+        {
+          "Place": "Riga Polytechnicum (now Riga Technical University)"
+        },
+        {
+          "Place": "Leipzig University"
+        },
+        {
+          "Place": "Harvard University"
+        },
+        {
+          "Place": "Großbothen, Saxony"
+        }
+      ]
+    }
+  ]
+}

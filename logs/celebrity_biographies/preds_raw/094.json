@@ -1,0 +1,59 @@
+{
+  "id": "094",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Walther Hermann Nernst\",\n        \"Track\": [\n            {\"Place\": \"Briesen (now Wąbrzeźno, Poland)\"},\n            {\"Place\": \"Graudenz (now Grudziądz)\"},\n            {\"Place\": \"Zürich\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Graz\"},\n            {\"Place\": \"Würzburg\"},\n            {\"Place\": \"Leipzig\"},\n            {\"Place\": \"Heidelberg\"},\n            {\"Place\": \"Göttingen\"},\n            {\"Place\": \"Munich\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Brussels\"},\n            {\"Place\": \"France\"},\n            {\"Place\": \"Gau, Lower Silesia, East Prussia (now Niwica, Poland)\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Göttingen\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Walther Hermann Nernst",
+      "Track": [
+        {
+          "Place": "Briesen (now Wąbrzeźno, Poland)"
+        },
+        {
+          "Place": "Graudenz (now Grudziądz)"
+        },
+        {
+          "Place": "Zürich"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Graz"
+        },
+        {
+          "Place": "Würzburg"
+        },
+        {
+          "Place": "Leipzig"
+        },
+        {
+          "Place": "Heidelberg"
+        },
+        {
+          "Place": "Göttingen"
+        },
+        {
+          "Place": "Munich"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Brussels"
+        },
+        {
+          "Place": "France"
+        },
+        {
+          "Place": "Gau, Lower Silesia, East Prussia (now Niwica, Poland)"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Göttingen"
+        }
+      ]
+    }
+  ]
+}

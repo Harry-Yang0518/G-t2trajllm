@@ -16,7 +16,7 @@ import unicodedata
 RUN_INFERENCE = False  # set True only when you want to re-run LLM inference
 LABELS_PATH = "datasets/travel_blogs/labels.txt"
 PREDS_PATH  = "datasets/travel_blogs/preds.txt"
-
+TEXT_PATH = "datasets/travel_blogs/texts.txt"
 
 client = OpenAI()
 
@@ -235,8 +235,8 @@ if __name__ == "__main__":
 
     ### 3.2.3 人工标注的文本—轨迹配对
     def random_sample():
-        text_df = pd.DataFrame(jsonlines.open("datasets/travel_blogs/texts.txt"))
-        label_df = pd.DataFrame(jsonlines.open("datasets/travel_blogs/labels.txt"))
+        text_df = pd.DataFrame(jsonlines.open(TEXT_PATH))
+        label_df = pd.DataFrame(jsonlines.open(LABELS_PATH))
         data = pd.merge(text_df, label_df, on='id')
         sample = data.sample(1)
         return sample.text, sample.label
@@ -283,10 +283,10 @@ if __name__ == "__main__":
 
 
     # 2. Load data and extract trajectory
-    text_jsonl = "datasets/travel_blogs/texts.txt"
+    # text_jsonl = "datasets/travel_blogs/texts.txt"
     
     if RUN_INFERENCE:
-        text_df = pd.DataFrame(jsonlines.open(text_jsonl))
+        text_df = pd.DataFrame(jsonlines.open(TEXT_PATH))
 
         pred_df = pd.DataFrame(columns=['id', 'pred'])
 

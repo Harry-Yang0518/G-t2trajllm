@@ -1,0 +1,23 @@
+{
+  "id": "042",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Gabriel Lippmann\",\n        \"Track\": [\n            {\"Place\": \"Bonnevoie, Luxembourg\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Heidelberg University\"},\n            {\"Place\": \"Paris\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Gabriel Lippmann",
+      "Track": [
+        {
+          "Place": "Bonnevoie, Luxembourg"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Heidelberg University"
+        },
+        {
+          "Place": "Paris"
+        }
+      ]
+    }
+  ]
+}

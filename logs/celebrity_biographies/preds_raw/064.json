@@ -1,0 +1,20 @@
+{
+  "id": "064",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Alfred Hermann Fried\",\n        \"Track\": [\n            {\"Place\": \"Vienna\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Switzerland\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Alfred Hermann Fried",
+      "Track": [
+        {
+          "Place": "Vienna"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Switzerland"
+        }
+      ]
+    }
+  ]
+}

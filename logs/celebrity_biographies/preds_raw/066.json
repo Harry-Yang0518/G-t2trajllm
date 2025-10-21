@@ -1,0 +1,23 @@
+{
+  "id": "066",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Victor Grignard\",\n        \"Track\": [\n            {\"Place\": \"Lyon\"},\n            {\"Place\": \"University of Lyon\"},\n            {\"Place\": \"University of Nancy\"},\n            {\"Place\": \"Sorbonne University\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Victor Grignard",
+      "Track": [
+        {
+          "Place": "Lyon"
+        },
+        {
+          "Place": "University of Lyon"
+        },
+        {
+          "Place": "University of Nancy"
+        },
+        {
+          "Place": "Sorbonne University"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "078",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Robert Bárány\",\n        \"Track\": [\n            {\"Place\": \"Vienna\"},\n            {\"Place\": \"Russian prisoner of war camp\"},\n            {\"Place\": \"Nobel Prize awards ceremony\"},\n            {\"Place\": \"Uppsala University\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Robert Bárány",
+      "Track": [
+        {
+          "Place": "Vienna"
+        },
+        {
+          "Place": "Russian prisoner of war camp"
+        },
+        {
+          "Place": "Nobel Prize awards ceremony"
+        },
+        {
+          "Place": "Uppsala University"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "075",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Henri La Fontaine\",\n        \"Track\": [\n            {\"Place\": \"Brussels\"},\n            {\"Place\": \"Free University of Brussels\"},\n            {\"Place\": \"The Hague\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"League of Nations Assembly\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Henri La Fontaine",
+      "Track": [
+        {
+          "Place": "Brussels"
+        },
+        {
+          "Place": "Free University of Brussels"
+        },
+        {
+          "Place": "The Hague"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "League of Nations Assembly"
+        }
+      ]
+    }
+  ]
+}

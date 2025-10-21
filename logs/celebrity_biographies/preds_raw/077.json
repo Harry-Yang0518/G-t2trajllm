@@ -1,0 +1,32 @@
+{
+  "id": "077",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Theodore William Richards\",\n        \"Track\": [\n            {\"Place\": \"Germantown, Pennsylvania\"},\n            {\"Place\": \"Newport, Rhode Island\"},\n            {\"Place\": \"England\"},\n            {\"Place\": \"Haverford College, Pennsylvania\"},\n            {\"Place\": \"Harvard University\"},\n            {\"Place\": \"University of Göttingen, Germany\"},\n            {\"Place\": \"Cambridge, Massachusetts\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Theodore William Richards",
+      "Track": [
+        {
+          "Place": "Germantown, Pennsylvania"
+        },
+        {
+          "Place": "Newport, Rhode Island"
+        },
+        {
+          "Place": "England"
+        },
+        {
+          "Place": "Haverford College, Pennsylvania"
+        },
+        {
+          "Place": "Harvard University"
+        },
+        {
+          "Place": "University of Göttingen, Germany"
+        },
+        {
+          "Place": "Cambridge, Massachusetts"
+        }
+      ]
+    }
+  ]
+}

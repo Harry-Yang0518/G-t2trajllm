@@ -1,0 +1,32 @@
+{
+  "id": "041",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Louis Renault\",\n        \"Track\": [\n            {\"Place\": \"Autun\"},\n            {\"Place\": \"University of Dijon\"},\n            {\"Place\": \"Paris Institute of Political Studies\"},\n            {\"Place\": \"University of Paris\"},\n            {\"Place\": \"Ministry of Foreign Affairs\"},\n            {\"Place\": \"Hague Conventions\"},\n            {\"Place\": \"London Naval Conference\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Louis Renault",
+      "Track": [
+        {
+          "Place": "Autun"
+        },
+        {
+          "Place": "University of Dijon"
+        },
+        {
+          "Place": "Paris Institute of Political Studies"
+        },
+        {
+          "Place": "University of Paris"
+        },
+        {
+          "Place": "Ministry of Foreign Affairs"
+        },
+        {
+          "Place": "Hague Conventions"
+        },
+        {
+          "Place": "London Naval Conference"
+        }
+      ]
+    }
+  ]
+}

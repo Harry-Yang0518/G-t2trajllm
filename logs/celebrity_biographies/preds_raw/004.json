@@ -1,0 +1,47 @@
+{
+  "id": "004",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Henry Dunant\",\n        \"Track\": [\n            {\"Place\": \"Geneva\"},\n            {\"Place\": \"French Algeria\"},\n            {\"Place\": \"Tunisia\"},\n            {\"Place\": \"Solferino\"},\n            {\"Place\": \"Geneva\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Stuttgart\"},\n            {\"Place\": \"Rome\"},\n            {\"Place\": \"Corfu\"},\n            {\"Place\": \"Basel\"},\n            {\"Place\": \"Karlsruhe\"},\n            {\"Place\": \"Heiden\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Henry Dunant",
+      "Track": [
+        {
+          "Place": "Geneva"
+        },
+        {
+          "Place": "French Algeria"
+        },
+        {
+          "Place": "Tunisia"
+        },
+        {
+          "Place": "Solferino"
+        },
+        {
+          "Place": "Geneva"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Stuttgart"
+        },
+        {
+          "Place": "Rome"
+        },
+        {
+          "Place": "Corfu"
+        },
+        {
+          "Place": "Basel"
+        },
+        {
+          "Place": "Karlsruhe"
+        },
+        {
+          "Place": "Heiden"
+        }
+      ]
+    }
+  ]
+}

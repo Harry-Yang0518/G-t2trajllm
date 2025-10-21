@@ -1,0 +1,29 @@
+{
+  "id": "024",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"José Echegaray\",\n        \"Track\": [\n            {\"Place\": \"Madrid\"},\n            {\"Place\": \"Murcia\"},\n            {\"Place\": \"Madrid\"},\n            {\"Place\": \"Almeria\"},\n            {\"Place\": \"Granada\"},\n            {\"Place\": \"Madrid\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "José Echegaray",
+      "Track": [
+        {
+          "Place": "Madrid"
+        },
+        {
+          "Place": "Murcia"
+        },
+        {
+          "Place": "Madrid"
+        },
+        {
+          "Place": "Almeria"
+        },
+        {
+          "Place": "Granada"
+        },
+        {
+          "Place": "Madrid"
+        }
+      ]
+    }
+  ]
+}

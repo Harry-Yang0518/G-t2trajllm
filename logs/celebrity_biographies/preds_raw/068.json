@@ -1,0 +1,29 @@
+{
+  "id": "068",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Alexis Carrel\",\n        \"Track\": [\n            {\"Place\": \"Sainte-Foy-lès-Lyon, Rhône\"},\n            {\"Place\": \"Lourdes\"},\n            {\"Place\": \"Montreal, Canada\"},\n            {\"Place\": \"Chicago, Illinois\"},\n            {\"Place\": \"New York\"},\n            {\"Place\": \"Île Saint-Gildas\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Alexis Carrel",
+      "Track": [
+        {
+          "Place": "Sainte-Foy-lès-Lyon, Rhône"
+        },
+        {
+          "Place": "Lourdes"
+        },
+        {
+          "Place": "Montreal, Canada"
+        },
+        {
+          "Place": "Chicago, Illinois"
+        },
+        {
+          "Place": "New York"
+        },
+        {
+          "Place": "Île Saint-Gildas"
+        }
+      ]
+    }
+  ]
+}

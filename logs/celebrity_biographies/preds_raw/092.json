@@ -1,0 +1,50 @@
+{
+  "id": "092",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Woodrow Wilson\",\n        \"Track\": [\n            {\"Place\": \"Staunton, Virginia\"},\n            {\"Place\": \"Augusta, Georgia\"},\n            {\"Place\": \"Columbia, South Carolina\"},\n            {\"Place\": \"Davidson, North Carolina\"},\n            {\"Place\": \"Princeton, New Jersey\"},\n            {\"Place\": \"Charlottesville, Virginia\"},\n            {\"Place\": \"Wilmington, North Carolina\"},\n            {\"Place\": \"Atlanta, Georgia\"},\n            {\"Place\": \"Baltimore, Maryland\"},\n            {\"Place\": \"Bryn Mawr, Pennsylvania\"},\n            {\"Place\": \"Middletown, Connecticut\"},\n            {\"Place\": \"Bermuda\"},\n            {\"Place\": \"Paris, France\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Woodrow Wilson",
+      "Track": [
+        {
+          "Place": "Staunton, Virginia"
+        },
+        {
+          "Place": "Augusta, Georgia"
+        },
+        {
+          "Place": "Columbia, South Carolina"
+        },
+        {
+          "Place": "Davidson, North Carolina"
+        },
+        {
+          "Place": "Princeton, New Jersey"
+        },
+        {
+          "Place": "Charlottesville, Virginia"
+        },
+        {
+          "Place": "Wilmington, North Carolina"
+        },
+        {
+          "Place": "Atlanta, Georgia"
+        },
+        {
+          "Place": "Baltimore, Maryland"
+        },
+        {
+          "Place": "Bryn Mawr, Pennsylvania"
+        },
+        {
+          "Place": "Middletown, Connecticut"
+        },
+        {
+          "Place": "Bermuda"
+        },
+        {
+          "Place": "Paris, France"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "088",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Fritz Haber\",\n        \"Track\": [\n            {\"Place\": \"Breslau, Kingdom of Prussia (now Wrocław, Poland)\"},\n            {\"Place\": \"Berlin, Germany\"},\n            {\"Place\": \"Heidelberg, Germany\"},\n            {\"Place\": \"Charlottenburg, Germany\"},\n            {\"Place\": \"Budapest, Hungary\"},\n            {\"Place\": \"Austria\"},\n            {\"Place\": \"Zürich, Switzerland\"},\n            {\"Place\": \"Jena, Germany\"},\n            {\"Place\": \"Karlsruhe, Germany\"},\n            {\"Place\": \"Silesia\"},\n            {\"Place\": \"Saxony\"},\n            {\"Place\": \"Ypres, Belgium\"},\n            {\"Place\": \"Japan\"},\n            {\"Place\": \"Paris, France\"},\n            {\"Place\": \"Spain\"},\n            {\"Place\": \"Switzerland\"},\n            {\"Place\": \"Cambridge, England\"},\n            {\"Place\": \"Rehovot, Mandatory Palestine\"},\n            {\"Place\": \"Basel, Switzerland\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Fritz Haber",
+      "Track": [
+        {
+          "Place": "Breslau, Kingdom of Prussia (now Wrocław, Poland)"
+        },
+        {
+          "Place": "Berlin, Germany"
+        },
+        {
+          "Place": "Heidelberg, Germany"
+        },
+        {
+          "Place": "Charlottenburg, Germany"
+        },
+        {
+          "Place": "Budapest, Hungary"
+        },
+        {
+          "Place": "Austria"
+        },
+        {
+          "Place": "Zürich, Switzerland"
+        },
+        {
+          "Place": "Jena, Germany"
+        },
+        {
+          "Place": "Karlsruhe, Germany"
+        },
+        {
+          "Place": "Silesia"
+        },
+        {
+          "Place": "Saxony"
+        },
+        {
+          "Place": "Ypres, Belgium"
+        },
+        {
+          "Place": "Japan"
+        },
+        {
+          "Place": "Paris, France"
+        },
+        {
+          "Place": "Spain"
+        },
+        {
+          "Place": "Switzerland"
+        },
+        {
+          "Place": "Cambridge, England"
+        },
+        {
+          "Place": "Rehovot, Mandatory Palestine"
+        },
+        {
+          "Place": "Basel, Switzerland"
+        }
+      ]
+    }
+  ]
+}

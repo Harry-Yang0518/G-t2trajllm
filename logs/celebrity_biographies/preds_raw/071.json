@@ -1,0 +1,26 @@
+{
+  "id": "071",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Heike Kamerlingh Onnes\",\n        \"Track\": [\n            {\"Place\": \"Groningen, Netherlands\"},\n            {\"Place\": \"University of Groningen\"},\n            {\"Place\": \"University of Heidelberg\"},\n            {\"Place\": \"Delft Polytechnic\"},\n            {\"Place\": \"University of Leiden\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Heike Kamerlingh Onnes",
+      "Track": [
+        {
+          "Place": "Groningen, Netherlands"
+        },
+        {
+          "Place": "University of Groningen"
+        },
+        {
+          "Place": "University of Heidelberg"
+        },
+        {
+          "Place": "Delft Polytechnic"
+        },
+        {
+          "Place": "University of Leiden"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "082",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Romain Rolland\",\n        \"Track\": [\n            {\"Place\": \"Clamecy, Nièvre\"},\n            {\"Place\": \"École normale supérieure\"},\n            {\"Place\": \"Rome\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Florence\"},\n            {\"Place\": \"Switzerland\"},\n            {\"Place\": \"Moscow\"},\n            {\"Place\": \"Villeneuve\"},\n            {\"Place\": \"Vézelay\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Romain Rolland",
+      "Track": [
+        {
+          "Place": "Clamecy, Nièvre"
+        },
+        {
+          "Place": "École normale supérieure"
+        },
+        {
+          "Place": "Rome"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Florence"
+        },
+        {
+          "Place": "Switzerland"
+        },
+        {
+          "Place": "Moscow"
+        },
+        {
+          "Place": "Villeneuve"
+        },
+        {
+          "Place": "Vézelay"
+        }
+      ]
+    }
+  ]
+}

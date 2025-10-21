@@ -1,0 +1,35 @@
+{
+  "id": "032",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Camillo Golgi\",\n        \"Track\": [\n            {\"Place\": \"Corteno\"},\n            {\"Place\": \"University of Pavia\"},\n            {\"Place\": \"San Matteo Hospital\"},\n            {\"Place\": \"Novara Hospital\"},\n            {\"Place\": \"Hospital of the Chronically Ill in Abbiategrasso\"},\n            {\"Place\": \"University of Siena\"},\n            {\"Place\": \"University of Pavia\"},\n            {\"Place\": \"Collegio Borrmeo\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Camillo Golgi",
+      "Track": [
+        {
+          "Place": "Corteno"
+        },
+        {
+          "Place": "University of Pavia"
+        },
+        {
+          "Place": "San Matteo Hospital"
+        },
+        {
+          "Place": "Novara Hospital"
+        },
+        {
+          "Place": "Hospital of the Chronically Ill in Abbiategrasso"
+        },
+        {
+          "Place": "University of Siena"
+        },
+        {
+          "Place": "University of Pavia"
+        },
+        {
+          "Place": "Collegio Borrmeo"
+        }
+      ]
+    }
+  ]
+}

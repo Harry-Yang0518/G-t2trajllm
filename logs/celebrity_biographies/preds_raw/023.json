@@ -1,0 +1,32 @@
+{
+  "id": "023",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Frédéric Mistral\",\n        \"Track\": [\n            {\"Place\": \"Maillane\"},\n            {\"Place\": \"Saint-Rémy-de-Provence\"},\n            {\"Place\": \"Saint-Michel-de-Frigolet\"},\n            {\"Place\": \"Nîmes\"},\n            {\"Place\": \"Aix-en-Provence\"},\n            {\"Place\": \"Dijon Cathedral\"},\n            {\"Place\": \"Arles\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Frédéric Mistral",
+      "Track": [
+        {
+          "Place": "Maillane"
+        },
+        {
+          "Place": "Saint-Rémy-de-Provence"
+        },
+        {
+          "Place": "Saint-Michel-de-Frigolet"
+        },
+        {
+          "Place": "Nîmes"
+        },
+        {
+          "Place": "Aix-en-Provence"
+        },
+        {
+          "Place": "Dijon Cathedral"
+        },
+        {
+          "Place": "Arles"
+        }
+      ]
+    }
+  ]
+}

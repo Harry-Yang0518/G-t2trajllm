@@ -1,0 +1,32 @@
+{
+  "id": "084",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Charles Glover Barkla\",\n        \"Track\": [\n            {\"Place\": \"Widnes, England\"},\n            {\"Place\": \"Liverpool Institute\"},\n            {\"Place\": \"Liverpool University\"},\n            {\"Place\": \"Trinity College, Cambridge\"},\n            {\"Place\": \"King's College, Cambridge\"},\n            {\"Place\": \"University of Edinburgh\"},\n            {\"Place\": \"Hermitage of Braid, Edinburgh\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Charles Glover Barkla",
+      "Track": [
+        {
+          "Place": "Widnes, England"
+        },
+        {
+          "Place": "Liverpool Institute"
+        },
+        {
+          "Place": "Liverpool University"
+        },
+        {
+          "Place": "Trinity College, Cambridge"
+        },
+        {
+          "Place": "King's College, Cambridge"
+        },
+        {
+          "Place": "University of Edinburgh"
+        },
+        {
+          "Place": "Hermitage of Braid, Edinburgh"
+        }
+      ]
+    }
+  ]
+}

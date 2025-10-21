@@ -1,0 +1,23 @@
+{
+  "id": "073",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Charles Robert Richet\",\n        \"Track\": [\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Salpêtrière hospital, Paris\"},\n            {\"Place\": \"Collège de France, Paris\"},\n            {\"Place\": \"French coast of Atlantic Ocean\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Charles Robert Richet",
+      "Track": [
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Salpêtrière hospital, Paris"
+        },
+        {
+          "Place": "Collège de France, Paris"
+        },
+        {
+          "Place": "French coast of Atlantic Ocean"
+        }
+      ]
+    }
+  ]
+}

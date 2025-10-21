@@ -1,0 +1,32 @@
+{
+  "id": "016",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Svante Arrhenius\",\n        \"Track\": [\n            {\"Place\": \"Vik\"},\n            {\"Place\": \"Uppsala\"},\n            {\"Place\": \"Stockholm\"},\n            {\"Place\": \"Riga\"},\n            {\"Place\": \"Würzburg\"},\n            {\"Place\": \"Graz\"},\n            {\"Place\": \"Amsterdam\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Svante Arrhenius",
+      "Track": [
+        {
+          "Place": "Vik"
+        },
+        {
+          "Place": "Uppsala"
+        },
+        {
+          "Place": "Stockholm"
+        },
+        {
+          "Place": "Riga"
+        },
+        {
+          "Place": "Würzburg"
+        },
+        {
+          "Place": "Graz"
+        },
+        {
+          "Place": "Amsterdam"
+        }
+      ]
+    }
+  ]
+}

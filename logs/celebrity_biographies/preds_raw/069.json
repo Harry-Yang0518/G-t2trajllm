@@ -1,0 +1,62 @@
+{
+  "id": "069",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Gerhart Hauptmann\",\n        \"Track\": [\n            {\"Place\": \"Obersalzbrunn (Szczawno-Zdrój)\"},\n            {\"Place\": \"Breslau\"},\n            {\"Place\": \"Lohnig (Łagiewniki Średzkie)\"},\n            {\"Place\": \"Rome\"},\n            {\"Place\": \"Dresden\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Radebeul\"},\n            {\"Place\": \"Rügen\"},\n            {\"Place\": \"Hiddensee\"},\n            {\"Place\": \"Erkner\"},\n            {\"Place\": \"Charlottenburg\"},\n            {\"Place\": \"Schreiberhau\"},\n            {\"Place\": \"Agnetendorf (Jagniątków)\"},\n            {\"Place\": \"Monte Verità in Locarno\"},\n            {\"Place\": \"United States\"},\n            {\"Place\": \"Wiesenstein\"},\n            {\"Place\": \"Agnieszków (Jagniątków)\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Gerhart Hauptmann",
+      "Track": [
+        {
+          "Place": "Obersalzbrunn (Szczawno-Zdrój)"
+        },
+        {
+          "Place": "Breslau"
+        },
+        {
+          "Place": "Lohnig (Łagiewniki Średzkie)"
+        },
+        {
+          "Place": "Rome"
+        },
+        {
+          "Place": "Dresden"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Radebeul"
+        },
+        {
+          "Place": "Rügen"
+        },
+        {
+          "Place": "Hiddensee"
+        },
+        {
+          "Place": "Erkner"
+        },
+        {
+          "Place": "Charlottenburg"
+        },
+        {
+          "Place": "Schreiberhau"
+        },
+        {
+          "Place": "Agnetendorf (Jagniątków)"
+        },
+        {
+          "Place": "Monte Verità in Locarno"
+        },
+        {
+          "Place": "United States"
+        },
+        {
+          "Place": "Wiesenstein"
+        },
+        {
+          "Place": "Agnieszków (Jagniątków)"
+        }
+      ]
+    }
+  ]
+}

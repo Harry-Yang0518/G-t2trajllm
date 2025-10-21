@@ -1,0 +1,26 @@
+{
+  "id": "015",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Marie Curie\",\n        \"Track\": [\n            {\"Place\": \"Warsaw\"},\n            {\"Place\": \"Szczuki\"},\n            {\"Place\": \"Paris\"},\n            {\"Place\": \"Sceaux\"},\n            {\"Place\": \"Passy\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Marie Curie",
+      "Track": [
+        {
+          "Place": "Warsaw"
+        },
+        {
+          "Place": "Szczuki"
+        },
+        {
+          "Place": "Paris"
+        },
+        {
+          "Place": "Sceaux"
+        },
+        {
+          "Place": "Passy"
+        }
+      ]
+    }
+  ]
+}

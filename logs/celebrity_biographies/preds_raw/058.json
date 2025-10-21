@@ -1,0 +1,47 @@
+{
+  "id": "058",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Albrecht Kossel\",\n        \"Track\": [\n            {\"Place\": \"Rostock, Germany\"},\n            {\"Place\": \"University of Strassburg\"},\n            {\"Place\": \"University of Berlin\"},\n            {\"Place\": \"University of Marburg\"},\n            {\"Place\": \"Heidelberg University\"},\n            {\"Place\": \"United States\"},\n            {\"Place\": \"Johns Hopkins\"},\n            {\"Place\": \"University of California at Berkeley\"},\n            {\"Place\": \"University of Chicago\"},\n            {\"Place\": \"New York City\"},\n            {\"Place\": \"University of Edinburgh\"},\n            {\"Place\": \"England\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Albrecht Kossel",
+      "Track": [
+        {
+          "Place": "Rostock, Germany"
+        },
+        {
+          "Place": "University of Strassburg"
+        },
+        {
+          "Place": "University of Berlin"
+        },
+        {
+          "Place": "University of Marburg"
+        },
+        {
+          "Place": "Heidelberg University"
+        },
+        {
+          "Place": "United States"
+        },
+        {
+          "Place": "Johns Hopkins"
+        },
+        {
+          "Place": "University of California at Berkeley"
+        },
+        {
+          "Place": "University of Chicago"
+        },
+        {
+          "Place": "New York City"
+        },
+        {
+          "Place": "University of Edinburgh"
+        },
+        {
+          "Place": "England"
+        }
+      ]
+    }
+  ]
+}

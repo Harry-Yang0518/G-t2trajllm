@@ -1,0 +1,20 @@
+{
+  "id": "061",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Allvar Gullstrand\",\n        \"Track\": [\n            {\"Place\": \"Landskrona\"},\n            {\"Place\": \"University of Uppsala\"},\n            {\"Place\": \"Stockholm\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Allvar Gullstrand",
+      "Track": [
+        {
+          "Place": "Landskrona"
+        },
+        {
+          "Place": "University of Uppsala"
+        },
+        {
+          "Place": "Stockholm"
+        }
+      ]
+    }
+  ]
+}

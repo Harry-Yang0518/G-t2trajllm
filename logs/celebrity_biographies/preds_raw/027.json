@@ -1,0 +1,53 @@
+{
+  "id": "027",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Robert Koch\",\n        \"Track\": [\n            {\"Place\": \"Clausthal, Germany\"},\n            {\"Place\": \"University of Göttingen\"},\n            {\"Place\": \"General Hospital of Hamburg\"},\n            {\"Place\": \"Idiot's Hospital of Langenhagen\"},\n            {\"Place\": \"Neimegk\"},\n            {\"Place\": \"Rakwitz\"},\n            {\"Place\": \"Wollstein, Prussian Posen (now Wolsztyn, Poland)\"},\n            {\"Place\": \"University of Breslau (now the University of Wrocław)\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Alexandria, Egypt\"},\n            {\"Place\": \"Calcutta (now Kolkata), India\"},\n            {\"Place\": \"East Africa\"},\n            {\"Place\": \"Bugula research camp\"},\n            {\"Place\": \"German New Guinea\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Robert Koch",
+      "Track": [
+        {
+          "Place": "Clausthal, Germany"
+        },
+        {
+          "Place": "University of Göttingen"
+        },
+        {
+          "Place": "General Hospital of Hamburg"
+        },
+        {
+          "Place": "Idiot's Hospital of Langenhagen"
+        },
+        {
+          "Place": "Neimegk"
+        },
+        {
+          "Place": "Rakwitz"
+        },
+        {
+          "Place": "Wollstein, Prussian Posen (now Wolsztyn, Poland)"
+        },
+        {
+          "Place": "University of Breslau (now the University of Wrocław)"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Alexandria, Egypt"
+        },
+        {
+          "Place": "Calcutta (now Kolkata), India"
+        },
+        {
+          "Place": "East Africa"
+        },
+        {
+          "Place": "Bugula research camp"
+        },
+        {
+          "Place": "German New Guinea"
+        }
+      ]
+    }
+  ]
+}

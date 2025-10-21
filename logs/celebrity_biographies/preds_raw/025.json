@@ -1,0 +1,41 @@
+{
+  "id": "025",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Philipp Lenard\",\n        \"Track\": [\n            {\"Place\": \"Pressburg (Pozsony, today's Bratislava)\"},\n            {\"Place\": \"Vienna\"},\n            {\"Place\": \"Budapest\"},\n            {\"Place\": \"Heidelberg\"},\n            {\"Place\": \"Berlin\"},\n            {\"Place\": \"Aachen\"},\n            {\"Place\": \"Bonn\"},\n            {\"Place\": \"Breslau\"},\n            {\"Place\": \"Kiel\"},\n            {\"Place\": \"Messelhausen\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Philipp Lenard",
+      "Track": [
+        {
+          "Place": "Pressburg (Pozsony, today's Bratislava)"
+        },
+        {
+          "Place": "Vienna"
+        },
+        {
+          "Place": "Budapest"
+        },
+        {
+          "Place": "Heidelberg"
+        },
+        {
+          "Place": "Berlin"
+        },
+        {
+          "Place": "Aachen"
+        },
+        {
+          "Place": "Bonn"
+        },
+        {
+          "Place": "Breslau"
+        },
+        {
+          "Place": "Kiel"
+        },
+        {
+          "Place": "Messelhausen"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "009",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Ronald Ross\",\n        \"Track\": [\n            {\"Place\": \"Almora\"},\n            {\"Place\": \"Isle of Wight\"},\n            {\"Place\": \"Ryde\"},\n            {\"Place\": \"Springhill\"},\n            {\"Place\": \"London\"},\n            {\"Place\": \"Madras\"},\n            {\"Place\": \"Moulmein\"},\n            {\"Place\": \"Baluchistan\"},\n            {\"Place\": \"Andaman Islands\"},\n            {\"Place\": \"Bangalore\"},\n            {\"Place\": \"Secunderabad\"},\n            {\"Place\": \"Sigur Ghat\"},\n            {\"Place\": \"Ooty\"},\n            {\"Place\": \"Bombay\"},\n            {\"Place\": \"Kherwara\"},\n            {\"Place\": \"Calcutta\"},\n            {\"Place\": \"Mahanad village\"},\n            {\"Place\": \"southern Assam\"},\n            {\"Place\": \"Liverpool\"},\n            {\"Place\": \"West Africa\"},\n            {\"Place\": \"Suez Canal zone\"},\n            {\"Place\": \"Greece\"},\n            {\"Place\": \"Mauritius\"},\n            {\"Place\": \"Cyprus\"},\n            {\"Place\": \"Thessaloniki\"},\n            {\"Place\": \"Italy\"},\n            {\"Place\": \"Putney Heath\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Ronald Ross",
+      "Track": [
+        {
+          "Place": "Almora"
+        },
+        {
+          "Place": "Isle of Wight"
+        },
+        {
+          "Place": "Ryde"
+        },
+        {
+          "Place": "Springhill"
+        },
+        {
+          "Place": "London"
+        },
+        {
+          "Place": "Madras"
+        },
+        {
+          "Place": "Moulmein"
+        },
+        {
+          "Place": "Baluchistan"
+        },
+        {
+          "Place": "Andaman Islands"
+        },
+        {
+          "Place": "Bangalore"
+        },
+        {
+          "Place": "Secunderabad"
+        },
+        {
+          "Place": "Sigur Ghat"
+        },
+        {
+          "Place": "Ooty"
+        },
+        {
+          "Place": "Bombay"
+        },
+        {
+          "Place": "Kherwara"
+        },
+        {
+          "Place": "Calcutta"
+        },
+        {
+          "Place": "Mahanad village"
+        },
+        {
+          "Place": "southern Assam"
+        },
+        {
+          "Place": "Liverpool"
+        },
+        {
+          "Place": "West Africa"
+        },
+        {
+          "Place": "Suez Canal zone"
+        },
+        {
+          "Place": "Greece"
+        },
+        {
+          "Place": "Mauritius"
+        },
+        {
+          "Place": "Cyprus"
+        },
+        {
+          "Place": "Thessaloniki"
+        },
+        {
+          "Place": "Italy"
+        },
+        {
+          "Place": "Putney Heath"
+        }
+      ]
+    }
+  ]
+}

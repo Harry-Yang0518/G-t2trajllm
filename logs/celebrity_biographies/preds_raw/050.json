@@ -1,0 +1,101 @@
+{
+  "id": "050",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Guglielmo Marconi\",\n        \"Track\": [\n            {\"Place\": \"Bologna\"},\n            {\"Place\": \"Bedford\"},\n            {\"Place\": \"Tuscany\"},\n            {\"Place\": \"Florence\"},\n            {\"Place\": \"Livorno\"},\n            {\"Place\": \"Villa Griffone, Pontecchio\"},\n            {\"Place\": \"London\"},\n            {\"Place\": \"Dover\"},\n            {\"Place\": \"Salisbury Plain\"},\n            {\"Place\": \"Flat Holm Island\"},\n            {\"Place\": \"Lavernock Point\"},\n            {\"Place\": \"Brean Down Fort\"},\n            {\"Place\": \"La Spezia\"},\n            {\"Place\": \"Ballycastle\"},\n            {\"Place\": \"Rathlin Island\"},\n            {\"Place\": \"Wimereux\"},\n            {\"Place\": \"South Foreland Lighthouse\"},\n            {\"Place\": \"Haven Hotel, Sandbanks\"},\n            {\"Place\": \"Brownsea Island\"},\n            {\"Place\": \"South Foreland lighthouse\"},\n            {\"Place\": \"East Goodwin lightship\"},\n            {\"Place\": \"Sandy Hook, New Jersey\"},\n            {\"Place\": \"SS Saint Paul\"},\n            {\"Place\": \"Rosslare Strand\"},\n            {\"Place\": \"Poldhu\"},\n            {\"Place\": \"Clifden\"},\n            {\"Place\": \"Signal Hill, St. John's\"},\n            {\"Place\": \"Glace Bay\"},\n            {\"Place\": \"South Wellfleet\"},\n            {\"Place\": \"Rome\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Guglielmo Marconi",
+      "Track": [
+        {
+          "Place": "Bologna"
+        },
+        {
+          "Place": "Bedford"
+        },
+        {
+          "Place": "Tuscany"
+        },
+        {
+          "Place": "Florence"
+        },
+        {
+          "Place": "Livorno"
+        },
+        {
+          "Place": "Villa Griffone, Pontecchio"
+        },
+        {
+          "Place": "London"
+        },
+        {
+          "Place": "Dover"
+        },
+        {
+          "Place": "Salisbury Plain"
+        },
+        {
+          "Place": "Flat Holm Island"
+        },
+        {
+          "Place": "Lavernock Point"
+        },
+        {
+          "Place": "Brean Down Fort"
+        },
+        {
+          "Place": "La Spezia"
+        },
+        {
+          "Place": "Ballycastle"
+        },
+        {
+          "Place": "Rathlin Island"
+        },
+        {
+          "Place": "Wimereux"
+        },
+        {
+          "Place": "South Foreland Lighthouse"
+        },
+        {
+          "Place": "Haven Hotel, Sandbanks"
+        },
+        {
+          "Place": "Brownsea Island"
+        },
+        {
+          "Place": "South Foreland lighthouse"
+        },
+        {
+          "Place": "East Goodwin lightship"
+        },
+        {
+          "Place": "Sandy Hook, New Jersey"
+        },
+        {
+          "Place": "SS Saint Paul"
+        },
+        {
+          "Place": "Rosslare Strand"
+        },
+        {
+          "Place": "Poldhu"
+        },
+        {
+          "Place": "Clifden"
+        },
+        {
+          "Place": "Signal Hill, St. John's"
+        },
+        {
+          "Place": "Glace Bay"
+        },
+        {
+          "Place": "South Wellfleet"
+        },
+        {
+          "Place": "Rome"
+        }
+      ]
+    }
+  ]
+}

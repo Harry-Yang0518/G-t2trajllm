@@ -1,0 +1,44 @@
+{
+  "id": "080",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Lawrence Bragg\",\n        \"Track\": [\n            {\"Place\": \"Adelaide, South Australia\"},\n            {\"Place\": \"North Adelaide\"},\n            {\"Place\": \"St Peter's College, Adelaide\"},\n            {\"Place\": \"University of Adelaide\"},\n            {\"Place\": \"University of Leeds, England\"},\n            {\"Place\": \"Trinity College, Cambridge\"},\n            {\"Place\": \"Cavendish Laboratory, Cambridge\"},\n            {\"Place\": \"Victoria University of Manchester\"},\n            {\"Place\": \"National Physical Laboratory, Teddington\"},\n            {\"Place\": \"Royal Institution, London\"},\n            {\"Place\": \"Waldringfield, Ipswich, Suffolk\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Lawrence Bragg",
+      "Track": [
+        {
+          "Place": "Adelaide, South Australia"
+        },
+        {
+          "Place": "North Adelaide"
+        },
+        {
+          "Place": "St Peter's College, Adelaide"
+        },
+        {
+          "Place": "University of Adelaide"
+        },
+        {
+          "Place": "University of Leeds, England"
+        },
+        {
+          "Place": "Trinity College, Cambridge"
+        },
+        {
+          "Place": "Cavendish Laboratory, Cambridge"
+        },
+        {
+          "Place": "Victoria University of Manchester"
+        },
+        {
+          "Place": "National Physical Laboratory, Teddington"
+        },
+        {
+          "Place": "Royal Institution, London"
+        },
+        {
+          "Place": "Waldringfield, Ipswich, Suffolk"
+        }
+      ]
+    }
+  ]
+}

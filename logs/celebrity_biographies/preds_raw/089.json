@@ -1,0 +1,44 @@
+{
+  "id": "089",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Johannes Stark\",\n        \"Track\": [\n            {\"Place\": \"Schickenhof, Kingdom of Bavaria (now Freihung)\"},\n            {\"Place\": \"Bayreuth Gymnasium\"},\n            {\"Place\": \"Regensburg\"},\n            {\"Place\": \"University of Munich\"},\n            {\"Place\": \"University of Göttingen\"},\n            {\"Place\": \"Leibniz University Hannover\"},\n            {\"Place\": \"RWTH Aachen University\"},\n            {\"Place\": \"University of Greifswald\"},\n            {\"Place\": \"University of Würzburg\"},\n            {\"Place\": \"Gut Eppenstatt near Traunstein in Upper Bavaria\"},\n            {\"Place\": \"Schönau am Königssee\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Johannes Stark",
+      "Track": [
+        {
+          "Place": "Schickenhof, Kingdom of Bavaria (now Freihung)"
+        },
+        {
+          "Place": "Bayreuth Gymnasium"
+        },
+        {
+          "Place": "Regensburg"
+        },
+        {
+          "Place": "University of Munich"
+        },
+        {
+          "Place": "University of Göttingen"
+        },
+        {
+          "Place": "Leibniz University Hannover"
+        },
+        {
+          "Place": "RWTH Aachen University"
+        },
+        {
+          "Place": "University of Greifswald"
+        },
+        {
+          "Place": "University of Würzburg"
+        },
+        {
+          "Place": "Gut Eppenstatt near Traunstein in Upper Bavaria"
+        },
+        {
+          "Place": "Schönau am Königssee"
+        }
+      ]
+    }
+  ]
+}

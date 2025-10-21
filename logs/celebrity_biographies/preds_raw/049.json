@@ -1,0 +1,35 @@
+{
+  "id": "049",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Karl Ferdinand Braun\",\n        \"Track\": [\n            {\"Place\": \"Fulda, Germany\"},\n            {\"Place\": \"University of Marburg\"},\n            {\"Place\": \"University of Berlin\"},\n            {\"Place\": \"University of Strassburg\"},\n            {\"Place\": \"Mutzig\"},\n            {\"Place\": \"Cuxhaven\"},\n            {\"Place\": \"Heligoland\"},\n            {\"Place\": \"Brooklyn, New York\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Karl Ferdinand Braun",
+      "Track": [
+        {
+          "Place": "Fulda, Germany"
+        },
+        {
+          "Place": "University of Marburg"
+        },
+        {
+          "Place": "University of Berlin"
+        },
+        {
+          "Place": "University of Strassburg"
+        },
+        {
+          "Place": "Mutzig"
+        },
+        {
+          "Place": "Cuxhaven"
+        },
+        {
+          "Place": "Heligoland"
+        },
+        {
+          "Place": "Brooklyn, New York"
+        }
+      ]
+    }
+  ]
+}

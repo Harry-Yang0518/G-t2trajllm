@@ -1,0 +1,50 @@
+{
+  "id": "022",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Ivan Petrovich Pavlov\",\n        \"Track\": [\n            {\"Place\": \"Ryazan, Russian Empire\"},\n            {\"Place\": \"University of Saint Petersburg\"},\n            {\"Place\": \"Imperial Academy of Medical Surgery\"},\n            {\"Place\": \"Veterinary Institute\"},\n            {\"Place\": \"Germany\"},\n            {\"Place\": \"Leipzig\"},\n            {\"Place\": \"Heidenhain laboratories in Breslau\"},\n            {\"Place\": \"Russia\"},\n            {\"Place\": \"Tomsk University\"},\n            {\"Place\": \"University of Warsaw\"},\n            {\"Place\": \"Military Medical Academy\"},\n            {\"Place\": \"Institute of Experimental Medicine in St. Petersburg\"},\n            {\"Place\": \"Volkovo Cemetery in St. Petersburg\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Ivan Petrovich Pavlov",
+      "Track": [
+        {
+          "Place": "Ryazan, Russian Empire"
+        },
+        {
+          "Place": "University of Saint Petersburg"
+        },
+        {
+          "Place": "Imperial Academy of Medical Surgery"
+        },
+        {
+          "Place": "Veterinary Institute"
+        },
+        {
+          "Place": "Germany"
+        },
+        {
+          "Place": "Leipzig"
+        },
+        {
+          "Place": "Heidenhain laboratories in Breslau"
+        },
+        {
+          "Place": "Russia"
+        },
+        {
+          "Place": "Tomsk University"
+        },
+        {
+          "Place": "University of Warsaw"
+        },
+        {
+          "Place": "Military Medical Academy"
+        },
+        {
+          "Place": "Institute of Experimental Medicine in St. Petersburg"
+        },
+        {
+          "Place": "Volkovo Cemetery in St. Petersburg"
+        }
+      ]
+    }
+  ]
+}

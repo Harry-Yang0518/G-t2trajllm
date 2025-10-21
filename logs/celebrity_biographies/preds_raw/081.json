@@ -1,0 +1,38 @@
+{
+  "id": "081",
+  "raw_output": "```json\n[\n    {\n        \"Actor\": \"Richard Martin Willstätter\",\n        \"Track\": [\n            {\"Place\": \"Karlsruhe\"},\n            {\"Place\": \"Nuremberg\"},\n            {\"Place\": \"University of Munich\"},\n            {\"Place\": \"ETH Zürich\"},\n            {\"Place\": \"University of Berlin\"},\n            {\"Place\": \"Dahlem\"},\n            {\"Place\": \"Munich\"},\n            {\"Place\": \"Switzerland\"},\n            {\"Place\": \"Muralto\"}\n        ]\n    }\n]\n```",
+  "parsed": [
+    {
+      "Actor": "Richard Martin Willstätter",
+      "Track": [
+        {
+          "Place": "Karlsruhe"
+        },
+        {
+          "Place": "Nuremberg"
+        },
+        {
+          "Place": "University of Munich"
+        },
+        {
+          "Place": "ETH Zürich"
+        },
+        {
+          "Place": "University of Berlin"
+        },
+        {
+          "Place": "Dahlem"
+        },
+        {
+          "Place": "Munich"
+        },
+        {
+          "Place": "Switzerland"
+        },
+        {
+          "Place": "Muralto"
+        }
+      ]
+    }
+  ]
+}
