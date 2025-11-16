@@ -1,0 +1,3 @@
+{"id": "0000", "label": [{"Actor": "Tourist", "Track": [{"Place": "Tokyo"}, {"Place": "Kanazawa"}, {"Place": "Hakone"}, {"Place": "Tokyo"}]}]}
+{"id": "0001", "label": [{"Actor": "Tourist", "Track": [{"Place": "Tokyo"}, {"Place": "Osaka"}, {"Place": "Kobe"}, {"Place": "Fukuoka"}, {"Place": "Aso"}, {"Place": "Beppu"}]}]}
+{"id": "0002", "label": [{"Actor": "Tourist", "Track": [{"Place": "Kansai International Airport"}, {"Place": "Osaka"}, {"Place": "Himeji"}, {"Place": "Kobe"}, {"Place": "Okayama"}, {"Place": "Kurashiki"}, {"Place": "Hiroshima"}, {"Place": "Miyajima"}]}]}
