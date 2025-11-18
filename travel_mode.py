@@ -412,6 +412,7 @@ def augment_actors_with_gmaps_modes(actors: List[Dict[str,Any]], gmaps: GoogleMa
             g1 = geos.get(p1)
             g2 = geos.get(p2)
             if g1 and g2:
+                # return the ModeFromPrev accotding to the duration_sec
                 bm = gmaps.best_mode((g1["lat"], g1["lng"]), (g2["lat"], g2["lng"]))
                 # annotate on the destination step
                 curr["ModeFromPrev"] = bm["best_mode"]
